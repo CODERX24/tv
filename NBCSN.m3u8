@@ -1,0 +1,13 @@
+#EXTM3U
+#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=585373
+http://tvecsnnorthwest-i.akamaihd.net/hls/live/221535/CSNnorthwestx/351XCSN400.m3u8
+#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=891431
+http://tvecsnnorthwest-i.akamaihd.net/hls/live/221535/CSNnorthwestx/351XCSN700.m3u8
+#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=1398975
+http://tvecsnnorthwest-i.akamaihd.net/hls/live/221535/CSNnorthwestx/351XCSN1200.m3u8
+#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2015450
+http://tvecsnnorthwest-i.akamaihd.net/hls/live/221535/CSNnorthwestx/351XCSN1800.m3u8
+#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2728385
+http://tvecsnnorthwest-i.akamaihd.net/hls/live/221535/CSNnorthwestx/351XCSN2500.m3u8
+#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=4469329
+http://tvecsnnorthwest-i.akamaihd.net/hls/live/221535/CSNnorthwestx/351XCSN4200.m3u8
