@@ -1,0 +1,45 @@
+<VAST version="2.0">
+  <Ad id="static">
+    <InLine>
+      <AdSystem>Static ROKU Template</AdSystem>
+      <AdTitle>Static ROKU Tag</AdTitle>
+      <Impression>https://cdn1.adplugg.io/apusers/serve/A48218767/file/53985/Capture.PNG</Impression>
+      <Creatives>
+        <Creative>
+          <Linear>
+            <Duration>00:00:10</Duration>
+            <TrackingEvents>
+              <Tracking event="start">https://cdn1.adplugg.io/apusers/serve/A48218767/file/53985/Capture.PNG</Tracking>
+              <Tracking event="firstQuartile">https://cdn1.adplugg.io/apusers/serve/A48218767/file/53985/Capture.PNG</Tracking>
+              <Tracking event="midpoint">https://cdn1.adplugg.io/apusers/serve/A48218767/file/53985/Capture.PNG</Tracking>
+              <Tracking event="thirdQuartile">https://cdn1.adplugg.io/apusers/serve/A48218767/file/53985/Capture.PNG</Tracking>
+              <Tracking event="complete">https://cdn1.adplugg.io/apusers/serve/A48218767/file/53985/Capture.PNG</Tracking>
+              <Tracking event="pause">https://cdn1.adplugg.io/apusers/serve/A48218767/file/53985/Capture.PNG</Tracking>
+              <Tracking event="mute">https://cdn1.adplugg.io/apusers/serve/A48218767/file/53985/Capture.PNG</Tracking>
+              <Tracking event="fullscreen">https://cdn1.adplugg.io/apusers/serve/A48218767/file/53985/Capture.PNG</Tracking>
+            </TrackingEvents>
+            <VideoClicks>
+              <ClickThrough>http://www.roku.com/</ClickThrough>
+              <ClickTracking>https://cdn1.adplugg.io/apusers/serve/A48218767/file/53985/Capture.PNG</ClickTracking>
+            </VideoClicks>
+            <MediaFiles>
+              <MediaFile type="video/mp4" bitrate="300" width="1920" height="1080">
+                https://github.com/CODERX24/tv/blob/master/2020-06-17-21-35-38.mp4?raw=true
+              </MediaFile>
+            </MediaFiles>
+            <Icons>
+              <Icon program="AdChoices" height="16" width="16" xPosition="right" yPosition="top">
+                <StaticResource creativeType="image/png">
+                 https://cdn1.adplugg.io/apusers/serve/A48218767/file/53985/Capture.PNG
+                </StaticResource>
+                <Iconclicks>
+                  <IconClickThrough>roku.com</IconClickThrough>
+                </IconClicks>
+              </Icon>
+            </Icons>
+           </Linear>
+        </Creative>
+      </Creatives>
+    </InLine>
+  </Ad>
+</VAST>
