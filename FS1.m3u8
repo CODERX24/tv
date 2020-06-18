@@ -1,13 +1,9 @@
 #EXTM3U
 #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=189035,CODECS="avc1.66.31,mp4a.40.5",RESOLUTION=320x180
-https://foxsports04-i.akamaihd.net/hls/live/619816/fs_sg/stream1/streamPlaylist.m3u8
-#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=655254,CODECS="avc1.77.31,mp4a.40.5",RESOLUTION=320x180
-https://foxsports04-i.akamaihd.net/hls/live/619816/fs_sg/stream2/streamPlaylist.m3u8
+https://gma2.blab.email/fs1.m3u8
 #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=1206993,CODECS="avc1.77.31,mp4a.40.5",RESOLUTION=480x270
-https://foxsports04-i.akamaihd.net/hls/live/619816/fs_sg/stream3/streamPlaylist.m3u8
-#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=1869080,CODECS="avc1.77.31,mp4a.40.5",RESOLUTION=960x540
-https://foxsports04-i.akamaihd.net/hls/live/619816/fs_sg/stream4/streamPlaylist.m3u8
+https://gma2.blab.email/fs1.m3u8
 #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=3413950,CODECS="avc1.100.31,mp4a.40.5",RESOLUTION=1280x720
-https://foxsports04-i.akamaihd.net/hls/live/619816/fs_sg/stream5/streamPlaylist.m3u8
+https://gma2.blab.email/fs1.m3u8
 #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=6724385,CODECS="avc1.100.40,mp4a.40.5",RESOLUTION=1920x1080
-https://foxsports04-i.akamaihd.net/hls/live/619816/fs_sg/stream6/streamPlaylist.m3u8
+https://gma2.blab.email/fs1.m3u8
