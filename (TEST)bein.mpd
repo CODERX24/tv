@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MPD
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="urn:mpeg:dash:schema:mpd:2011" xsi:schemaLocation="urn:mpeg:dash:schema:mpd:2011 DASH-MPD.xsd" type="dynamic" minimumUpdatePeriod="PT6S" minBufferTime="PT5.000S" maxSegmentDuration="PT4.504S" availabilityStartTime="2019-06-03T15:25:09Z" timeShiftBufferDepth="PT1801.800S" publishTime="2020-06-29T16:12:47Z" profiles="urn:mpeg:dash:profile:isoff-live:2011">
+	<Period id="391765500" start="PT9053583.045S">
+		<AdaptationSet mimeType="video/mp4" segmentAlignment="true" startWithSAP="1" maxWidth="1920" maxHeight="1080" maxFrameRate="30000/1001" par="16:9">
+			<SegmentTemplate timescale="90000" initialization="https://besus01d.akamaized.net/dash/live/706260/besus01d/$RepresentationID$/segment-Header-init.m4s" media="https://besus01d.akamaized.net/dash/live/706260/besus01d/$RepresentationID$/segment-$Number$.m4s" duration="360360" startNumber="391765500" presentationTimeOffset="1752346473018"/>
+			<Representation id="video1" width="1920" height="1080" frameRate="30000/1001" sar="1:1" scanType="progressive" bandwidth="3400000" codecs="avc1.4D4028"/>
+			<Representation id="video2" width="1280" height="720" frameRate="30000/1001" sar="1:1" scanType="progressive" bandwidth="2600000" codecs="avc1.4D401F"/>
+			<Representation id="video3" width="960" height="540" frameRate="30000/1001" sar="1:1" scanType="progressive" bandwidth="1800000" codecs="avc1.4D401F"/>
+			<Representation id="video4" width="960" height="540" frameRate="30000/1001" sar="1:1" scanType="progressive" bandwidth="1200000" codecs="avc1.4D401F"/>
+			<Representation id="video5" width="640" height="360" frameRate="30000/1001" sar="1:1" scanType="progressive" bandwidth="600000" codecs="avc1.42E01E"/>
+			<Representation id="video6" width="480" height="270" frameRate="30000/1001" sar="1:1" scanType="progressive" bandwidth="300000" codecs="avc1.42E015"/>
+		</AdaptationSet>
+		<AdaptationSet mimeType="audio/mp4" lang="en" segmentAlignment="true" startWithSAP="1">
+			<SegmentTemplate timescale="90000" initialization="https://besus01d.akamaized.net/dash/live/706260/besus01d/$RepresentationID$/segment-Header-init.m4s" media="https://besus01d.akamaized.net/dash/live/706260/besus01d/$RepresentationID$/segment-$Number$.m4s" duration="360360" startNumber="391765500" presentationTimeOffset="1752346473018"/>
+			<Representation id="audio1" audioSamplingRate="24000" bandwidth="96000" codecs="mp4a.40.2">
+				<AudioChannelConfiguration schemeIdUri="urn:mpeg:dash:23003:3:audio_channel_configuration:2011" value="2"/>
+			</Representation>
+		</AdaptationSet>
+		<AdaptationSet mimeType="audio/mp4" lang="es" segmentAlignment="true" startWithSAP="1">
+			<SegmentTemplate timescale="90000" initialization="https://besus01d.akamaized.net/dash/live/706260/besus01d/$RepresentationID$/segment-Header-init.m4s" media="https://besus01d.akamaized.net/dash/live/706260/besus01d/$RepresentationID$/segment-$Number$.m4s" duration="360360" startNumber="391765500" presentationTimeOffset="1752346473018"/>
+			<Representation id="audio2" audioSamplingRate="24000" bandwidth="96000" codecs="mp4a.40.2">
+				<AudioChannelConfiguration schemeIdUri="urn:mpeg:dash:23003:3:audio_channel_configuration:2011" value="2"/>
+			</Representation>
+		</AdaptationSet>
+	</Period>
+	<UTCTiming schemeIdUri="urn:mpeg:dash:utc:direct:2014" value="2020-06-29T16:12:47Z"/>
+</MPD>
