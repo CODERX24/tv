@@ -1,23 +1,27 @@
-<VAST xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="vast.xsd" version="2.0">
-<Ad id="adglare_732354285">
-<InLine>
-<AdSystem>AdGlare Ad Server</AdSystem>
-<AdTitle>VAST Ad</AdTitle>
-<Impression id="732354285">
-<![CDATA[ https://personal3.engine.adglare.net/imp?data=eyJ0aW1lIjoxNTkzMDUyMTk0LCJ6SUQiOjUwMTU4MzMyNSwiY0lEIjoiNzMyMzU0Mjg1IiwiY3JJRCI6IjM0MTM0NzQyNCIsInRpZXIiOiIyIiwiYWR0eXBlIjoidmFzdCIsImFkZm9ybWF0IjoiIiwiZG9tYWluIjoiVW5rbm93biIsImNyX29wdF9ncm91cCI6bnVsbCwic3NsIjoieWVzIiwiY29vcmQiOiI0MCMtODYuMSIsIl8iOjM2MzQ0M30.-494c75ec ]]>
-</Impression>
-<Creatives>
-<Creative sequence="1">
-<Linear>
-<Duration>00:00:10</Duration>
-<MediaFiles>
-<MediaFile width="1920" height="1080" delivery="progressive" type="video/mp4" bitrate="1280" scalable="true" maintainAspectRatio="true">
-<![CDATA[ https://github.com/CODERX24/tv/blob/master/2020-06-17-21-35-38.mp4?raw=true ]]>
-</MediaFile>
-</MediaFiles>
-</Linear>
-</Creative>
-</Creatives>
-</InLine>
-</Ad>
-</VAST>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd">
+<article lang="">
+  <para>&lt;VAST xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="vast.xsd" version="2.0"&gt;&#13;</para>
+  <para>&lt;Ad id="adglare_732354285"&gt;&#13;</para>
+  <para>&lt;InLine&gt;&#13;</para>
+  <para>&lt;AdSystem&gt;AdGlare Ad Server&lt;/AdSystem&gt;&#13;</para>
+  <para>&lt;AdTitle&gt;VAST Ad&lt;/AdTitle&gt;&#13;</para>
+  <para>&lt;Impression id="732354285"&gt;&#13;</para>
+  <para>&lt;![CDATA[ https://personal3.engine.adglare.net/imp?data=eyJ0aW1lIjoxNTkzMDUyMTk0LCJ6SUQiOjUwMTU4MzMyNSwiY0lEIjoiNzMyMzU0Mjg1IiwiY3JJRCI6IjM0MTM0NzQyNCIsInRpZXIiOiIyIiwiYWR0eXBlIjoidmFzdCIsImFkZm9ybWF0IjoiIiwiZG9tYWluIjoiVW5rbm93biIsImNyX29wdF9ncm91cCI6bnVsbCwic3NsIjoieWVzIiwiY29vcmQiOiI0MCMtODYuMSIsIl8iOjM2MzQ0M30.-494c75ec ]]&gt;&#13;</para>
+  <para>&lt;/Impression&gt;&#13;</para>
+  <para>&lt;Creatives&gt;&#13;</para>
+  <para>&lt;Creative sequence="1"&gt;&#13;</para>
+  <para>&lt;Linear&gt;&#13;</para>
+  <para>&lt;Duration&gt;00:00:10&lt;/Duration&gt;&#13;</para>
+  <para>&lt;MediaFiles&gt;&#13;</para>
+  <para>&lt;MediaFile width="1920" height="1080" delivery="progressive" type="video/mp4" bitrate="1280" scalable="true" maintainAspectRatio="true"&gt;&#13;</para>
+  <para>&lt;![CDATA[ https://github.com/CODERX24/tv/blob/master/2020-06-17-21-35-38.mp4?raw=true ]]&gt;&#13;</para>
+  <para>&lt;/MediaFile&gt;&#13;</para>
+  <para>&lt;/MediaFiles&gt;&#13;</para>
+  <para>&lt;/Linear&gt;&#13;</para>
+  <para>&lt;/Creative&gt;&#13;</para>
+  <para>&lt;/Creatives&gt;&#13;</para>
+  <para>&lt;/InLine&gt;&#13;</para>
+  <para>&lt;/Ad&gt;&#13;</para>
+  <para>&lt;/VAST&gt;</para>
+</article>
