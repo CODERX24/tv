@@ -1,13 +1,1 @@
-#EXTM3U
-#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=585373
-https://edge01.iptv.digijadoo.net/live/bbc_world/chunks.m3u8
-#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=891431
-https://edge01.iptv.digijadoo.net/live/bbc_world/chunks.m3u8
-#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=1398975
-https://edge01.iptv.digijadoo.net/live/bbc_world/chunks.m3u8
-#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2015450
-https://edge01.iptv.digijadoo.net/live/bbc_world/chunks.m3u8
-#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2728385
-https://edge01.iptv.digijadoo.net/live/bbc_world/chunks.m3u8
-#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=4469329
-https://edge01.iptv.digijadoo.net/live/bbc_world/chunks.m3u8
+http://103.199.161.254/Content/bbcworld/Live/Channel(BBCworld)/index.m3u8
