@@ -1,0 +1,4 @@
+  
+#EXTM3U
+#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=864000,RESOLUTION=960x540,CODECS="avc1.77.30, mp4a.40.2"
+http://edge-1192-ch-gv.filmon.com/live/4130.high.stream/playlist.m3u8
