@@ -1,7 +1,7 @@
 #EXTM3U
 #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=1896000
-http://tvegolf-i.Akamaihd.net/hls/live/218225/golfx/1896k/prog.m3u8
+http://tvegolf-i.Akamaihd.net/hls/live/218225/golfx/1896k/prog.m3u8|X-Forwarded-For=209.239.112.104
 #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2596000
-http://tvegolf-i.Akamaihd.net/hls/live/218225/golfx/2596k/prog.m3u8
+http://tvegolf-i.Akamaihd.net/hls/live/218225/golfx/2596k/prog.m3u8|X-Forwarded-For=209.239.112.104
 #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=4296000
-http://tvegolf-i.akamaihd.net/hls/live/218225/golfx/4296k/prog.m3u8
+http://tvegolf-i.akamaihd.net/hls/live/218225/golfx/4296k/prog.m3u8|X-Forwarded-For=209.239.112.104
