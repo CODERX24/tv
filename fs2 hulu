@@ -1,0 +1,8 @@
+var src = "https://livemanifest-hulustream-com.akamaized.net/live_dash/FS2-MLB.mpd?duration=10800&corruption_start=1612808908&cdn=all&max_h264_codec=avc1.640029&max_frame_rate=60&enabled_audio_codecs=AAC&cluster=blue&origin_location=aor&repeat=1&use_events=1&fill_gap=1&include_segment_type=1&fragment_offset=3&authToken=1616329451_c6355d31c6e52772fc1acda881af5c71";
+var hls = "https://livemanifest-hulustream-com.akamaized.net/live_hls/FS2-MLB.m3u8?start=1616241602&corruption_start=1612808908&cdn=all&max_h264_codec=avc1.640029&max_frame_rate=60&enabled_audio_codecs=AAC&cluster=blue&origin_location=aor&fragment_offset=3&live_dai=1&authToken=1616329459_9ba823f2826fd657a6a93c68539a7cae&ad_session_id=hulu%3Aads%3Aus%3Aplay%3Asession%3Ad7c14b27-1a73-4fac-8cfb-ed7448ecca42-37279430-37279430-F42FE63A3786205FCDB0D3328637A3A0";
+var myPR = "https://play.hulu.com/license/v2/linear/pr_license/FS2-MLB?deejay_device_id=190&signature=1616279051_3928f0ef3499078f8d3cd655ed29d488ca6d578f";
+var myFP = "https://play.hulu.com/license/v1/linear/fp_license/303030303036303234303733372d4650?deejay_device_id=191&signature=1616279059_e606c42829e7d925c4a3c297512681a2930147b9";
+var myCert = "https://ads-v-darwin.hulustream.com/public/fairplay_cert.der";
+
+
+https://livemanifest-hulustream-com.akamaized.net/live_dash/FS2-MLB.mpd?duration=10800&corruption_start=1612808908&cdn=all&max_h264_codec=avc1.640029&max_frame_rate=60&enabled_audio_codecs=AAC&cluster=blue&origin_location=aor&repeat=1&use_events=1&fill_gap=1&include_segment_type=1&fragment_offset=3&authToken=1616329451_c6355d31c6e52772fc1acda881af5c71
