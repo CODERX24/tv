@@ -1,0 +1,11 @@
+https://livemanifest-hulustream-com.akamaized.net/live_dash/FS1-MLB.mpd?duration=10800&corruption_start=1610634390&cdn=all&max_h264_codec=avc1.640029&max_frame_rate=60&enabled_audio_codecs=AAC&cluster=blue&origin_location=aor&repeat=1&use_events=1&fill_gap=1&include_segment_type=1&fragment_offset=3&authToken=1616323343_60df8ce7469da1a3bca0277e5097e81b
+
+
+
+
+var src = "https://livemanifest-hulustream-com.akamaized.net/live_dash/FS1-MLB.mpd?duration=10800&corruption_start=1610634390&cdn=all&max_h264_codec=avc1.640029&max_frame_rate=60&enabled_audio_codecs=AAC&cluster=blue&origin_location=aor&repeat=1&use_events=1&fill_gap=1&include_segment_type=1&fragment_offset=3&authToken=1616323343_60df8ce7469da1a3bca0277e5097e81b";
+var hls = "https://livemanifest-hulustream-com.akamaized.net/live_hls/FS1-MLB.m3u8?start=1616236201&corruption_start=1610634390&cdn=all&max_h264_codec=avc1.640029&max_frame_rate=60&enabled_audio_codecs=AAC&cluster=blue&origin_location=aor&fragment_offset=3&live_dai=1&authToken=1616323345_ad78a014dc38ffc548049448af5cc17a&ad_session_id=hulu%3Aads%3Aus%3Aplay%3Asession%3A486b6946-c034-455a-a534-09f9063ad21e-37279430-37279430-F42FE63A3786205FCDB0D3328637A3A0";
+var myPR = "https://play.hulu.com/license/v2/linear/pr_license/FS1-MLB?deejay_device_id=190&signature=1616272943_a19c24c01359f3f12ae7291c9d12740612ebbdf2";
+var myFP = "https://play.hulu.com/license/v1/linear/fp_license/303030303036303234303733372d4650?deejay_device_id=191&signature=1616272944_2721d552f32424417e22a0ed72f58f62c3c4edde";
+var myCert = "https://ads-v-darwin.hulustream.com/public/fairplay_cert.der";
+var sec = "eyJraWQiOiJ2MS4wIiwiYWxnIjoiSFMyNTYifQN2QwOWUxN2E4NzhkYzI0ODRlMDQ4NjcxYmU4YjBiMzQeyJraWQiOiJ2MS4wIiwiYWxnIjoiSFMyNTYifQ";
