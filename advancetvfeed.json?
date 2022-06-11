@@ -2,8 +2,8 @@
 	"providerName": "Advance TV Fees",
 	"language": "en-US",
 	"lastUpdated": "2022-06-11T00:12:32.125Z",
-	"shortFormVideos": [{
-		"id": "decbe34b64ea4ca281dc09997d0f23fd",
+	"liveFeeds": [{
+		"id": "Fox-News-Live-Advance-TV",
 		"title": "Fox News",
 		"shortDescription": "Fox News is an American multinational conservative cable news television channel based in New York City. It is owned by Fox News Media, which itself is owned by the Fox Corporation.",
 		"thumbnail": "https://raw.githubusercontent.com/CODERX24/tv/master/ky0RuOG.jpg",
@@ -13,7 +13,7 @@
 		"content": {
 			"dateAdded": "2022-06-11T14:14:54.431Z",
 			"captions": [],
-			"duration": 53,
+			"duration": 86400,
 			"adBreaks": ["00:00:00", "00:00:53"],
 			"videos": [{
 				"url": "http://roku.content.video.llnw.net/smedia/59021fabe3b645968e382ac726cd6c7b/Gb/siCt-V7LOSU08W_Ve1ByJY5N9emKZeXZvnrH2Yb9c/117_segment_2_twitch__nw_060515.mp4",
