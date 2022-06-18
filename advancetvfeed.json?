@@ -14,7 +14,7 @@
 			"dateAdded": "2022-06-11T14:14:54.431Z",
 			"captions": [],
 			"duration": 86400,
-			"adBreaks": ["00:00:00", "00:00:53"],
+			"adBreaks": ["00:00:00", "00:00:00"],
 			"videos": [{
 				"url": "http://roku.content.video.llnw.net/smedia/59021fabe3b645968e382ac726cd6c7b/Gb/siCt-V7LOSU08W_Ve1ByJY5N9emKZeXZvnrH2Yb9c/117_segment_2_twitch__nw_060515.mp4",
 				"quality": "HD",
@@ -27,22 +27,22 @@
 			"ratingSource": "USA_PR"
 		}
 	}, {
-		"id": "6c9d0951d6d74229afe4adf972b278dd",
-		"title": "Let's Get Cookin'",
-		"shortDescription": "The Paula Deen Channel is your instant access to Paula Deenâ€™s new and hilarious cooking and lifestyle shows. Paula and her sons,  Jamie and Bobby, will cook up their delicious southern recipes and help you with hints and tips that make meal planning simple, affordable and easy.",
-		"thumbnail": "https://blog.roku.com/developer/files/2016/10/paula-deen-poster-artwork.png",
-		"genres": ["food"],
-		"tags": ["food", "cooking", "eating"],
-		"releaseDate": "2015-05-21",
+		"id": "CBS-News-Live-Advance-TV",
+		"title": "CBSN",
+		"shortDescription": "CBS News is the news division of the American television and radio service CBS.",
+		"thumbnail": "https://raw.githubusercontent.com/CODERX24/tv/master/A10dOqa.jpg",
+		"genres": ["news"],
+		"tags": ["news", "information", "entertainment"],
+		"releaseDate": "2022-06-18",
 		"content": {
-			"dateAdded": "2015-05-21T14:14:54.431Z",
+			"dateAdded": "2022-06-18T14:14:54.431Z",
 			"captions": [],
-			"duration": 59,
-			"adBreaks": ["00:00:00", "00:00:59"],
+			"duration": 86400,
+			"adBreaks": ["00:00:00", "00:00:00"],
 			"videos": [{
-				"url": "http://roku.content.video.llnw.net/smedia/59021fabe3b645968e382ac726cd6c7b/An/Ad7-vxssRzyBjjdbdLdikctclTqxwEGsVWZGpiKp4/roku_ep_115_segment_5_paula_nw_050515.mp4",
+				"url": "https://github.com/CODERX24/tv/raw/master/CBSN.m3u8",
 				"quality": "HD",
-				"videoType": "MP4"
+				"videoType": "HLS"
 			}]
 		},
 		"language": "en-us",
@@ -51,22 +51,22 @@
 			"ratingSource": "USA_PR"
 		}
 	}, {
-		"id": "7405a8c101ee4c9da312c426e6067044",
-		"title": "Ideas Worth Spreading",
-		"shortDescription": "TED is a nonprofit devoted to Ideas Worth Spreading. On this channel, youâ€™ll find TEDTalks video to inspire, intrigue and stir the imagination from some of the worldâ€™s leading thinkers and doers, speaking from the stage at TED conferences, TEDx events and partner events around the world.",
-		"thumbnail": "https://blog.roku.com/developer/files/2016/10/ted-poster-artwork.png",
-		"genres": ["educational", "science"],
-		"tags": ["educational", "science", "innovation"],
-		"releaseDate": "2015-05-21",
+		"id": "ABC-News-Live-Advance-TV",
+		"title": "ABC NEWS",
+		"shortDescription": "ABC News is the news division of the American broadcast network ABC.",
+		"thumbnail": "https://raw.githubusercontent.com/CODERX24/tv/master/DvJHOSg.jpg",
+		"genres": ["educational", "news"],
+		"tags": ["educational", "news", "innovation"],
+		"releaseDate": "2022-06-18",
 		"content": {
-			"dateAdded": "2015-05-21T14:14:54.431Z",
+			"dateAdded": "2022-06-18T14:14:54.431Z",
 			"captions": [],
-			"duration": 71,
-			"adBreaks": ["00:00:00", "00:01:11"],
+			"duration": 86400,
+			"adBreaks": ["00:00:00", "00:00:00"],
 			"videos": [{
-				"url": "http://roku.content.video.llnw.net/smedia/59021fabe3b645968e382ac726cd6c7b/p-/IBQ_ar_jBKNjk2ZGYCNHHNcN7v6Qy2Gf4V517CuX0/roku_ep_115_segment_1_ted_nw_050515.mp4",
+				"url": "https://github.com/CODERX24/tv/raw/master/ABCNEWS.m3u8",
 				"quality": "HD",
-				"videoType": "MP4"
+				"videoType": "HLS"
 			}]
 		},
 		"language": "en-us",
@@ -75,22 +75,22 @@
 			"ratingSource": "USA_PR"
 		}
 	}, {
-		"id": "5686748268874a57a4ba3debda1619dd",
-		"title": "Fanboys Unite",
-		"shortDescription": "ConTv is a channel that promises to let you \"immerse yourself in the Comic Con experience.\" The channel offers Sci-fi and monster movies, cult classics, martial arts, hit television series from years past, and more.",
-		"thumbnail": "https://blog.roku.com/developer/files/2016/10/con-tv-poster-artwork.png",
-		"genres": ["science fiction"],
+		"id": "CNN-News-Live-Advance-TV",
+		"title": "CNN",
+		"shortDescription": "CNN was founded in 1980 by American media proprietor Ted Turner and Reese Schonfeld as a 24-hour cable news channel.",
+		"thumbnail": "https://raw.githubusercontent.com/CODERX24/tv/master/sfSkC6L.jpg",
+		"genres": ["news"],
 		"tags": ["science fiction", "Comics", "cult"],
-		"releaseDate": "2015-08-13",
+		"releaseDate": "2022-06-18",
 		"content": {
-			"dateAdded": "2015-08-13T14:14:54.431Z",
+			"dateAdded": "2022-06-18T14:14:54.431Z",
 			"captions": [],
-			"duration": 63,
-			"adBreaks": ["00:00:00", "00:01:03"],
+			"duration": 86400,
+			"adBreaks": ["00:00:00", "00:00:00"],
 			"videos": [{
-				"url": "http://roku.content.video.llnw.net/smedia/59021fabe3b645968e382ac726cd6c7b/QQ/6q06mla758cIcH6GFeTCKS-iTyFVH5PCCDYbScMzM/ep-126-seg-3_contv_v1-mo.mp4",
+				"url": "https://github.com/CODERX24/tv/raw/master/CNN.m3u8",
 				"quality": "HD",
-				"videoType": "MP4"
+				"videoType": "HLS"
 			}]
 		},
 		"language": "en-us",
@@ -102,7 +102,7 @@
 		"id": "37d290e03d894135b07c5e514cbad72d",
 		"title": "Fight Pass",
 		"shortDescription": "UFCTV gives you Live and On-Demand access to UFC events and classic fights. UFC (Ultimate Fighting Championship), is the worldâ€™s leading mixed martial arts sports association.",
-		"thumbnail": "https://blog.roku.com/developer/files/2016/10/ufc-poster-artwork.png",
+		"thumbnail": "https://raw.githubusercontent.com/CODERX24/tv/master/OAN-1.jpg",
 		"genres": ["sports"],
 		"tags": ["MMA", "sports", "Fighting"],
 		"releaseDate": "2015-05-28",
