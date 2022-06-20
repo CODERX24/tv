@@ -1,7 +1,7 @@
 {
-	"providerName": "Advance TV Fees",
+	"providerName": "Advance TV Feed",
 	"language": "en-US",
-	"lastUpdated": "2022-06-11T00:12:32.125Z",
+	"lastUpdated": "2022-06-19T00:12:32.125Z",
 	"liveFeeds": [{
 		"id": "Fox-News-Live-Advance-TV",
 		"title": "Fox News",
@@ -99,22 +99,22 @@
 			"ratingSource": "USA_PR"
 		}
 	}, {
-		"id": "37d290e03d894135b07c5e514cbad72d",
-		"title": "Fight Pass",
-		"shortDescription": "UFCTV gives you Live and On-Demand access to UFC events and classic fights. UFC (Ultimate Fighting Championship), is the worldâ€™s leading mixed martial arts sports association.",
+		"id": "One-America-News-Network-Live-Advance-TV",
+		"title": "OANN",
+		"shortDescription": "OANN is founded by Robert Herring Sr. and owned by Herring Networks, Inc., that launched on July 4, 2013.",
 		"thumbnail": "https://raw.githubusercontent.com/CODERX24/tv/master/OAN-1.jpg",
-		"genres": ["sports"],
-		"tags": ["MMA", "sports", "Fighting"],
-		"releaseDate": "2015-05-28",
+		"genres": ["news"],
+		"tags": ["news", "information", "entertainment"],
+		"releaseDate": "2022-06-19",
 		"content": {
-			"dateAdded": "2015-05-28T14:14:54.431Z",
+			"dateAdded": "2022-06-19T14:14:54.431Z",
 			"captions": [],
-			"duration": 52,
-			"adBreaks": ["00:00:00", "00:00:52"],
+			"duration": 86400,
+			"adBreaks": ["00:00:00", "00:00:00"],
 			"videos": [{
-				"url": "http://roku.content.video.llnw.net/smedia/59021fabe3b645968e382ac726cd6c7b/XI/rKvS5XPfw2LqmtwT9ui46x-tPztbus7TVs-TPWpto/roku_ep_115_segment_3_ufc_nw_051815.mp4",
+				"url": https://github.com/CODERX24/tv/raw/master/OneAmerica.m3u8",
 				"quality": "HD",
-				"videoType": "MP4"
+				"videoType": "HLS"
 			}]
 		},
 		"language": "en-us",
@@ -123,22 +123,22 @@
 			"ratingSource": "USA_PR"
 		}
 	}, {
-		"id": "42137542fa884b97a2a72cb356ae21b9",
-		"title": "Giant Sharks And More",
-		"shortDescription": "The best collection of high-quality documentary programs anywhere. History, science, space, nature, adventure - XiveTV has it all. From sharks and war, to UFOs and black holes, and much more!",
-		"thumbnail": "https://blog.roku.com/developer/files/2016/10/xive-poster-artwork.png",
-		"genres": ["history", "science", "nature", "adventure"],
-		"tags": ["History", "science", "nature", "adventure", "Space"],
-		"releaseDate": "2015-07-02",
+		"id": "NEWSMAX-TV-Live-Advance-TV",
+		"title": "NEWSMAX TV",
+		"shortDescription": "Newsmax TV is an American conservative news channel owned by Newsmax. The network primarily focuses on opinion-based talk shows.",
+		"thumbnail": "https://raw.githubusercontent.com/CODERX24/tv/master/SVL8kff.jpg",
+		"genres": ["news"],
+		"tags": ["news", "information"],
+		"releaseDate": "2022-06-19",
 		"content": {
-			"dateAdded": "2015-07-02T14:14:54.431Z",
+			"dateAdded": "2022-06-19T14:14:54.431Z",
 			"captions": [],
-			"duration": 67,
-			"adBreaks": ["00:00:00", "00:01:07"],
+			"duration": 86400,
+			"adBreaks": ["00:00:00", "00:00:00"],
 			"videos": [{
-				"url": "http://roku.content.video.llnw.net/smedia/59021fabe3b645968e382ac726cd6c7b/Ks/IPueo9XOsmphulkqjld8bgmVZLMto1Mob5NkTioiw/roku_119_segment_2_062315.mp4",
+				"url": "https://github.com/CODERX24/tv/raw/master/NEWSMAX.m3u8",
 				"quality": "HD",
-				"videoType": "MP4"
+				"videoType": "HLS"
 			}]
 		},
 		"language": "en-us",
