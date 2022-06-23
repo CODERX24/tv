@@ -2,7 +2,7 @@
 	"providerName": "Advance TV Feed",
 	"language": "en-US",
 	"lastUpdated": "2022-06-19T00:12:32.125Z",
-	"liveFeeds": [{
+	"shortFormVideos": [{
 		"id": "Fox-News-Live-Advance-TV",
 		"title": "Fox News",
 		"shortDescription": "Fox News is an American multinational conservative cable news television channel based in New York City. It is owned by Fox News Media, which itself is owned by the Fox Corporation.",
