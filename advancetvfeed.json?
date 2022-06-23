@@ -603,10 +603,10 @@
 			"ratingSource": "USA_PR"
 		}
 	}, {
-		"id": "GETTV-Live-Advance-TV",
-		"title": "GetTv",
+		"id": "Antenna-TV-Live-Advance-TV",
+		"title": "Antenna TV",
 		"shortDescription": "Local TV",
-		"thumbnail": "https://raw.githubusercontent.com/CODERX24/tv/master/LA57545LOGO.jpg",
+		"thumbnail": "https://raw.githubusercontent.com/CODERX24/tv/master/ATV2022_Orange-Logo.png",
 		"genres": ["local-tv"],
 		"tags": ["local TV"],
 		"releaseDate": "2022-06-23",
@@ -616,7 +616,7 @@
 			"duration": 86400,
 			"adBreaks": ["00:00:00", "00:00:00"],
 			"videos": [{
-				"url": "https://github.com/CODERX24/tv/raw/master/gettv.m3u8",
+				"url": "https://raw.githubusercontent.com/CODERX24/tv/master/antennatv.m3u8",
 				"quality": "HD",
 				"videoType": "HLS"
 			}]
@@ -626,11 +626,126 @@
 			"rating": "G",
 			"ratingSource": "USA_PR"
 		}
-	
-	
-	
-	
-	
+	}, {
+		"id": "ABC-Live-Advance-TV",
+		"title": "ABC 6",
+		"shortDescription": "Local TV",
+		"thumbnail": "https://raw.githubusercontent.com/CODERX24/tv/master/ABC-Logo-2007.png",
+		"genres": ["local-tv"],
+		"tags": ["local TV"],
+		"releaseDate": "2022-06-23",
+		"content": {
+			"dateAdded": "2022-06-23T14:14:54.431Z",
+			"captions": [],
+			"duration": 86400,
+			"adBreaks": ["00:00:00", "00:00:00"],
+			"videos": [{
+				"url": "https://raw.githubusercontent.com/CODERX24/tv/master/ABC.m3u8",
+				"quality": "HD",
+				"videoType": "HLS"
+			}]
+		},
+		"language": "en-us",
+		"rating": {
+			"rating": "G",
+			"ratingSource": "USA_PR"
+		}
+	}, {
+		"id": "ION-TV-Live-Advance-TV",
+		"title": "Ion Television",
+		"shortDescription": "Local TV",
+		"thumbnail": "https://raw.githubusercontent.com/CODERX24/tv/master/ion-tv-new-logo-2016.png",
+		"genres": ["local-tv"],
+		"tags": ["local TV"],
+		"releaseDate": "2022-06-23",
+		"content": {
+			"dateAdded": "2022-06-23T14:14:54.431Z",
+			"captions": [],
+			"duration": 86400,
+			"adBreaks": ["00:00:00", "00:00:00"],
+			"videos": [{
+				"url": "https://raw.githubusercontent.com/CODERX24/tv/master/ION.m3u8",
+				"quality": "HD",
+				"videoType": "HLS"
+			}]
+		},
+		"language": "en-us",
+		"rating": {
+			"rating": "G",
+			"ratingSource": "USA_PR"
+		}
+	}, {
+		"id": "Bounce-TV-Live-Advance-TV",
+		"title": "BOUNCE TV",
+		"shortDescription": "Local TV",
+		"thumbnail": "https://raw.githubusercontent.com/CODERX24/tv/master/515d1f8b-bounce_logo_720x486.jpg",
+		"genres": ["local-tv"],
+		"tags": ["local TV"],
+		"releaseDate": "2022-06-23",
+		"content": {
+			"dateAdded": "2022-06-23T14:14:54.431Z",
+			"captions": [],
+			"duration": 86400,
+			"adBreaks": ["00:00:00", "00:00:00"],
+			"videos": [{
+				"url": "https://raw.githubusercontent.com/CODERX24/tv/master/BOUNCE.m3u8",
+				"quality": "HD",
+				"videoType": "HLS"
+			}]
+		},
+		"language": "en-us",
+		"rating": {
+			"rating": "G",
+			"ratingSource": "USA_PR"
+		}
+	}, {
+		"id": "FOX-TV-Live-Advance-TV",
+		"title": "FOX 29",
+		"shortDescription": "Local TV",
+		"thumbnail": "https://raw.githubusercontent.com/CODERX24/tv/master/ATV2022_Orange-Logo.png",
+		"genres": ["local-tv"],
+		"tags": ["local TV"],
+		"releaseDate": "2022-06-23",
+		"content": {
+			"dateAdded": "2022-06-23T14:14:54.431Z",
+			"captions": [],
+			"duration": 86400,
+			"adBreaks": ["00:00:00", "00:00:00"],
+			"videos": [{
+				"url": "https://raw.githubusercontent.com/CODERX24/tv/master/FOX.m3u8",
+				"quality": "HD",
+				"videoType": "HLS"
+			}]
+		},
+		"language": "en-us",
+		"rating": {
+			"rating": "G",
+			"ratingSource": "USA_PR"
+		}
+	}, {
+		"id": "Antenna-TV-Live-Advance-TV",
+		"title": "Antenna TV",
+		"shortDescription": "Local TV",
+		"thumbnail": "https://raw.githubusercontent.com/CODERX24/tv/master/ATV2022_Orange-Logo.png",
+		"genres": ["local-tv"],
+		"tags": ["local TV"],
+		"releaseDate": "2022-06-23",
+		"content": {
+			"dateAdded": "2022-06-23T14:14:54.431Z",
+			"captions": [],
+			"duration": 86400,
+			"adBreaks": ["00:00:00", "00:00:00"],
+			"videos": [{
+				"url": "https://raw.githubusercontent.com/CODERX24/tv/master/antennatv.m3u8",
+				"quality": "HD",
+				"videoType": "HLS"
+			}]
+		},
+		"language": "en-us",
+		"rating": {
+			"rating": "G",
+			"ratingSource": "USA_PR"
+		}
 	
 	
 	
