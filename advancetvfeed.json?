@@ -534,7 +534,7 @@
 		"id": "CBS-Live-Advance-TV",
 		"title": "CBS",
 		"shortDescription": "Local TV",
-		"thumbnail": "https://raw.githubusercontent.com/CODERX24/tv/master/LA57545LOGO.jpg",
+		"thumbnail": "https://raw.githubusercontent.com/CODERX24/tv/master/cbs-social_3.jpg",
 		"genres": ["local-tv"],
 		"tags": ["local TV"],
 		"releaseDate": "2022-06-23",
@@ -555,10 +555,10 @@
 			"ratingSource": "USA_PR"
 		}
 	}, {
-		"id": "GETTV-Live-Advance-TV",
-		"title": "GetTv",
+		"id": "MeTv-Live-Advance-TV",
+		"title": "MeTv",
 		"shortDescription": "Local TV",
-		"thumbnail": "https://raw.githubusercontent.com/CODERX24/tv/master/LA57545LOGO.jpg",
+		"thumbnail": "https://raw.githubusercontent.com/CODERX24/tv/master/K7XBG-1567718383-142-uploader-FB_MeTV.jpg",
 		"genres": ["local-tv"],
 		"tags": ["local TV"],
 		"releaseDate": "2022-06-23",
@@ -568,7 +568,7 @@
 			"duration": 86400,
 			"adBreaks": ["00:00:00", "00:00:00"],
 			"videos": [{
-				"url": "https://github.com/CODERX24/tv/raw/master/gettv.m3u8",
+				"url": "https://github.com/CODERX24/tv/raw/master/Metv.m3u8",
 				"quality": "HD",
 				"videoType": "HLS"
 			}]
