@@ -702,7 +702,7 @@
 		"id": "FOX-TV-Live-Advance-TV",
 		"title": "FOX 29",
 		"shortDescription": "Local TV",
-		"thumbnail": "https://raw.githubusercontent.com/CODERX24/tv/master/ATV2022_Orange-Logo.png",
+		"thumbnail": "https://raw.githubusercontent.com/CODERX24/tv/master/download%20(1).png",
 		"genres": ["local-tv"],
 		"tags": ["local TV"],
 		"releaseDate": "2022-06-23",
@@ -723,10 +723,10 @@
 			"ratingSource": "USA_PR"
 		}
 	}, {
-		"id": "Antenna-TV-Live-Advance-TV",
-		"title": "Antenna TV",
+		"id": "Univision-Live-Advance-TV",
+		"title": "Univision",
 		"shortDescription": "Local TV",
-		"thumbnail": "https://raw.githubusercontent.com/CODERX24/tv/master/ATV2022_Orange-Logo.png",
+		"thumbnail": "https://raw.githubusercontent.com/CODERX24/tv/master/univision2018.jpg",
 		"genres": ["local-tv"],
 		"tags": ["local TV"],
 		"releaseDate": "2022-06-23",
@@ -736,7 +736,7 @@
 			"duration": 86400,
 			"adBreaks": ["00:00:00", "00:00:00"],
 			"videos": [{
-				"url": "https://raw.githubusercontent.com/CODERX24/tv/master/antennatv.m3u8",
+				"url": "https://raw.githubusercontent.com/CODERX24/tv/master/Univision.m3u8",
 				"quality": "HD",
 				"videoType": "HLS"
 			}]
@@ -746,71 +746,10 @@
 			"rating": "G",
 			"ratingSource": "USA_PR"
 		}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	}],
 	"playlists": [{
-		"name": "sports",
-		"itemIds": ["a4d29aebf55e499c968ce02469859637", "7ec4711dc886464fa16001c1962904f8", "37d290e03d894135b07c5e514cbad72d", "decbe34b64ea4ca281dc09997d0f23fd"]
+		"name": "Local TV",
+		"itemIds": ["GETTV-Live-Advance-TV", "NBC10-Live-Advance-TV", "CBS-Live-Advance-TV", "MeTv-Live-Advance-TV", "Pbs-Kids-Live-Advance-TV", "Antenna-TV-Live-Advance-TV", "ABC-Live-Advance-TV", "ION-TV-Live-Advance-TV", "Bounce-TV-Live-Advance-TV", "FOX-TV-Live-Advance-TV", "Univision-Live-Advance-TV"]
 	}, {
 		"name": "misc",
 		"itemIds": ["6c9d0951d6d74229afe4adf972b278dd", "7405a8c101ee4c9da312c426e6067044", "5686748268874a57a4ba3debda1619dd", "42137542fa884b97a2a72cb356ae21b9", "69ce40b268fa4766aa1612131aa74898", "2c4e8ea1ad2f4a8d9d244f5dd4cc47b6"]
