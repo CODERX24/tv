@@ -459,6 +459,30 @@
 			"ratingSource": "USA_PR"
 		}
 	}, {
+		"id": "POP-Live-Advance-TV",
+		"title": "POP(latency)",
+		"shortDescription": "Pop, commonly referred to as Pop TV, is an American pay television channel owned by Paramount Global under its networks division through MTV Entertainment Group. It is a general entertainment channel, focusing primarily on programs pertaining to popular culture.",
+		"thumbnail": "https://raw.githubusercontent.com/CODERX24/tv/master/Pop_Network_Logo.png",
+		"genres": ["reality"],
+		"tags": ["entertainment"],
+		"releaseDate": "2022-06-23",
+		"content": {
+			"dateAdded": "2022-06-23T14:14:54.431Z",
+			"captions": [],
+			"duration": 86400,
+			"adBreaks": ["00:00:00", "00:00:00"],
+			"videos": [{
+				"url": "https://github.com/CODERX24/tv/raw/master/pop.m3u8",
+				"quality": "HD",
+				"videoType": "HLS"
+			}]
+		},
+		"language": "en-us",
+		"rating": {
+			"rating": "G",
+			"ratingSource": "USA_PR"
+		}
+	}, {
 		"id": "TNT-Live-Advance-TV",
 		"title": "TNT(Temporary)GEO-BLOCKED",
 		"shortDescription": "TNT is an American basic cable television channel owned by the Warner Bros. Discovery Networks unit of Warner Bros. Discovery that launched on October 3, 1988. TNT's original purpose was to air classic films and television series to which Turner Broadcasting maintained spillover rights through its sister station TBS.",
@@ -482,9 +506,54 @@
 			"rating": "G",
 			"ratingSource": "USA_PR"
 		}
-	
-	
-	
+	}, {
+		"id": "TNT-Live-Advance-TV",
+		"title": "TNT(Temporary)GEO-BLOCKED",
+		"shortDescription": "TNT is an American basic cable television channel owned by the Warner Bros. Discovery Networks unit of Warner Bros. Discovery that launched on October 3, 1988. TNT's original purpose was to air classic films and television series to which Turner Broadcasting maintained spillover rights through its sister station TBS.",
+		"thumbnail": "https://raw.githubusercontent.com/CODERX24/tv/master/TNT_HD.png",
+		"genres": ["reality"],
+		"tags": ["entertainment"],
+		"releaseDate": "2022-06-23",
+		"content": {
+			"dateAdded": "2022-06-23T14:14:54.431Z",
+			"captions": [],
+			"duration": 86400,
+			"adBreaks": ["00:00:00", "00:00:00"],
+			"videos": [{
+				"url": "https://github.com/CODERX24/tv/raw/master/TNT.m3u8",
+				"quality": "HD",
+				"videoType": "HLS"
+			}]
+		},
+		"language": "en-us",
+		"rating": {
+			"rating": "G",
+			"ratingSource": "USA_PR"
+		}
+	}, {
+		"id": "TNT-Live-Advance-TV",
+		"title": "TNT(Temporary)GEO-BLOCKED",
+		"shortDescription": "TNT is an American basic cable television channel owned by the Warner Bros. Discovery Networks unit of Warner Bros. Discovery that launched on October 3, 1988. TNT's original purpose was to air classic films and television series to which Turner Broadcasting maintained spillover rights through its sister station TBS.",
+		"thumbnail": "https://raw.githubusercontent.com/CODERX24/tv/master/TNT_HD.png",
+		"genres": ["reality"],
+		"tags": ["entertainment"],
+		"releaseDate": "2022-06-23",
+		"content": {
+			"dateAdded": "2022-06-23T14:14:54.431Z",
+			"captions": [],
+			"duration": 86400,
+			"adBreaks": ["00:00:00", "00:00:00"],
+			"videos": [{
+				"url": "https://github.com/CODERX24/tv/raw/master/TNT.m3u8",
+				"quality": "HD",
+				"videoType": "HLS"
+			}]
+		},
+		"language": "en-us",
+		"rating": {
+			"rating": "G",
+			"ratingSource": "USA_PR"
+		}
 	
 	
 	
