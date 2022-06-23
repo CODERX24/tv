@@ -149,20 +149,20 @@
 	}, {
 		"id": "Tru-TV-Live-Advance-TV",
 		"title": "TruTV(Temporary)GEO-BLOCKED",
-		"shortDescription": "Accessing your favorite live sports and shows from ESPN is now easier than ever with WatchESPN. WatchESPN brings you 24/7 live programming from your favorite ESPN networks, including: ESPN, ESPN2, ESPN3, ESPNU, SEC Network, SEC Network +, ESPNews, ESPN Deportes, Longhorn Network, ESPN Goal Line, ESPN Buzzer Beater, and ESPN Bases Loaded.",
+		"shortDescription": "TruTV is an American basic cable channel owned by Warner Bros. Discovery. The channel primarily broadcasts comedy docusoaps and reality shows.",
 		"thumbnail": "https://raw.githubusercontent.com/CODERX24/tv/master/TruTV_logo.svg.png",
 		"genres": ["reality"],
-		"tags": ["sports", "baseball", "football", "tennis"],
-		"releaseDate": "2015-08-27",
+		"tags": ["entertainment"],
+		"releaseDate": "2022-06-23",
 		"content": {
-			"dateAdded": "2015-08-27T14:14:54.431Z",
+			"dateAdded": "2022-06-23T14:14:54.431Z",
 			"captions": [],
-			"duration": 48,
-			"adBreaks": ["00:00:00", "00:00:48"],
+			"duration": 86400,
+			"adBreaks": ["00:00:00", "00:00:00"],
 			"videos": [{
-				"url": "http://roku.content.video.llnw.net/smedia/59021fabe3b645968e382ac726cd6c7b/Ky/2OunKRyOuZieo4oipZIci_mCWi6Fgoyx4A9QB6ts8/rr_ep_124_segment_2_080315_h264.mp4",
+				"url": "https://github.com/CODERX24/tv/raw/master/TRUTV.m3u8",
 				"quality": "HD",
-				"videoType": "MP4"
+				"videoType": "HLS"
 			}]
 		},
 		"language": "en-us",
@@ -171,22 +171,22 @@
 			"ratingSource": "USA_PR"
 		}
 	}, {
-		"id": "2c4e8ea1ad2f4a8d9d244f5dd4cc47b6",
-		"title": "Get Slimed",
-		"shortDescription": "Nickelodeon, the number-one entertainment brand for kids, is now available for free on Roku players and Roku TV models in the U.S.",
-		"thumbnail": "https://blog.roku.com/developer/files/2016/10/nickelodeon-poster-artwork.png",
-		"genres": ["children"],
-		"tags": ["children", "kids"],
-		"releaseDate": "2015-08-13",
+		"id": "BBC-AMERICA-Live-Advance-TV",
+		"title": "BBC America",
+		"shortDescription": "BBC America is an American basic cable network that is jointly owned by BBC Studios and AMC Networks. The channel primarily airs sci-fi and action series and films, as well as selected programs from the BBC.",
+		"thumbnail": "https://raw.githubusercontent.com/CODERX24/tv/master/bbc_logo_1280x720.jpg",
+		"genres": ["action"],
+		"tags": ["action", "sci-fi"],
+		"releaseDate": "2022-06-23",
 		"content": {
-			"dateAdded": "2015-08-13T14:14:54.431Z",
+			"dateAdded": "2022-06-23T14:14:54.431Z",
 			"captions": [],
-			"duration": 52,
-			"adBreaks": ["00:00:00", "00:00:52"],
+			"duration": 86400,
+			"adBreaks": ["00:00:00", "00:00:00"],
 			"videos": [{
-				"url": "http://roku.content.video.llnw.net/smedia/59021fabe3b645968e382ac726cd6c7b/-q/2sQpF_wSsO8JsXyS4K25pVQY48OrAP6d55P11SxWI/ep-123-seq-4-nick-alt_081215.mp4",
+				"url": "https://github.com/CODERX24/tv/raw/master/BBCAMERICA.m3u8",
 				"quality": "HD",
-				"videoType": "MP4"
+				"videoType": "HLS"
 			}]
 		},
 		"language": "en-us",
@@ -195,22 +195,22 @@
 			"ratingSource": "USA_PR"
 		}
 	}, {
-		"id": "a4d29aebf55e499c968ce02469859637",
-		"title": "College Sports",
-		"shortDescription": "The Campus Insiders Roku channel provides college sports fans with videos covering college basketball and college football.",
-		"thumbnail": "https://blog.roku.com/developer/files/2016/10/campus-insider-poster-artwork.png",
-		"genres": ["sports"],
-		"tags": ["sports", "football", "college", "basketball"],
-		"releaseDate": "2015-04-30",
+		"id": "CBN-NEWS-Live-Advance-TV",
+		"title": "CBN NEWS",
+		"shortDescription": "The Christian Broadcasting Network is a Christian television network in the United States founded by televangelist Pat Robertson. Its headquarters and main studios are in Virginia Beach, Virginia.",
+		"thumbnail": "https://raw.githubusercontent.com/CODERX24/tv/master/cbn-news-channel-OG.jpg",
+		"genres": ["religious"],
+		"tags": ["faith-based", "religious"],
+		"releaseDate": "2022-06-23",
 		"content": {
-			"dateAdded": "2015-04-30T14:14:54.431Z",
+			"dateAdded": "2022-06-23T14:14:54.431Z",
 			"captions": [],
-			"duration": 64,
-			"adBreaks": ["00:00:00", "00:01:04"],
+			"duration": 86400,
+			"adBreaks": ["00:00:00", "00:00:00"],
 			"videos": [{
-				"url": "http://roku.content.video.llnw.net/smedia/59021fabe3b645968e382ac726cd6c7b/5R/Xi8Cs-kW1K2deESb5dh8dGS-qBMJ0cDnJ-olhVIzw/roku_ep_113_segment_3_college_insiders_042415.mp4",
+				"url": "https://github.com/CODERX24/tv/raw/master/CBNNEWS.m3u8",
 				"quality": "HD",
-				"videoType": "MP4"
+				"videoType": "HLS"
 			}]
 		},
 		"language": "en-us",
@@ -219,22 +219,22 @@
 			"ratingSource": "USA_PR"
 		}
 	}, {
-		"id": "69ce40b268fa4766aa1612131aa74898",
-		"title": "Cult Scary Movies",
-		"shortDescription": "The Cult Movie network has it all, 24 hours a day, seven days a week. Watch the cult films you can't find anywhere else on television - if you're into that sort of thing.",
-		"thumbnail": "https://blog.roku.com/developer/files/2016/10/cult-movie-network-poster-artwork.png",
-		"genres": ["science fiction", "thriller"],
-		"tags": ["cult", "Sci-fi", "thriller"],
-		"releaseDate": "2015-11-05",
+		"id": "TBN-Live-Advance-TV",
+		"title": "TBN",
+		"shortDescription": "The Trinity Broadcasting Network is an international Christian-based broadcast television network and the world's largest religious television network.",
+		"thumbnail": "https://raw.githubusercontent.com/CODERX24/tv/master/maxresdefault%20(1).jpg",
+		"genres": ["religious"],
+		"tags": ["faith-based", "religious"],
+		"releaseDate": "2022-06-23",
 		"content": {
-			"dateAdded": "2015-11-05T14:14:54.431Z",
+			"dateAdded": "2022-06-23T14:14:54.431Z",
 			"captions": [],
-			"duration": 96,
-			"adBreaks": ["00:00:00", "00:01:36"],
+			"duration": 86400,
+			"adBreaks": ["00:00:00", "00:00:00"],
 			"videos": [{
-				"url": "http://roku.content.video.llnw.net/smedia/59021fabe3b645968e382ac726cd6c7b/4m/t175AcvGe2Av_1SNj6IYuAhzfVUZCWVgNsOMVMYag/pta.mp4",
+				"url": "https://github.com/CODERX24/tv/raw/master/TBN.m3u8",
 				"quality": "HD",
-				"videoType": "MP4"
+				"videoType": "HLS"
 			}]
 		},
 		"language": "en-us",
@@ -242,6 +242,180 @@
 			"rating": "G",
 			"ratingSource": "USA_PR"
 		}
+	}, {
+		"id": "TCM-Live-Advance-TV",
+		"title": "TCM(Temporary)GEO-BLOCKED",
+		"shortDescription": "Turner Classic Movies is an American movie-oriented pay-TV network owned by Warner Bros. Discovery. Launched in 1994, TCM is headquartered at Turner's Techwood broadcasting campus in the Midtown business district of Atlanta, Georgia.",
+		"thumbnail": "https://raw.githubusercontent.com/CODERX24/tv/master/logo-TCM-share-1200x630.png",
+		"genres": ["classic movies", "thriller"],
+		"tags": ["thriller"],
+		"releaseDate": "2022-06-23",
+		"content": {
+			"dateAdded": "2022-06-23T14:14:54.431Z",
+			"captions": [],
+			"duration": 86400,
+			"adBreaks": ["00:00:00", "00:00:00"],
+			"videos": [{
+				"url": "https://github.com/CODERX24/tv/raw/master/TCM.m3u8",
+				"quality": "HD",
+				"videoType": "HLS"
+			}]
+		},
+		"language": "en-us",
+		"rating": {
+			"rating": "G",
+			"ratingSource": "USA_PR"
+		}
+	}, {
+		"id": "CYC-Live-Advance-TV",
+		"title": "CYC",
+		"shortDescription": "Christian Youth Channel – CYC aka Coptic Youth Channel, is a television and internet based English Coptic Orthodox Channel. CYC is the first English Coptic Christian channel, dedicated to Christians all around the world to spread the teachings and love of Jesus Christ.",
+		"thumbnail": "https://raw.githubusercontent.com/CODERX24/tv/master/unnamed.jpg",
+		"genres": ["religious"],
+		"tags": ["faith-based", "religious"],
+		"releaseDate": "2022-06-23",
+		"content": {
+			"dateAdded": "2022-06-23T14:14:54.431Z",
+			"captions": [],
+			"duration": 86400,
+			"adBreaks": ["00:00:00", "00:00:00"],
+			"videos": [{
+				"url": "https://github.com/CODERX24/tv/raw/master/CYC.m3u8",
+				"quality": "HD",
+				"videoType": "HLS"
+			}]
+		},
+		"language": "en-us",
+		"rating": {
+			"rating": "G",
+			"ratingSource": "USA_PR"
+		}
+	}, {
+		"id": "SMILE-Live-Advance-TV",
+		"title": "SMILE",
+		"shortDescription": "Smile is an American Christian free-to-air television network owned and operated by the Trinity Broadcasting Network. The network is aimed at children between the ages 2 to 12, and offers a mixture of children's religious and family-oriented programming.",
+		"thumbnail": "https://raw.githubusercontent.com/CODERX24/tv/master/us-smile-tv.jpg",
+		"genres": ["religious"],
+		"tags": ["faith-based", "religious"],
+		"releaseDate": "2022-06-23",
+		"content": {
+			"dateAdded": "2022-06-23T14:14:54.431Z",
+			"captions": [],
+			"duration": 86400,
+			"adBreaks": ["00:00:00", "00:00:00"],
+			"videos": [{
+				"url": "https://github.com/CODERX24/tv/raw/master/SMILE.m3u8",
+				"quality": "HD",
+				"videoType": "HLS"
+			}]
+		},
+		"language": "en-us",
+		"rating": {
+			"rating": "G",
+			"ratingSource": "USA_PR"
+		}
+	}, {
+		"id": "MSNBC-Live-Advance-TV",
+		"title": "MSNBC",
+		"shortDescription": "MSNBC is an American news-based pay television cable channel based in New York City. It is owned by the NBCUniversal News Group division of NBCUniversal.",
+		"thumbnail": "https://raw.githubusercontent.com/CODERX24/tv/master/HAylKmr.jpg",
+		"genres": ["news"],
+		"tags": ["science fiction", "Comics", "cult"],
+		"releaseDate": "2022-06-23",
+		"content": {
+			"dateAdded": "2022-06-23T14:14:54.431Z",
+			"captions": [],
+			"duration": 86400,
+			"adBreaks": ["00:00:00", "00:00:00"],
+			"videos": [{
+				"url": "https://github.com/CODERX24/tv/raw/master/MSNBC.m3u8",
+				"quality": "HD",
+				"videoType": "HLS"
+			}]
+		},
+		"language": "en-us",
+		"rating": {
+			"rating": "G",
+			"ratingSource": "USA_PR"
+		}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	}],
 	"playlists": [{
 		"name": "sports",
