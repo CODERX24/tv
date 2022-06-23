@@ -483,12 +483,12 @@
 			"ratingSource": "USA_PR"
 		}
 	}, {
-		"id": "TNT-Live-Advance-TV",
-		"title": "TNT(Temporary)GEO-BLOCKED",
-		"shortDescription": "TNT is an American basic cable television channel owned by the Warner Bros. Discovery Networks unit of Warner Bros. Discovery that launched on October 3, 1988. TNT's original purpose was to air classic films and television series to which Turner Broadcasting maintained spillover rights through its sister station TBS.",
-		"thumbnail": "https://raw.githubusercontent.com/CODERX24/tv/master/TNT_HD.png",
-		"genres": ["reality"],
-		"tags": ["entertainment"],
+		"id": "GETTV-Live-Advance-TV",
+		"title": "GetTv",
+		"shortDescription": "Local TV",
+		"thumbnail": "https://raw.githubusercontent.com/CODERX24/tv/master/LA57545LOGO.jpg",
+		"genres": ["local-tv"],
+		"tags": ["local TV"],
 		"releaseDate": "2022-06-23",
 		"content": {
 			"dateAdded": "2022-06-23T14:14:54.431Z",
@@ -496,7 +496,7 @@
 			"duration": 86400,
 			"adBreaks": ["00:00:00", "00:00:00"],
 			"videos": [{
-				"url": "https://github.com/CODERX24/tv/raw/master/TNT.m3u8",
+				"url": "https://github.com/CODERX24/tv/raw/master/gettv.m3u8",
 				"quality": "HD",
 				"videoType": "HLS"
 			}]
@@ -507,12 +507,12 @@
 			"ratingSource": "USA_PR"
 		}
 	}, {
-		"id": "TNT-Live-Advance-TV",
-		"title": "TNT(Temporary)GEO-BLOCKED",
-		"shortDescription": "TNT is an American basic cable television channel owned by the Warner Bros. Discovery Networks unit of Warner Bros. Discovery that launched on October 3, 1988. TNT's original purpose was to air classic films and television series to which Turner Broadcasting maintained spillover rights through its sister station TBS.",
-		"thumbnail": "https://raw.githubusercontent.com/CODERX24/tv/master/TNT_HD.png",
-		"genres": ["reality"],
-		"tags": ["entertainment"],
+		"id": "NBC10-Live-Advance-TV",
+		"title": "NBC10",
+		"shortDescription": "Local TV",
+		"thumbnail": "https://raw.githubusercontent.com/CODERX24/tv/master/NBC_2013_fixed_logo.png",
+		"genres": ["local-tv"],
+		"tags": ["local TV"],
 		"releaseDate": "2022-06-23",
 		"content": {
 			"dateAdded": "2022-06-23T14:14:54.431Z",
@@ -520,7 +520,7 @@
 			"duration": 86400,
 			"adBreaks": ["00:00:00", "00:00:00"],
 			"videos": [{
-				"url": "https://github.com/CODERX24/tv/raw/master/TNT.m3u8",
+				"url": "https://github.com/CODERX24/tv/raw/master/nbc10.m3u8",
 				"quality": "HD",
 				"videoType": "HLS"
 			}]
@@ -531,12 +531,12 @@
 			"ratingSource": "USA_PR"
 		}
 	}, {
-		"id": "TNT-Live-Advance-TV",
-		"title": "TNT(Temporary)GEO-BLOCKED",
-		"shortDescription": "TNT is an American basic cable television channel owned by the Warner Bros. Discovery Networks unit of Warner Bros. Discovery that launched on October 3, 1988. TNT's original purpose was to air classic films and television series to which Turner Broadcasting maintained spillover rights through its sister station TBS.",
-		"thumbnail": "https://raw.githubusercontent.com/CODERX24/tv/master/TNT_HD.png",
-		"genres": ["reality"],
-		"tags": ["entertainment"],
+		"id": "CBS-Live-Advance-TV",
+		"title": "CBS",
+		"shortDescription": "Local TV",
+		"thumbnail": "https://raw.githubusercontent.com/CODERX24/tv/master/LA57545LOGO.jpg",
+		"genres": ["local-tv"],
+		"tags": ["local TV"],
 		"releaseDate": "2022-06-23",
 		"content": {
 			"dateAdded": "2022-06-23T14:14:54.431Z",
@@ -544,7 +544,7 @@
 			"duration": 86400,
 			"adBreaks": ["00:00:00", "00:00:00"],
 			"videos": [{
-				"url": "https://github.com/CODERX24/tv/raw/master/TNT.m3u8",
+				"url": "https://github.com/CODERX24/tv/raw/master/cbs.m3u8",
 				"quality": "HD",
 				"videoType": "HLS"
 			}]
@@ -554,9 +554,78 @@
 			"rating": "G",
 			"ratingSource": "USA_PR"
 		}
-	
-	
-	
+	}, {
+		"id": "GETTV-Live-Advance-TV",
+		"title": "GetTv",
+		"shortDescription": "Local TV",
+		"thumbnail": "https://raw.githubusercontent.com/CODERX24/tv/master/LA57545LOGO.jpg",
+		"genres": ["local-tv"],
+		"tags": ["local TV"],
+		"releaseDate": "2022-06-23",
+		"content": {
+			"dateAdded": "2022-06-23T14:14:54.431Z",
+			"captions": [],
+			"duration": 86400,
+			"adBreaks": ["00:00:00", "00:00:00"],
+			"videos": [{
+				"url": "https://github.com/CODERX24/tv/raw/master/gettv.m3u8",
+				"quality": "HD",
+				"videoType": "HLS"
+			}]
+		},
+		"language": "en-us",
+		"rating": {
+			"rating": "G",
+			"ratingSource": "USA_PR"
+		}
+	}, {
+		"id": "GETTV-Live-Advance-TV",
+		"title": "GetTv",
+		"shortDescription": "Local TV",
+		"thumbnail": "https://raw.githubusercontent.com/CODERX24/tv/master/LA57545LOGO.jpg",
+		"genres": ["local-tv"],
+		"tags": ["local TV"],
+		"releaseDate": "2022-06-23",
+		"content": {
+			"dateAdded": "2022-06-23T14:14:54.431Z",
+			"captions": [],
+			"duration": 86400,
+			"adBreaks": ["00:00:00", "00:00:00"],
+			"videos": [{
+				"url": "https://github.com/CODERX24/tv/raw/master/gettv.m3u8",
+				"quality": "HD",
+				"videoType": "HLS"
+			}]
+		},
+		"language": "en-us",
+		"rating": {
+			"rating": "G",
+			"ratingSource": "USA_PR"
+		}
+	}, {
+		"id": "GETTV-Live-Advance-TV",
+		"title": "GetTv",
+		"shortDescription": "Local TV",
+		"thumbnail": "https://raw.githubusercontent.com/CODERX24/tv/master/LA57545LOGO.jpg",
+		"genres": ["local-tv"],
+		"tags": ["local TV"],
+		"releaseDate": "2022-06-23",
+		"content": {
+			"dateAdded": "2022-06-23T14:14:54.431Z",
+			"captions": [],
+			"duration": 86400,
+			"adBreaks": ["00:00:00", "00:00:00"],
+			"videos": [{
+				"url": "https://github.com/CODERX24/tv/raw/master/gettv.m3u8",
+				"quality": "HD",
+				"videoType": "HLS"
+			}]
+		},
+		"language": "en-us",
+		"rating": {
+			"rating": "G",
+			"ratingSource": "USA_PR"
+		}
 	
 	
 	
