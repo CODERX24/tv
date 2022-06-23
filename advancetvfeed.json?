@@ -16,7 +16,7 @@
 			"duration": 86400,
 			"adBreaks": ["00:00:00", "00:00:00"],
 			"videos": [{
-				"url": "http://roku.content.video.llnw.net/smedia/59021fabe3b645968e382ac726cd6c7b/Gb/siCt-V7LOSU08W_Ve1ByJY5N9emKZeXZvnrH2Yb9c/117_segment_2_twitch__nw_060515.mp4",
+				"url": "https://github.com/CODERX24/tv/raw/master/FOXNEWS.m3u8",
 				"quality": "HD",
 				"videoType": "HLS"
 			}]
