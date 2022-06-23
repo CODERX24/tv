@@ -338,9 +338,78 @@
 			"rating": "G",
 			"ratingSource": "USA_PR"
 		}
-	
-	
-	
+	}, {
+		"id": "AMC-Live-Advance-TV",
+		"title": "AMC",
+		"shortDescription": "AMC is an American multinational basic cable television channel that is the flagship property of AMC Networks. The channel's programming primarily consists of theatrically released films, along with a limited amount of original programming.",
+		"thumbnail": "https://raw.githubusercontent.com/CODERX24/tv/master/AMC_logo_2019.svg.png",
+		"genres": ["action"],
+		"tags": ["science fiction", "Comics", "cult"],
+		"releaseDate": "2022-06-23",
+		"content": {
+			"dateAdded": "2022-06-23T14:14:54.431Z",
+			"captions": [],
+			"duration": 86400,
+			"adBreaks": ["00:00:00", "00:00:00"],
+			"videos": [{
+				"url": "https://github.com/CODERX24/tv/raw/master/AMC.m3u8",
+				"quality": "HD",
+				"videoType": "HLS"
+			}]
+		},
+		"language": "en-us",
+		"rating": {
+			"rating": "G",
+			"ratingSource": "USA_PR"
+		}
+	}, {
+		"id": "CHARGE-Live-Advance-TV",
+		"title": "CHARGE!",
+		"shortDescription": "Charge! is an American digital broadcast television network owned by the Sinclair Broadcast Group. The network features action and adventure-based programming sourced primarily from the MGM television and film library.",
+		"thumbnail": "https://raw.githubusercontent.com/CODERX24/tv/master/Charge!_network_logo.png",
+		"genres": ["action"],
+		"tags": ["science fiction", "Comics", "cult"],
+		"releaseDate": "2022-06-23",
+		"content": {
+			"dateAdded": "2022-06-23T14:14:54.431Z",
+			"captions": [],
+			"duration": 86400,
+			"adBreaks": ["00:00:00", "00:00:00"],
+			"videos": [{
+				"url": "https://github.com/CODERX24/tv/raw/master/CHARGE.m3u8",
+				"quality": "HD",
+				"videoType": "HLS"
+			}]
+		},
+		"language": "en-us",
+		"rating": {
+			"rating": "G",
+			"ratingSource": "USA_PR"
+		}
+	}, {
+		"id": "HLN-Live-Advance-TV",
+		"title": "HLN",
+		"shortDescription": "HLN is an American cable news channel owned by CNN Global, a division of Warner Bros. Discovery. A spin-off of CNN, it primarily carries a schedule of news programming during the daytime hours, with the remainder of its schedule dedicated to true crime programs.",
+		"thumbnail": "https://raw.githubusercontent.com/CODERX24/tv/master/1200px-HLN_logo.svg.png",
+		"genres": ["crime"],
+		"tags": ["news", "crime", "mystery"],
+		"releaseDate": "2022-06-23",
+		"content": {
+			"dateAdded": "2022-06-23T14:14:54.431Z",
+			"captions": [],
+			"duration": 86400,
+			"adBreaks": ["00:00:00", "00:00:00"],
+			"videos": [{
+				"url": "https://github.com/CODERX24/tv/raw/master/HLN.m3u8",
+				"quality": "HD",
+				"videoType": "HLS"
+			}]
+		},
+		"language": "en-us",
+		"rating": {
+			"rating": "G",
+			"ratingSource": "USA_PR"
+		}
 	
 	
 	
