@@ -1,0 +1,1204 @@
+{
+  "providerName": "Advance TV Feed",
+  "language": "en-US",
+  "lastUpdated": "2022-06-19T00:12:32.125Z",
+  "shortFormVideos": [
+    {
+      "id": "Fox-News-Live-Advance-TV",
+      "title": "Fox News",
+      "shortDescription": "Fox News is an American multinational conservative cable news television channel based in New York City. It is owned by Fox News Media, which itself is owned by the Fox Corporation.",
+      "thumbnail": "https://raw.githubusercontent.com/CODERX24/tv/master/ky0RuOG.jpg",
+      "genres": [
+        "news",
+        "information"
+      ],
+      "tags": [
+        "news",
+        "broadcasts",
+        "live",
+        "information",
+        "fox news live"
+      ],
+      "releaseDate": "2022-06-11",
+      "content": {
+        "dateAdded": "2022-06-11T14:14:54.431Z",
+        "captions": [],
+        "duration": 86400,
+        "adBreaks": [
+          "00:00:00",
+          "00:00:00"
+        ],
+        "videos": [
+          {
+            "url": "https://github.com/CODERX24/tv/raw/master/FOXNEWS.m3u8",
+            "quality": "HD",
+            "videoType": "HLS"
+          }
+        ]
+      },
+      "language": "en-us",
+      "rating": {
+        "rating": "G",
+        "ratingSource": "USA_PR"
+      }
+    },
+    {
+      "id": "CBS-News-Live-Advance-TV",
+      "title": "CBSN",
+      "shortDescription": "CBS News is the news division of the American television and radio service CBS.",
+      "thumbnail": "https://raw.githubusercontent.com/CODERX24/tv/master/A10dOqa.jpg",
+      "genres": [
+        "news"
+      ],
+      "tags": [
+        "news",
+        "information",
+        "entertainment"
+      ],
+      "releaseDate": "2022-06-18",
+      "content": {
+        "dateAdded": "2022-06-18T14:14:54.431Z",
+        "captions": [],
+        "duration": 86400,
+        "adBreaks": [
+          "00:00:00",
+          "00:00:00"
+        ],
+        "videos": [
+          {
+            "url": "https://github.com/CODERX24/tv/raw/master/CBSN.m3u8",
+            "quality": "HD",
+            "videoType": "HLS"
+          }
+        ]
+      },
+      "language": "en-us",
+      "rating": {
+        "rating": "G",
+        "ratingSource": "USA_PR"
+      }
+    },
+    {
+      "id": "ABC-News-Live-Advance-TV",
+      "title": "ABC NEWS",
+      "shortDescription": "ABC News is the news division of the American broadcast network ABC.",
+      "thumbnail": "https://raw.githubusercontent.com/CODERX24/tv/master/DvJHOSg.jpg",
+      "genres": [
+        "educational",
+        "news"
+      ],
+      "tags": [
+        "educational",
+        "news",
+        "innovation"
+      ],
+      "releaseDate": "2022-06-18",
+      "content": {
+        "dateAdded": "2022-06-18T14:14:54.431Z",
+        "captions": [],
+        "duration": 86400,
+        "adBreaks": [
+          "00:00:00",
+          "00:00:00"
+        ],
+        "videos": [
+          {
+            "url": "https://github.com/CODERX24/tv/raw/master/ABCNEWS.m3u8",
+            "quality": "HD",
+            "videoType": "HLS"
+          }
+        ]
+      },
+      "language": "en-us",
+      "rating": {
+        "rating": "G",
+        "ratingSource": "USA_PR"
+      }
+    },
+    {
+      "id": "CNN-News-Live-Advance-TV",
+      "title": "CNN",
+      "shortDescription": "CNN was founded in 1980 by American media proprietor Ted Turner and Reese Schonfeld as a 24-hour cable news channel.",
+      "thumbnail": "https://raw.githubusercontent.com/CODERX24/tv/master/sfSkC6L.jpg",
+      "genres": [
+        "news"
+      ],
+      "tags": [
+        "science fiction",
+        "Comics",
+        "cult"
+      ],
+      "releaseDate": "2022-06-18",
+      "content": {
+        "dateAdded": "2022-06-18T14:14:54.431Z",
+        "captions": [],
+        "duration": 86400,
+        "adBreaks": [
+          "00:00:00",
+          "00:00:00"
+        ],
+        "videos": [
+          {
+            "url": "https://github.com/CODERX24/tv/raw/master/CNN.m3u8",
+            "quality": "HD",
+            "videoType": "HLS"
+          }
+        ]
+      },
+      "language": "en-us",
+      "rating": {
+        "rating": "G",
+        "ratingSource": "USA_PR"
+      }
+    },
+    {
+      "id": "One-America-News-Network-Live-Advance-TV",
+      "title": "OANN",
+      "shortDescription": "OANN is founded by Robert Herring Sr. and owned by Herring Networks, Inc., that launched on July 4, 2013.",
+      "thumbnail": "https://raw.githubusercontent.com/CODERX24/tv/master/OAN-1.jpg",
+      "genres": [
+        "news"
+      ],
+      "tags": [
+        "news",
+        "information",
+        "entertainment"
+      ],
+      "releaseDate": "2022-06-19",
+      "content": {
+        "dateAdded": "2022-06-19T14:14:54.431Z",
+        "captions": [],
+        "duration": 86400,
+        "adBreaks": [
+          "00:00:00",
+          "00:00:00"
+        ],
+        "videos": [
+          {
+            "url": "https://github.com/CODERX24/tv/raw/master/OneAmerica.m3u8",
+            "quality": "HD",
+            "videoType": "HLS"
+          }
+        ]
+      },
+      "language": "en-us",
+      "rating": {
+        "rating": "G",
+        "ratingSource": "USA_PR"
+      }
+    },
+    {
+      "id": "NEWSMAX-TV-Live-Advance-TV",
+      "title": "NEWSMAX TV",
+      "shortDescription": "Newsmax TV is an American conservative news channel owned by Newsmax. The network primarily focuses on opinion-based talk shows.",
+      "thumbnail": "https://raw.githubusercontent.com/CODERX24/tv/master/SVL8kff.jpg",
+      "genres": [
+        "news"
+      ],
+      "tags": [
+        "news",
+        "information"
+      ],
+      "releaseDate": "2022-06-19",
+      "content": {
+        "dateAdded": "2022-06-19T14:14:54.431Z",
+        "captions": [],
+        "duration": 86400,
+        "adBreaks": [
+          "00:00:00",
+          "00:00:00"
+        ],
+        "videos": [
+          {
+            "url": "https://github.com/CODERX24/tv/raw/master/NEWSMAX.m3u8",
+            "quality": "HD",
+            "videoType": "HLS"
+          }
+        ]
+      },
+      "language": "en-us",
+      "rating": {
+        "rating": "G",
+        "ratingSource": "USA_PR"
+      }
+    },
+    {
+      "id": "Tru-TV-Live-Advance-TV",
+      "title": "TruTV(Temporary)GEO-BLOCKED",
+      "shortDescription": "TruTV is an American basic cable channel owned by Warner Bros. Discovery. The channel primarily broadcasts comedy docusoaps and reality shows.",
+      "thumbnail": "https://raw.githubusercontent.com/CODERX24/tv/master/TruTV_logo.svg.png",
+      "genres": [
+        "reality"
+      ],
+      "tags": [
+        "entertainment"
+      ],
+      "releaseDate": "2022-06-23",
+      "content": {
+        "dateAdded": "2022-06-23T14:14:54.431Z",
+        "captions": [],
+        "duration": 86400,
+        "adBreaks": [
+          "00:00:00",
+          "00:00:00"
+        ],
+        "videos": [
+          {
+            "url": "https://github.com/CODERX24/tv/raw/master/TRUTV.m3u8",
+            "quality": "HD",
+            "videoType": "HLS"
+          }
+        ]
+      },
+      "language": "en-us",
+      "rating": {
+        "rating": "G",
+        "ratingSource": "USA_PR"
+      }
+    },
+    {
+      "id": "BBC-AMERICA-Live-Advance-TV",
+      "title": "BBC America",
+      "shortDescription": "BBC America is an American basic cable network that is jointly owned by BBC Studios and AMC Networks. The channel primarily airs sci-fi and action series and films, as well as selected programs from the BBC.",
+      "thumbnail": "https://raw.githubusercontent.com/CODERX24/tv/master/bbc_logo_1280x720.jpg",
+      "genres": [
+        "action"
+      ],
+      "tags": [
+        "action",
+        "sci-fi"
+      ],
+      "releaseDate": "2022-06-23",
+      "content": {
+        "dateAdded": "2022-06-23T14:14:54.431Z",
+        "captions": [],
+        "duration": 86400,
+        "adBreaks": [
+          "00:00:00",
+          "00:00:00"
+        ],
+        "videos": [
+          {
+            "url": "https://github.com/CODERX24/tv/raw/master/BBCAMERICA.m3u8",
+            "quality": "HD",
+            "videoType": "HLS"
+          }
+        ]
+      },
+      "language": "en-us",
+      "rating": {
+        "rating": "G",
+        "ratingSource": "USA_PR"
+      }
+    },
+    {
+      "id": "CBN-NEWS-Live-Advance-TV",
+      "title": "CBN NEWS",
+      "shortDescription": "The Christian Broadcasting Network is a Christian television network in the United States founded by televangelist Pat Robertson. Its headquarters and main studios are in Virginia Beach, Virginia.",
+      "thumbnail": "https://raw.githubusercontent.com/CODERX24/tv/master/cbn-news-channel-OG.jpg",
+      "genres": [
+        "religious"
+      ],
+      "tags": [
+        "faith-based",
+        "religious"
+      ],
+      "releaseDate": "2022-06-23",
+      "content": {
+        "dateAdded": "2022-06-23T14:14:54.431Z",
+        "captions": [],
+        "duration": 86400,
+        "adBreaks": [
+          "00:00:00",
+          "00:00:00"
+        ],
+        "videos": [
+          {
+            "url": "https://github.com/CODERX24/tv/raw/master/CBNNEWS.m3u8",
+            "quality": "HD",
+            "videoType": "HLS"
+          }
+        ]
+      },
+      "language": "en-us",
+      "rating": {
+        "rating": "G",
+        "ratingSource": "USA_PR"
+      }
+    },
+    {
+      "id": "TBN-Live-Advance-TV",
+      "title": "TBN",
+      "shortDescription": "The Trinity Broadcasting Network is an international Christian-based broadcast television network and the world's largest religious television network.",
+      "thumbnail": "https://raw.githubusercontent.com/CODERX24/tv/master/maxresdefault%20(1).jpg",
+      "genres": [
+        "religious"
+      ],
+      "tags": [
+        "faith-based",
+        "religious"
+      ],
+      "releaseDate": "2022-06-23",
+      "content": {
+        "dateAdded": "2022-06-23T14:14:54.431Z",
+        "captions": [],
+        "duration": 86400,
+        "adBreaks": [
+          "00:00:00",
+          "00:00:00"
+        ],
+        "videos": [
+          {
+            "url": "https://github.com/CODERX24/tv/raw/master/TBN.m3u8",
+            "quality": "HD",
+            "videoType": "HLS"
+          }
+        ]
+      },
+      "language": "en-us",
+      "rating": {
+        "rating": "G",
+        "ratingSource": "USA_PR"
+      }
+    },
+    {
+      "id": "TCM-Live-Advance-TV",
+      "title": "TCM(Temporary)GEO-BLOCKED",
+      "shortDescription": "Turner Classic Movies is an American movie-oriented pay-TV network owned by Warner Bros. Discovery. Launched in 1994, TCM is headquartered at Turner's Techwood broadcasting campus in the Midtown business district of Atlanta, Georgia.",
+      "thumbnail": "https://raw.githubusercontent.com/CODERX24/tv/master/logo-TCM-share-1200x630.png",
+      "genres": [
+        "classic movies",
+        "thriller"
+      ],
+      "tags": [
+        "thriller"
+      ],
+      "releaseDate": "2022-06-23",
+      "content": {
+        "dateAdded": "2022-06-23T14:14:54.431Z",
+        "captions": [],
+        "duration": 86400,
+        "adBreaks": [
+          "00:00:00",
+          "00:00:00"
+        ],
+        "videos": [
+          {
+            "url": "https://github.com/CODERX24/tv/raw/master/TCM.m3u8",
+            "quality": "HD",
+            "videoType": "HLS"
+          }
+        ]
+      },
+      "language": "en-us",
+      "rating": {
+        "rating": "G",
+        "ratingSource": "USA_PR"
+      }
+    },
+    {
+      "id": "CYC-Live-Advance-TV",
+      "title": "CYC",
+      "shortDescription": "Christian Youth Channel – CYC aka Coptic Youth Channel, is a television and internet based English Coptic Orthodox Channel. CYC is the first English Coptic Christian channel, dedicated to Christians all around the world to spread the teachings and love of Jesus Christ.",
+      "thumbnail": "https://raw.githubusercontent.com/CODERX24/tv/master/unnamed.jpg",
+      "genres": [
+        "religious"
+      ],
+      "tags": [
+        "faith-based",
+        "religious"
+      ],
+      "releaseDate": "2022-06-23",
+      "content": {
+        "dateAdded": "2022-06-23T14:14:54.431Z",
+        "captions": [],
+        "duration": 86400,
+        "adBreaks": [
+          "00:00:00",
+          "00:00:00"
+        ],
+        "videos": [
+          {
+            "url": "https://github.com/CODERX24/tv/raw/master/CYC.m3u8",
+            "quality": "HD",
+            "videoType": "HLS"
+          }
+        ]
+      },
+      "language": "en-us",
+      "rating": {
+        "rating": "G",
+        "ratingSource": "USA_PR"
+      }
+    },
+    {
+      "id": "SMILE-Live-Advance-TV",
+      "title": "SMILE",
+      "shortDescription": "Smile is an American Christian free-to-air television network owned and operated by the Trinity Broadcasting Network. The network is aimed at children between the ages 2 to 12, and offers a mixture of children's religious and family-oriented programming.",
+      "thumbnail": "https://raw.githubusercontent.com/CODERX24/tv/master/us-smile-tv.jpg",
+      "genres": [
+        "religious"
+      ],
+      "tags": [
+        "faith-based",
+        "religious"
+      ],
+      "releaseDate": "2022-06-23",
+      "content": {
+        "dateAdded": "2022-06-23T14:14:54.431Z",
+        "captions": [],
+        "duration": 86400,
+        "adBreaks": [
+          "00:00:00",
+          "00:00:00"
+        ],
+        "videos": [
+          {
+            "url": "https://github.com/CODERX24/tv/raw/master/SMILE.m3u8",
+            "quality": "HD",
+            "videoType": "HLS"
+          }
+        ]
+      },
+      "language": "en-us",
+      "rating": {
+        "rating": "G",
+        "ratingSource": "USA_PR"
+      }
+    },
+    {
+      "id": "MSNBC-Live-Advance-TV",
+      "title": "MSNBC",
+      "shortDescription": "MSNBC is an American news-based pay television cable channel based in New York City. It is owned by the NBCUniversal News Group division of NBCUniversal.",
+      "thumbnail": "https://raw.githubusercontent.com/CODERX24/tv/master/HAylKmr.jpg",
+      "genres": [
+        "news"
+      ],
+      "tags": [
+        "science fiction",
+        "Comics",
+        "cult"
+      ],
+      "releaseDate": "2022-06-23",
+      "content": {
+        "dateAdded": "2022-06-23T14:14:54.431Z",
+        "captions": [],
+        "duration": 86400,
+        "adBreaks": [
+          "00:00:00",
+          "00:00:00"
+        ],
+        "videos": [
+          {
+            "url": "https://github.com/CODERX24/tv/raw/master/MSNBC.m3u8",
+            "quality": "HD",
+            "videoType": "HLS"
+          }
+        ]
+      },
+      "language": "en-us",
+      "rating": {
+        "rating": "G",
+        "ratingSource": "USA_PR"
+      }
+    },
+    {
+      "id": "AMC-Live-Advance-TV",
+      "title": "AMC",
+      "shortDescription": "AMC is an American multinational basic cable television channel that is the flagship property of AMC Networks. The channel's programming primarily consists of theatrically released films, along with a limited amount of original programming.",
+      "thumbnail": "https://raw.githubusercontent.com/CODERX24/tv/master/AMC_logo_2019.svg.png",
+      "genres": [
+        "action"
+      ],
+      "tags": [
+        "science fiction",
+        "Comics",
+        "cult"
+      ],
+      "releaseDate": "2022-06-23",
+      "content": {
+        "dateAdded": "2022-06-23T14:14:54.431Z",
+        "captions": [],
+        "duration": 86400,
+        "adBreaks": [
+          "00:00:00",
+          "00:00:00"
+        ],
+        "videos": [
+          {
+            "url": "https://github.com/CODERX24/tv/raw/master/AMC.m3u8",
+            "quality": "HD",
+            "videoType": "HLS"
+          }
+        ]
+      },
+      "language": "en-us",
+      "rating": {
+        "rating": "G",
+        "ratingSource": "USA_PR"
+      }
+    },
+    {
+      "id": "CHARGE-Live-Advance-TV",
+      "title": "CHARGE!",
+      "shortDescription": "Charge! is an American digital broadcast television network owned by the Sinclair Broadcast Group. The network features action and adventure-based programming sourced primarily from the MGM television and film library.",
+      "thumbnail": "https://raw.githubusercontent.com/CODERX24/tv/master/Charge!_network_logo.png",
+      "genres": [
+        "action"
+      ],
+      "tags": [
+        "science fiction",
+        "Comics",
+        "cult"
+      ],
+      "releaseDate": "2022-06-23",
+      "content": {
+        "dateAdded": "2022-06-23T14:14:54.431Z",
+        "captions": [],
+        "duration": 86400,
+        "adBreaks": [
+          "00:00:00",
+          "00:00:00"
+        ],
+        "videos": [
+          {
+            "url": "https://github.com/CODERX24/tv/raw/master/CHARGE.m3u8",
+            "quality": "HD",
+            "videoType": "HLS"
+          }
+        ]
+      },
+      "language": "en-us",
+      "rating": {
+        "rating": "G",
+        "ratingSource": "USA_PR"
+      }
+    },
+    {
+      "id": "HLN-Live-Advance-TV",
+      "title": "HLN",
+      "shortDescription": "HLN is an American cable news channel owned by CNN Global, a division of Warner Bros. Discovery. A spin-off of CNN, it primarily carries a schedule of news programming during the daytime hours, with the remainder of its schedule dedicated to true crime programs.",
+      "thumbnail": "https://raw.githubusercontent.com/CODERX24/tv/master/1200px-HLN_logo.svg.png",
+      "genres": [
+        "crime"
+      ],
+      "tags": [
+        "news",
+        "crime",
+        "mystery"
+      ],
+      "releaseDate": "2022-06-23",
+      "content": {
+        "dateAdded": "2022-06-23T14:14:54.431Z",
+        "captions": [],
+        "duration": 86400,
+        "adBreaks": [
+          "00:00:00",
+          "00:00:00"
+        ],
+        "videos": [
+          {
+            "url": "https://github.com/CODERX24/tv/raw/master/HLN.m3u8",
+            "quality": "HD",
+            "videoType": "HLS"
+          }
+        ]
+      },
+      "language": "en-us",
+      "rating": {
+        "rating": "G",
+        "ratingSource": "USA_PR"
+      }
+    },
+    {
+      "id": "Cartoon-Network-Live-Advance-TV",
+      "title": "Cartoon Network(Temporary)GEO-BLOCKED",
+      "shortDescription": "Cartoon Network is an American cable television channel owned by the Warner Bros. Discovery Networks subsidiary of Warner Bros. Discovery. It is monitored through the holding group The Cartoon Network, Inc., which also monitors the broadcasting and production activities of Adult Swim, Cartoonito, Boomerang and Discovery Family.",
+      "thumbnail": "https://raw.githubusercontent.com/CODERX24/tv/master/180px-CN_logo.svg.jpg",
+      "genres": [
+        "kids"
+      ],
+      "tags": [
+        "funny",
+        "kids",
+        "family"
+      ],
+      "releaseDate": "2022-06-23",
+      "content": {
+        "dateAdded": "2022-06-23T14:14:54.431Z",
+        "captions": [],
+        "duration": 86400,
+        "adBreaks": [
+          "00:00:00",
+          "00:00:00"
+        ],
+        "videos": [
+          {
+            "url": "https://github.com/CODERX24/tv/raw/master/CARTOONNETWORK.m3u8",
+            "quality": "HD",
+            "videoType": "HLS"
+          }
+        ]
+      },
+      "language": "en-us",
+      "rating": {
+        "rating": "G",
+        "ratingSource": "USA_PR"
+      }
+    },
+    {
+      "id": "TBS-Live-Advance-TV",
+      "title": "TBS(Temporary)GEO-BLOCKED",
+      "shortDescription": "TBS is an American pay television network owned by Warner Bros. Discovery U.S. Networks division of Warner Bros. Discovery.It carries a variety of programming, with a focus on comedy, along with some sports events, including Major League Baseball, National Hockey League, NCAA Men's Basketball Tournament and professional wrestling from AEW Dynamite.",
+      "thumbnail": "https://raw.githubusercontent.com/CODERX24/tv/master/0f0BylCLrB5ODD6M9SPTU8mxB23InJs9udqW5izsqAw.png",
+      "genres": [
+        "reality"
+      ],
+      "tags": [
+        "entertainment"
+      ],
+      "releaseDate": "2022-06-23",
+      "content": {
+        "dateAdded": "2022-06-23T14:14:54.431Z",
+        "captions": [],
+        "duration": 86400,
+        "adBreaks": [
+          "00:00:00",
+          "00:00:00"
+        ],
+        "videos": [
+          {
+            "url": "https://github.com/CODERX24/tv/raw/master/TBS.m3u8",
+            "quality": "HD",
+            "videoType": "HLS"
+          }
+        ]
+      },
+      "language": "en-us",
+      "rating": {
+        "rating": "G",
+        "ratingSource": "USA_PR"
+      }
+    },
+    {
+      "id": "POP-Live-Advance-TV",
+      "title": "POP(latency)",
+      "shortDescription": "Pop, commonly referred to as Pop TV, is an American pay television channel owned by Paramount Global under its networks division through MTV Entertainment Group. It is a general entertainment channel, focusing primarily on programs pertaining to popular culture.",
+      "thumbnail": "https://raw.githubusercontent.com/CODERX24/tv/master/Pop_Network_Logo.png",
+      "genres": [
+        "reality"
+      ],
+      "tags": [
+        "entertainment"
+      ],
+      "releaseDate": "2022-06-23",
+      "content": {
+        "dateAdded": "2022-06-23T14:14:54.431Z",
+        "captions": [],
+        "duration": 86400,
+        "adBreaks": [
+          "00:00:00",
+          "00:00:00"
+        ],
+        "videos": [
+          {
+            "url": "https://github.com/CODERX24/tv/raw/master/pop.m3u8",
+            "quality": "HD",
+            "videoType": "HLS"
+          }
+        ]
+      },
+      "language": "en-us",
+      "rating": {
+        "rating": "G",
+        "ratingSource": "USA_PR"
+      }
+    },
+    {
+      "id": "GETTV-Live-Advance-TV",
+      "title": "GetTv",
+      "shortDescription": "Local TV",
+      "thumbnail": "https://raw.githubusercontent.com/CODERX24/tv/master/LA57545LOGO.jpg",
+      "genres": [
+        "local-tv"
+      ],
+      "tags": [
+        "local TV"
+      ],
+      "releaseDate": "2022-06-23",
+      "content": {
+        "dateAdded": "2022-06-23T14:14:54.431Z",
+        "captions": [],
+        "duration": 86400,
+        "adBreaks": [
+          "00:00:00",
+          "00:00:00"
+        ],
+        "videos": [
+          {
+            "url": "https://github.com/CODERX24/tv/raw/master/gettv.m3u8",
+            "quality": "HD",
+            "videoType": "HLS"
+          }
+        ]
+      },
+      "language": "en-us",
+      "rating": {
+        "rating": "G",
+        "ratingSource": "USA_PR"
+      }
+    },
+    {
+      "id": "NBC10-Live-Advance-TV",
+      "title": "NBC10",
+      "shortDescription": "Local TV",
+      "thumbnail": "https://raw.githubusercontent.com/CODERX24/tv/master/NBC_2013_fixed_logo.png",
+      "genres": [
+        "local-tv"
+      ],
+      "tags": [
+        "local TV"
+      ],
+      "releaseDate": "2022-06-23",
+      "content": {
+        "dateAdded": "2022-06-23T14:14:54.431Z",
+        "captions": [],
+        "duration": 86400,
+        "adBreaks": [
+          "00:00:00",
+          "00:00:00"
+        ],
+        "videos": [
+          {
+            "url": "https://github.com/CODERX24/tv/raw/master/nbc10.m3u8",
+            "quality": "HD",
+            "videoType": "HLS"
+          }
+        ]
+      },
+      "language": "en-us",
+      "rating": {
+        "rating": "G",
+        "ratingSource": "USA_PR"
+      }
+    },
+    {
+      "id": "CBS-Live-Advance-TV",
+      "title": "CBS",
+      "shortDescription": "Local TV",
+      "thumbnail": "https://raw.githubusercontent.com/CODERX24/tv/master/cbs-social_3.jpg",
+      "genres": [
+        "local-tv"
+      ],
+      "tags": [
+        "local TV"
+      ],
+      "releaseDate": "2022-06-23",
+      "content": {
+        "dateAdded": "2022-06-23T14:14:54.431Z",
+        "captions": [],
+        "duration": 86400,
+        "adBreaks": [
+          "00:00:00",
+          "00:00:00"
+        ],
+        "videos": [
+          {
+            "url": "https://github.com/CODERX24/tv/raw/master/cbs.m3u8",
+            "quality": "HD",
+            "videoType": "HLS"
+          }
+        ]
+      },
+      "language": "en-us",
+      "rating": {
+        "rating": "G",
+        "ratingSource": "USA_PR"
+      }
+    },
+    {
+      "id": "MeTv-Live-Advance-TV",
+      "title": "MeTv New York",
+      "shortDescription": "Local TV",
+      "thumbnail": "https://raw.githubusercontent.com/CODERX24/tv/master/K7XBG-1567718383-142-uploader-FB_MeTV.jpg",
+      "genres": [
+        "local-tv"
+      ],
+      "tags": [
+        "local TV"
+      ],
+      "releaseDate": "2022-06-23",
+      "content": {
+        "dateAdded": "2022-06-23T14:14:54.431Z",
+        "captions": [],
+        "duration": 86400,
+        "adBreaks": [
+          "00:00:00",
+          "00:00:00"
+        ],
+        "videos": [
+          {
+            "url": "https://github.com/CODERX24/tv/raw/master/Metv.m3u8",
+            "quality": "HD",
+            "videoType": "HLS"
+          }
+        ]
+      },
+      "language": "en-us",
+      "rating": {
+        "rating": "G",
+        "ratingSource": "USA_PR"
+      }
+    },
+    {
+      "id": "Pbs-Kids-Live-Advance-TV",
+      "title": "PBS KIDS New York",
+      "shortDescription": "Local TV",
+      "thumbnail": "https://raw.githubusercontent.com/CODERX24/tv/master/387px-PBS_Kids_Dot_2.png",
+      "genres": [
+        "local-tv"
+      ],
+      "tags": [
+        "local TV"
+      ],
+      "releaseDate": "2022-06-23",
+      "content": {
+        "dateAdded": "2022-06-23T14:14:54.431Z",
+        "captions": [],
+        "duration": 86400,
+        "adBreaks": [
+          "00:00:00",
+          "00:00:00"
+        ],
+        "videos": [
+          {
+            "url": "https://github.com/CODERX24/tv/raw/master/pbskids.m3u8",
+            "quality": "HD",
+            "videoType": "HLS"
+          }
+        ]
+      },
+      "language": "en-us",
+      "rating": {
+        "rating": "G",
+        "ratingSource": "USA_PR"
+      }
+    },
+    {
+      "id": "Antenna-TV-Live-Advance-TV",
+      "title": "Antenna TV",
+      "shortDescription": "Local TV",
+      "thumbnail": "https://raw.githubusercontent.com/CODERX24/tv/master/ATV2022_Orange-Logo.png",
+      "genres": [
+        "local-tv"
+      ],
+      "tags": [
+        "local TV"
+      ],
+      "releaseDate": "2022-06-23",
+      "content": {
+        "dateAdded": "2022-06-23T14:14:54.431Z",
+        "captions": [],
+        "duration": 86400,
+        "adBreaks": [
+          "00:00:00",
+          "00:00:00"
+        ],
+        "videos": [
+          {
+            "url": "https://raw.githubusercontent.com/CODERX24/tv/master/antennatv.m3u8",
+            "quality": "HD",
+            "videoType": "HLS"
+          }
+        ]
+      },
+      "language": "en-us",
+      "rating": {
+        "rating": "G",
+        "ratingSource": "USA_PR"
+      }
+    },
+    {
+      "id": "ABC-Live-Advance-TV",
+      "title": "ABC 6",
+      "shortDescription": "Local TV",
+      "thumbnail": "https://raw.githubusercontent.com/CODERX24/tv/master/ABC-Logo-2007.png",
+      "genres": [
+        "local-tv"
+      ],
+      "tags": [
+        "local TV"
+      ],
+      "releaseDate": "2022-06-23",
+      "content": {
+        "dateAdded": "2022-06-23T14:14:54.431Z",
+        "captions": [],
+        "duration": 86400,
+        "adBreaks": [
+          "00:00:00",
+          "00:00:00"
+        ],
+        "videos": [
+          {
+            "url": "https://raw.githubusercontent.com/CODERX24/tv/master/ABC.m3u8",
+            "quality": "HD",
+            "videoType": "HLS"
+          }
+        ]
+      },
+      "language": "en-us",
+      "rating": {
+        "rating": "G",
+        "ratingSource": "USA_PR"
+      }
+    },
+    {
+      "id": "ION-TV-Live-Advance-TV",
+      "title": "Ion Television",
+      "shortDescription": "Local TV",
+      "thumbnail": "https://raw.githubusercontent.com/CODERX24/tv/master/ion-tv-new-logo-2016.png",
+      "genres": [
+        "local-tv"
+      ],
+      "tags": [
+        "local TV"
+      ],
+      "releaseDate": "2022-06-23",
+      "content": {
+        "dateAdded": "2022-06-23T14:14:54.431Z",
+        "captions": [],
+        "duration": 86400,
+        "adBreaks": [
+          "00:00:00",
+          "00:00:00"
+        ],
+        "videos": [
+          {
+            "url": "https://raw.githubusercontent.com/CODERX24/tv/master/ION.m3u8",
+            "quality": "HD",
+            "videoType": "HLS"
+          }
+        ]
+      },
+      "language": "en-us",
+      "rating": {
+        "rating": "G",
+        "ratingSource": "USA_PR"
+      }
+    },
+    {
+      "id": "Bounce-TV-Live-Advance-TV",
+      "title": "BOUNCE TV",
+      "shortDescription": "Local TV",
+      "thumbnail": "https://raw.githubusercontent.com/CODERX24/tv/master/515d1f8b-bounce_logo_720x486.jpg",
+      "genres": [
+        "local-tv"
+      ],
+      "tags": [
+        "local TV"
+      ],
+      "releaseDate": "2022-06-23",
+      "content": {
+        "dateAdded": "2022-06-23T14:14:54.431Z",
+        "captions": [],
+        "duration": 86400,
+        "adBreaks": [
+          "00:00:00",
+          "00:00:00"
+        ],
+        "videos": [
+          {
+            "url": "https://raw.githubusercontent.com/CODERX24/tv/master/BOUNCE.m3u8",
+            "quality": "HD",
+            "videoType": "HLS"
+          }
+        ]
+      },
+      "language": "en-us",
+      "rating": {
+        "rating": "G",
+        "ratingSource": "USA_PR"
+      }
+    },
+    {
+      "id": "FOX-TV-Live-Advance-TV",
+      "title": "FOX 29",
+      "shortDescription": "Local TV",
+      "thumbnail": "https://raw.githubusercontent.com/CODERX24/tv/master/download%20(1).png",
+      "genres": [
+        "local-tv"
+      ],
+      "tags": [
+        "local TV"
+      ],
+      "releaseDate": "2022-06-23",
+      "content": {
+        "dateAdded": "2022-06-23T14:14:54.431Z",
+        "captions": [],
+        "duration": 86400,
+        "adBreaks": [
+          "00:00:00",
+          "00:00:00"
+        ],
+        "videos": [
+          {
+            "url": "https://raw.githubusercontent.com/CODERX24/tv/master/FOX.m3u8",
+            "quality": "HD",
+            "videoType": "HLS"
+          }
+        ]
+      },
+      "language": "en-us",
+      "rating": {
+        "rating": "G",
+        "ratingSource": "USA_PR"
+      }
+    },
+    {
+      "id": "Univision-Live-Advance-TV",
+      "title": "Univision",
+      "shortDescription": "Local TV",
+      "thumbnail": "https://raw.githubusercontent.com/CODERX24/tv/master/univision2018.jpg",
+      "genres": [
+        "local-tv"
+      ],
+      "tags": [
+        "local TV"
+      ],
+      "releaseDate": "2022-06-23",
+      "content": {
+        "dateAdded": "2022-06-23T14:14:54.431Z",
+        "captions": [],
+        "duration": 86400,
+        "adBreaks": [
+          "00:00:00",
+          "00:00:00"
+        ],
+        "videos": [
+          {
+            "url": "https://raw.githubusercontent.com/CODERX24/tv/master/Univision.m3u8",
+            "quality": "HD",
+            "videoType": "HLS"
+          }
+        ]
+      },
+      "language": "en-us",
+      "rating": {
+        "rating": "G",
+        "ratingSource": "USA_PR"
+      }
+    },
+    {
+      "id": "TNT-Live-Advance-TV",
+      "title": "TNT (Geo-Blocked)",
+      "shortDescription": "TNT is an American basic cable television channel owned by the Warner Bros. Discovery Networks unit of Warner Bros. Discovery that launched on October 3, 1988. TNT's original purpose was to air classic films and television series to which Turner Broadcasting maintained spillover rights through its sister station TBS.",
+      "thumbnail": "https://raw.githubusercontent.com/CODERX24/tv/master/TNT_HD.png",
+      "genres": [
+        "local-tv"
+      ],
+      "tags": [
+        "local TV"
+      ],
+      "releaseDate": "2022-06-23",
+      "content": {
+        "dateAdded": "2022-06-23T14:14:54.431Z",
+        "captions": [],
+        "duration": 86400,
+        "adBreaks": [
+          "00:00:00",
+          "00:00:00"
+        ],
+        "videos": [
+          {
+            "url": "https://raw.githubusercontent.com/CODERX24/tv/master/TNT.m3u8",
+            "quality": "HD",
+            "videoType": "HLS"
+          }
+        ]
+      },
+      "language": "en-us",
+      "rating": {
+        "rating": "G",
+        "ratingSource": "USA_PR"
+      }
+    }
+  ],
+  "playlists": [
+    {
+      "name": "LocalTV",
+      "itemIds": [
+        "GETTV-Live-Advance-TV",
+        "NBC10-Live-Advance-TV",
+        "CBS-Live-Advance-TV",
+        "MeTv-Live-Advance-TV",
+        "Pbs-Kids-Live-Advance-TV",
+        "Antenna-TV-Live-Advance-TV",
+        "ABC-Live-Advance-TV",
+        "ION-TV-Live-Advance-TV",
+        "Bounce-TV-Live-Advance-TV",
+        "FOX-TV-Live-Advance-TV",
+        "Univision-Live-Advance-TV"
+      ]
+    },
+    {
+      "name": "Newschannels",
+      "itemIds": [
+        "Fox-News-Live-Advance-TV",
+        "CBS-News-Live-Advance-TV",
+        "ABC-News-Live-Advance-TV",
+        "CNN-News-Live-Advance-TV",
+        "One-America-News-Network-Live-Advance-TV",
+        "NEWSMAX-TV-Live-Advance-TV",
+        "CBN-NEWS-Live-Advance-TV",
+        "MSNBC-Live-Advance-TV",
+        "HLN-Live-Advance-TV"
+      ]
+    },
+    {
+      "name": "Turner",
+      "itemIds": [
+        "TBS-Live-Advance-TV",
+        "Cartoon-Network-Live-Advance-TV",
+        "AMC-Live-Advance-TV",
+        "TCM-Live-Advance-TV",
+        "Tru-TV-Live-Advance-TV",
+        "TNT-Live-Advance-TV",
+        "HLN-Live-Advance-TV",
+        "CNN-News-Live-Advance-TV"
+      ]
+    },
+    {
+      "name": "extrastuff",
+      "itemIds": [
+        "POP-Live-Advance-TV",
+        "CHARGE-Live-Advance-TV",
+        "AMC-Live-Advance-TV",
+        "SMILE-Live-Advance-TV",
+        "CYC-Live-Advance-TV",
+        "TBN-Live-Advance-TV"
+      ]
+    }
+  ],
+  "categories": [
+    {
+      "name": "Turner Pack (Geo-Blocked)Temporary",
+      "playlistName": "Turner",
+      "order": "manual"
+    },
+    {
+      "name": "News",
+      "playlistName": "Newschannels",
+      "order": "manual"
+    },
+    {
+      "name": "Local TV",
+      "playlistName": "LocalTV",
+      "order": "manual"
+    },
+    {
+      "name": "EXTRAS",
+      "playlistName": "extrastuff",
+      "order": "manual"
+    }
+  ]
+}
