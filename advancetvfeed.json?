@@ -751,11 +751,11 @@
 		"name": "Local TV",
 		"itemIds": ["GETTV-Live-Advance-TV", "NBC10-Live-Advance-TV", "CBS-Live-Advance-TV", "MeTv-Live-Advance-TV", "Pbs-Kids-Live-Advance-TV", "Antenna-TV-Live-Advance-TV", "ABC-Live-Advance-TV", "ION-TV-Live-Advance-TV", "Bounce-TV-Live-Advance-TV", "FOX-TV-Live-Advance-TV", "Univision-Live-Advance-TV"]
 	}, {
-		"name": "misc",
-		"itemIds": ["6c9d0951d6d74229afe4adf972b278dd", "7405a8c101ee4c9da312c426e6067044", "5686748268874a57a4ba3debda1619dd", "42137542fa884b97a2a72cb356ae21b9", "69ce40b268fa4766aa1612131aa74898", "2c4e8ea1ad2f4a8d9d244f5dd4cc47b6"]
+		"name": "News",
+		"itemIds": ["Fox-News-Live-Advance-TV", "CBS-News-Live-Advance-TV", "ABC-News-Live-Advance-TV", "CNN-News-Live-Advance-TV", "One-America-News-Network-Live-Advance-TV", "NEWSMAX-TV-Live-Advance-TV", "CBN-NEWS-Live-Advance-TV", "MSNBC-Live-Advance-TV", "HLN-Live-Advance-TV"]
 	}, {
-		"name": "short-form",
-		"itemIds": ["decbe34b64ea4ca281dc09997d0f23fd", "6c9d0951d6d74229afe4adf972b278dd", "7405a8c101ee4c9da312c426e6067044", "5686748268874a57a4ba3debda1619dd", "37d290e03d894135b07c5e514cbad72d", "42137542fa884b97a2a72cb356ae21b9", "7ec4711dc886464fa16001c1962904f8", "a4d29aebf55e499c968ce02469859637", "69ce40b268fa4766aa1612131aa74898", "2c4e8ea1ad2f4a8d9d244f5dd4cc47b6"]
+		"name": "Turner Pack (Geo-Blocked)Temporary",
+		"itemIds": ["TBS-Live-Advance-TV", "Cartoon-Network-Live-Advance-TV", "AMC-Live-Advance-TV", "TCM-Live-Advance-TV", "Tru-TV-Live-Advance-TV", "42137542fa884b97a2a72cb356ae21b9", "7ec4711dc886464fa16001c1962904f8", "a4d29aebf55e499c968ce02469859637", "69ce40b268fa4766aa1612131aa74898", "2c4e8ea1ad2f4a8d9d244f5dd4cc47b6"]
 	}],
 	"categories": [{
 		"name": "Roku Recommends",
