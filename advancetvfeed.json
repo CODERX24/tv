@@ -112,7 +112,7 @@
 			"duration": 86400,
 			"adBreaks": ["00:00:00", "00:00:00"],
 			"videos": [{
-				"url": https://github.com/CODERX24/tv/raw/master/OneAmerica.m3u8",
+				"url": "https://github.com/CODERX24/tv/raw/master/OneAmerica.m3u8",
 				"quality": "HD",
 				"videoType": "HLS"
 			}]
