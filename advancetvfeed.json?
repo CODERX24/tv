@@ -410,7 +410,30 @@
 			"rating": "G",
 			"ratingSource": "USA_PR"
 		}
-	
+	}, {
+		"id": "Cartoon-Network-Live-Advance-TV",
+		"title": "Cartoon Network(Temporary)GEO-BLOCKED",
+		"shortDescription": "Cartoon Network is an American cable television channel owned by the Warner Bros. Discovery Networks subsidiary of Warner Bros. Discovery. It is monitored through the holding group The Cartoon Network, Inc., which also monitors the broadcasting and production activities of Adult Swim, Cartoonito, Boomerang and Discovery Family.",
+		"thumbnail": "https://raw.githubusercontent.com/CODERX24/tv/master/180px-CN_logo.svg.jpg",
+		"genres": ["kids"],
+		"tags": ["funny", "kids", "family"],
+		"releaseDate": "2022-06-23",
+		"content": {
+			"dateAdded": "2022-06-23T14:14:54.431Z",
+			"captions": [],
+			"duration": 86400,
+			"adBreaks": ["00:00:00", "00:00:00"],
+			"videos": [{
+				"url": "https://github.com/CODERX24/tv/raw/master/CARTOONNETWORK.m3u8",
+				"quality": "HD",
+				"videoType": "HLS"
+			}]
+		},
+		"language": "en-us",
+		"rating": {
+			"rating": "G",
+			"ratingSource": "USA_PR"
+		}
 	
 	
 	
