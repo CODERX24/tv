@@ -147,11 +147,11 @@
 			"ratingSource": "USA_PR"
 		}
 	}, {
-		"id": "7ec4711dc886464fa16001c1962904f8",
-		"title": "Get Your Game Face On",
+		"id": "Tru-TV-Live-Advance-TV",
+		"title": "TruTV(Temporary)GEO-BLOCKED",
 		"shortDescription": "Accessing your favorite live sports and shows from ESPN is now easier than ever with WatchESPN. WatchESPN brings you 24/7 live programming from your favorite ESPN networks, including: ESPN, ESPN2, ESPN3, ESPNU, SEC Network, SEC Network +, ESPNews, ESPN Deportes, Longhorn Network, ESPN Goal Line, ESPN Buzzer Beater, and ESPN Bases Loaded.",
-		"thumbnail": "https://blog.roku.com/developer/files/2016/10/espn-poster-artwork.png",
-		"genres": ["sports"],
+		"thumbnail": "https://raw.githubusercontent.com/CODERX24/tv/master/TruTV_logo.svg.png",
+		"genres": ["reality"],
 		"tags": ["sports", "baseball", "football", "tennis"],
 		"releaseDate": "2015-08-27",
 		"content": {
