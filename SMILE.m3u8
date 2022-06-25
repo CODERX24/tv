@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:3
 #EXT-X-STREAM-INF:PROGRAM-ID=0,BANDWIDTH=4292608,CODECS="mp4a.40.2,avc1.640029",RESOLUTION=1920x1080
-https://gintna100.tulix.tv/gin_live/smilechild/8ec766b09ed8e680f9190152cb835117/62b4f002/index.m3u8
+https://api.new.livestream.com/accounts/27460990/events/8266916/live.m3u8
