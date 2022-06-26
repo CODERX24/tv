@@ -1,0 +1,6 @@
+#EXTM3U
+#EXT-X-VERSION:3
+#EXT-LICENSE-TYPE=COM.WIDEVINE.ALPHA
+#EXT-LICENSE-KEY=https://mrpw.ptmnc01.verspective.net/?deviceId=NjcwYWI2ZGEtYzE4Yi0zZWFlLTljOWYtZGEzOGIwYWFjN2I1
+#EXT-X-STREAM-INF:BANDWIDTH=2654208,CODECS="avc1.64001f,mp4a.40.2",RESOLUTION=1280x720
+https://liveanevia.mncnow.id/live/eds/NetTV-HD/sa_hls_vmx/NetTV-HD.m3u8
