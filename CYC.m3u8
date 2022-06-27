@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:3
-#EXT-X-STREAM-INF:PROGRAM-ID=0,BANDWIDTH=4292608,CODECS="mp4a.40.2,avc1.640029",RESOLUTION=1920x1080
-http://media.smc-host.com:1935/cycnow.com/cyc2/playlist.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=2530901,CODECS="avc1.4d002a,mp4a.40.2",RESOLUTION=1920x1080
+http://media.smc-host.com:1935/cycnow.com/cyc2/chunklist_w1168151159.m3u8
