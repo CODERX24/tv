@@ -13,3 +13,5 @@ https://stadium.samsung.wurl.com/manifest/7438ce986c54c101c5786e88107c8a7b.m3u8
 https://stadium.samsung.wurl.com/manifest/49e4e88fd2d93c0156563f263bde642c.m3u8
 #EXT-X-STREAM-INF:BANDWIDTH=3176404,AVERAGE-BANDWIDTH=3440800,CODECS="avc1.64001f,mp4a.40.2",RESOLUTION=1280x720,FRAME-RATE=29.970,CLOSED-CAPTIONS="CC",SUBTITLES="subtitles"
 https://stadium.samsung.wurl.com/manifest/434a3421d089aa90c063dc2b72a43f0a.m3u8
+test
+https://stadium.samsung.wurl.com/manifest/playlist.m3u8
