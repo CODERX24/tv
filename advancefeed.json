@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2022-06-24T04:38:21+00:00",
+  "lastUpdated": "2022-07-02T12:30:54+00:00",
   "providerName": "Advance TV Feed",
   "language": "en-US",
   "shortFormVideos": [
@@ -30,7 +30,7 @@
         "news"
       ],
       "rating": {
-        "rating": "UNRATED",
+        "rating": "TVG",
         "ratingSource": "MPAA"
       }
     },
@@ -61,7 +61,7 @@
         "news"
       ],
       "rating": {
-        "rating": "UNRATED",
+        "rating": "TVG",
         "ratingSource": "MPAA"
       }
     },
@@ -92,7 +92,7 @@
         "news"
       ],
       "rating": {
-        "rating": "UNRATED",
+        "rating": "TVG",
         "ratingSource": "MPAA"
       }
     },
@@ -123,7 +123,7 @@
         "news"
       ],
       "rating": {
-        "rating": "UNRATED",
+        "rating": "TVMA",
         "ratingSource": "MPAA"
       }
     },
@@ -154,7 +154,7 @@
         "news"
       ],
       "rating": {
-        "rating": "UNRATED",
+        "rating": "TVG",
         "ratingSource": "MPAA"
       }
     },
@@ -185,7 +185,7 @@
         "news"
       ],
       "rating": {
-        "rating": "UNRATED",
+        "rating": "TVG",
         "ratingSource": "MPAA"
       }
     },
@@ -216,7 +216,7 @@
         "reality"
       ],
       "rating": {
-        "rating": "UNRATED",
+        "rating": "TVG",
         "ratingSource": "MPAA"
       }
     },
@@ -244,10 +244,10 @@
         "sci-fi"
       ],
       "genres": [
-        "action"
+        "reality"
       ],
       "rating": {
-        "rating": "UNRATED",
+        "rating": "TVG",
         "ratingSource": "MPAA"
       }
     },
@@ -278,7 +278,7 @@
         "educational"
       ],
       "rating": {
-        "rating": "UNRATED",
+        "rating": "TVG",
         "ratingSource": "MPAA"
       }
     },
@@ -337,10 +337,10 @@
         "thriller"
       ],
       "genres": [
-        "thriller"
+        "reality"
       ],
       "rating": {
-        "rating": "UNRATED",
+        "rating": "TVG",
         "ratingSource": "MPAA"
       }
     },
@@ -371,7 +371,7 @@
         "educational"
       ],
       "rating": {
-        "rating": "UNRATED",
+        "rating": "TVY",
         "ratingSource": "MPAA"
       }
     },
@@ -402,7 +402,7 @@
         "educational"
       ],
       "rating": {
-        "rating": "UNRATED",
+        "rating": "TVY",
         "ratingSource": "MPAA"
       }
     },
@@ -433,7 +433,7 @@
         "news"
       ],
       "rating": {
-        "rating": "UNRATED",
+        "rating": "TVMA",
         "ratingSource": "MPAA"
       }
     },
@@ -461,10 +461,10 @@
         "action"
       ],
       "genres": [
-        "action"
+        "reality"
       ],
       "rating": {
-        "rating": "UNRATED",
+        "rating": "TVG",
         "ratingSource": "MPAA"
       }
     },
@@ -492,10 +492,10 @@
         "action"
       ],
       "genres": [
-        "action"
+        "reality"
       ],
       "rating": {
-        "rating": "UNRATED",
+        "rating": "TVG",
         "ratingSource": "MPAA"
       }
     },
@@ -526,7 +526,7 @@
         "news"
       ],
       "rating": {
-        "rating": "UNRATED",
+        "rating": "TVG",
         "ratingSource": "MPAA"
       }
     },
@@ -534,10 +534,10 @@
       "id": "Cartoon-Network-Live-Advance-TV",
       "title": "Cartoon Network(Temporary)GEO-BLOCKED",
       "content": {
-        "dateAdded": "2022-06-24T03:45:26+00:00",
+        "dateAdded": "2022-07-02T12:08:29+00:00",
         "videos": [
           {
-            "url": "https://github.com/CODERX24/tv/raw/master/CARTOONNETWORK.m3u8",
+            "url": "https://github.com/CODERX24/tv/raw/master/CNWEST.m3u8",
             "quality": "HD",
             "videoType": "HLS"
           }
@@ -557,7 +557,7 @@
         "thriller"
       ],
       "rating": {
-        "rating": "UNRATED",
+        "rating": "TVY7",
         "ratingSource": "MPAA"
       }
     },
@@ -588,7 +588,7 @@
         "reality"
       ],
       "rating": {
-        "rating": "UNRATED",
+        "rating": "TVG",
         "ratingSource": "MPAA"
       }
     },
@@ -619,7 +619,7 @@
         "reality"
       ],
       "rating": {
-        "rating": "UNRATED",
+        "rating": "TVG",
         "ratingSource": "MPAA"
       }
     },
@@ -650,7 +650,7 @@
         "educational"
       ],
       "rating": {
-        "rating": "UNRATED",
+        "rating": "TVG",
         "ratingSource": "MPAA"
       }
     },
@@ -681,7 +681,7 @@
         "educational"
       ],
       "rating": {
-        "rating": "UNRATED",
+        "rating": "TVG",
         "ratingSource": "MPAA"
       }
     },
@@ -712,7 +712,7 @@
         "educational"
       ],
       "rating": {
-        "rating": "UNRATED",
+        "rating": "TVG",
         "ratingSource": "MPAA"
       }
     },
@@ -743,7 +743,7 @@
         "educational"
       ],
       "rating": {
-        "rating": "UNRATED",
+        "rating": "TVG",
         "ratingSource": "MPAA"
       }
     },
@@ -774,7 +774,7 @@
         "educational"
       ],
       "rating": {
-        "rating": "UNRATED",
+        "rating": "TVG",
         "ratingSource": "MPAA"
       }
     },
@@ -805,7 +805,7 @@
         "educational"
       ],
       "rating": {
-        "rating": "UNRATED",
+        "rating": "TVG",
         "ratingSource": "MPAA"
       }
     },
@@ -836,7 +836,7 @@
         "educational"
       ],
       "rating": {
-        "rating": "UNRATED",
+        "rating": "TVG",
         "ratingSource": "MPAA"
       }
     },
@@ -867,7 +867,7 @@
         "educational"
       ],
       "rating": {
-        "rating": "UNRATED",
+        "rating": "TVG",
         "ratingSource": "MPAA"
       }
     },
@@ -898,7 +898,7 @@
         "educational"
       ],
       "rating": {
-        "rating": "UNRATED",
+        "rating": "TVG",
         "ratingSource": "MPAA"
       }
     },
@@ -929,7 +929,7 @@
         "educational"
       ],
       "rating": {
-        "rating": "UNRATED",
+        "rating": "TVG",
         "ratingSource": "MPAA"
       }
     },
@@ -960,7 +960,7 @@
         "educational"
       ],
       "rating": {
-        "rating": "UNRATED",
+        "rating": "TVG",
         "ratingSource": "MPAA"
       }
     },
@@ -968,7 +968,7 @@
       "id": "TNT-Live-Advance-TV",
       "title": "TNT(Geo-Blocked)",
       "content": {
-        "dateAdded": "2022-06-24T03:45:26+00:00",
+        "dateAdded": "2022-07-23T12:01:21+00:00",
         "videos": [
           {
             "url": "https://raw.githubusercontent.com/CODERX24/tv/master/TNT.m3u8",
@@ -991,7 +991,407 @@
         "reality"
       ],
       "rating": {
+        "rating": "TVG",
+        "ratingSource": "MPAA"
+      }
+    },
+    {
+      "id": "Cinemax-Live-Advance-TV",
+      "title": "Cinemax(Latency)",
+      "content": {
+        "dateAdded": "2022-07-02T11:58:07+00:00",
+        "videos": [
+          {
+            "url": "https://github.com/CODERX24/tv/raw/master/Cinemax.m3u8",
+            "quality": "HD",
+            "videoType": "HLS"
+          }
+        ],
+        "duration": 86400,
+        "language": "en-us",
+        "validityPeriodEnd": "3086-06-24T16:35:26+00:00"
+      },
+      "thumbnail": "https://raw.githubusercontent.com/CODERX24/tv/master/611-cinemax%20(1).png",
+      "shortDescription": "Cinemax is an American pay television, cable, and satellite television network owned by the Home Box Office, Inc.",
+      "releaseDate": "2022-07-02",
+      "longDescription": "Cinemax is an American pay television, cable, and satellite television network owned by the Home Box Office, Inc. subsidiary of Warner Bros. Discovery.",
+      "tags": [
+        "ftpplay"
+      ],
+      "genres": [
+        "reality"
+      ],
+      "rating": {
+        "rating": "TVG",
+        "ratingSource": "MPAA"
+      }
+    },
+    {
+      "id": "HBO-Live-Advance-TV",
+      "title": "HBO(Latency)",
+      "content": {
+        "dateAdded": "2022-07-02T11:58:21+00:00",
+        "videos": [
+          {
+            "url": "https://github.com/CODERX24/tv/raw/master/HBO.m3u8",
+            "quality": "HD",
+            "videoType": "HLS"
+          }
+        ],
+        "duration": 86400,
+        "language": "en-us",
+        "validityPeriodEnd": "3086-06-24T16:35:26+00:00"
+      },
+      "thumbnail": "https://raw.githubusercontent.com/CODERX24/tv/master/HBO-Symbol.jpg",
+      "shortDescription": "Home Box Office is an American pay television network, which is the flagship property of namesake parent subsidiary Home Box Office, Inc.; itself a unit owned by Warner Bros. Discovery.",
+      "releaseDate": "2022-07-02",
+      "longDescription": "Home Box Office airs primarily the theatrically released motion pictures and original television programs as well as made-for-cable movies, documentaries, occasional comedy and concert specials, and periodic interstitial programs (consisting of short films and making-of documentaries).",
+      "tags": [
+        "ftpplay"
+      ],
+      "genres": [
+        "reality"
+      ],
+      "rating": {
+        "rating": "TVG",
+        "ratingSource": "MPAA"
+      }
+    },
+    {
+      "id": "NatGeo-Live-Advance-TV",
+      "title": "National Geographic(Latency)",
+      "content": {
+        "dateAdded": "2022-07-02T11:58:26+00:00",
+        "videos": [
+          {
+            "url": "https://github.com/CODERX24/tv/raw/master/Natgeo.m3u8",
+            "quality": "HD",
+            "videoType": "HLS"
+          }
+        ],
+        "duration": 86400,
+        "language": "en-us",
+        "validityPeriodEnd": "3086-06-24T16:35:26+00:00"
+      },
+      "thumbnail": "https://raw.githubusercontent.com/CODERX24/tv/master/national-geographic-channel-logo.png",
+      "shortDescription": "Nat Geo is an American pay television network and flagship channel owned by the National Geographic Global Networks.",
+      "releaseDate": "2022-07-02",
+      "longDescription": "National Geographic is an American pay television network and flagship channel owned by the National Geographic Global Networks unit of Disney General Entertainment Content and National Geographic.",
+      "tags": [
+        "ftpplay"
+      ],
+      "genres": [
+        "reality"
+      ],
+      "rating": {
+        "rating": "TVG",
+        "ratingSource": "MPAA"
+      }
+    },
+    {
+      "id": "MTV-Live-Advance-TV",
+      "title": "MTV(Latency)",
+      "content": {
+        "dateAdded": "2022-07-02T11:58:36+00:00",
+        "videos": [
+          {
+            "url": "https://raw.githubusercontent.com/CODERX24/tv/master/MTVASIA.m3u8",
+            "quality": "HD",
+            "videoType": "HLS"
+          }
+        ],
+        "duration": 86400,
+        "language": "en-us",
+        "validityPeriodEnd": "3086-06-24T16:35:26+00:00"
+      },
+      "thumbnail": "https://raw.githubusercontent.com/CODERX24/tv/master/MTV-Logo.svg.png",
+      "shortDescription": "MTV is an American cable channel that launched on August 1, 1981.",
+      "releaseDate": "2022-07-02",
+      "longDescription": "MTV is an American cable channel that launched on August 1, 1981. Based in New York City, it serves as the flagship property of the MTV Entertainment Group, part of Paramount Media Networks, a division of Paramount Global.",
+      "tags": [
+        "ftpplay"
+      ],
+      "genres": [
+        "reality"
+      ],
+      "rating": {
+        "rating": "TVG",
+        "ratingSource": "MPAA"
+      }
+    },
+    {
+      "id": "NatGeoWild-Live-Advance-TV",
+      "title": "Nat Geo WIld(Latency)",
+      "content": {
+        "dateAdded": "2022-07-02T11:58:41+00:00",
+        "videos": [
+          {
+            "url": "https://raw.githubusercontent.com/CODERX24/tv/master/NATGEOWILD.m3u8",
+            "quality": "HD",
+            "videoType": "HLS"
+          }
+        ],
+        "duration": 86400,
+        "language": "en-us",
+        "validityPeriodEnd": "3086-06-24T16:35:26+00:00"
+      },
+      "thumbnail": "https://raw.githubusercontent.com/CODERX24/tv/master/82-828948_national-geographic-logo-transparent-wwwimgkidcom-nat-geo.png",
+      "shortDescription": "National Geographic Wild is a global pay television network owned by National Geographic Partners.",
+      "releaseDate": "2022-07-02",
+      "longDescription": "National Geographic Wild is a global pay television network owned by National Geographic Partners, a joint venture between The Walt Disney Company and the National Geographic Society. The channel primarily focuses on wildlife and natural history non-fiction programming.",
+      "tags": [
+        "ftpplay"
+      ],
+      "genres": [
+        "reality"
+      ],
+      "rating": {
+        "rating": "TVG",
+        "ratingSource": "MPAA"
+      }
+    },
+    {
+      "id": "TLC-Live-Advance-TV",
+      "title": "TLC(Latency)",
+      "content": {
+        "dateAdded": "2022-07-02T11:58:48+00:00",
+        "videos": [
+          {
+            "url": "https://raw.githubusercontent.com/CODERX24/tv/master/TLC.m3u8",
+            "quality": "HD",
+            "videoType": "HLS"
+          }
+        ],
+        "duration": 86400,
+        "language": "en-us",
+        "validityPeriodEnd": "3086-06-24T16:35:26+00:00"
+      },
+      "thumbnail": "https://raw.githubusercontent.com/CODERX24/tv/master/The_Learning_Channel_HD.png",
+      "shortDescription": "TLC is an American cable television channel owned by Warner Bros. Discovery.",
+      "releaseDate": "2022-07-02",
+      "longDescription": "TLC is an American cable television channel owned by Warner Bros. Discovery. First established in 1980 as The Learning Channel, it initially focused on educational and instructional programming.",
+      "tags": [
+        "ftpplay"
+      ],
+      "genres": [
+        "reality"
+      ],
+      "rating": {
+        "rating": "TVG",
+        "ratingSource": "MPAA"
+      }
+    },
+    {
+      "id": "Discovery-Live-Advance-TV",
+      "title": "Discovery Channel",
+      "content": {
+        "dateAdded": "2022-07-02T11:58:52+00:00",
+        "videos": [
+          {
+            "url": "https://raw.githubusercontent.com/CODERX24/tv/master/Discovery.m3u8",
+            "quality": "HD",
+            "videoType": "HLS"
+          }
+        ],
+        "duration": 86400,
+        "language": "en-us",
+        "validityPeriodEnd": "3086-06-24T16:35:26+00:00"
+      },
+      "thumbnail": "https://raw.githubusercontent.com/CODERX24/tv/master/discovery-logo-780x390.jpg",
+      "shortDescription": "Discovery Channel is an American cable channel owned by Warner Bros. Discovery, a publicly traded company run by CEO David Zaslav.",
+      "releaseDate": "2022-07-02",
+      "longDescription": "Discovery Channel is an American cable channel owned by Warner Bros. Discovery, a publicly traded company run by CEO David Zaslav.",
+      "tags": [
+        "ftpplay"
+      ],
+      "genres": [
+        "reality"
+      ],
+      "rating": {
+        "rating": "TVG",
+        "ratingSource": "MPAA"
+      }
+    },
+    {
+      "id": "Stadium-Live-Advance-TV",
+      "title": "Stadium",
+      "content": {
+        "dateAdded": "2022-07-02T11:58:59+00:00",
+        "videos": [
+          {
+            "url": "https://raw.githubusercontent.com/CODERX24/tv/master/Stadium.m3u8",
+            "quality": "HD",
+            "videoType": "HLS"
+          }
+        ],
+        "duration": 86400,
+        "language": "en-us",
+        "validityPeriodEnd": "3086-06-24T16:35:26+00:00"
+      },
+      "thumbnail": "https://raw.githubusercontent.com/CODERX24/tv/master/stadium-3.png",
+      "shortDescription": "Stadium is a digital television and internet sports network operated as a multi-platform sports network.",
+      "releaseDate": "2022-07-02",
+      "longDescription": "Stadium includes a 24/7 linear feed distributed across both digital and broadcast platforms, as well as on-demand digital content including additional live games and events.",
+      "tags": [
+        "sports"
+      ],
+      "genres": [
+        "reality"
+      ],
+      "rating": {
+        "rating": "TVG",
+        "ratingSource": "MPAA"
+      }
+    },
+    {
+      "id": "FS1-Live-Advance-TV",
+      "title": "FS1",
+      "content": {
+        "dateAdded": "2022-07-02T11:59:55+00:00",
+        "videos": [
+          {
+            "url": "https://raw.githubusercontent.com/CODERX24/tv/master/FS1TEMP.m3u8",
+            "quality": "HD",
+            "videoType": "HLS"
+          }
+        ],
+        "duration": 86400,
+        "language": "en-us",
+        "validityPeriodEnd": "3086-06-24T16:35:26+00:00"
+      },
+      "thumbnail": "https://raw.githubusercontent.com/CODERX24/tv/master/1280px-Fox_Sports_1_logo.svg.png",
+      "shortDescription": "Fox Sports 1 is an American pay television channel owned by the Fox Sports Media Group, a unit of Fox Corporation.",
+      "releaseDate": "2022-07-02",
+      "longDescription": "Fox Sports 1 is an American pay television channel owned by the Fox Sports Media Group, a unit of Fox Corporation. FS1 replaced the motorsports network Speed on August 17, 2013, at the same time that its companion channel Fox Sports 2 replaced Fuel TV.",
+      "tags": [
+        "sports"
+      ],
+      "genres": [
+        "reality"
+      ],
+      "rating": {
+        "rating": "TVG",
+        "ratingSource": "MPAA"
+      }
+    },
+    {
+      "id": "ESPN-Live-Advance-TV",
+      "title": "ESPN",
+      "content": {
+        "dateAdded": "2022-07-02T12:00:02+00:00",
+        "videos": [
+          {
+            "url": "https://raw.githubusercontent.com/CODERX24/tv/master/ESPNTEMP.m3u8",
+            "quality": "HD",
+            "videoType": "HLS"
+          }
+        ],
+        "duration": 86400,
+        "language": "en-us",
+        "validityPeriodEnd": "3086-06-24T16:35:26+00:00"
+      },
+      "thumbnail": "https://raw.githubusercontent.com/CODERX24/tv/master/ESPN-logo.jpg",
+      "shortDescription": "ESPN is an American international basic cable sports channel owned by ESPN Inc.",
+      "releaseDate": "2022-07-02",
+      "longDescription": "ESPN is an American international basic cable sports channel owned by ESPN Inc., owned jointly by The Walt Disney Company and Hearst Communications. The company was founded in 1979 by Bill Rasmussen along with his son Scott Rasmussen and Ed Eagan.",
+      "tags": [
+        "sports"
+      ],
+      "genres": [
+        "reality"
+      ],
+      "rating": {
+        "rating": "TVG",
+        "ratingSource": "MPAA"
+      }
+    },
+    {
+      "id": "ESPN2-Live-Advance-TV",
+      "title": "ESPN2",
+      "content": {
+        "dateAdded": "2022-07-02T12:00:24+00:00",
+        "videos": [
+          {
+            "url": "https://raw.githubusercontent.com/CODERX24/tv/master/ESPN2TEMP.m3u8",
+            "quality": "HD",
+            "videoType": "HLS"
+          }
+        ],
+        "duration": 86400,
+        "language": "en-us",
+        "validityPeriodEnd": "3086-06-24T16:35:26+00:00"
+      },
+      "thumbnail": "https://raw.githubusercontent.com/CODERX24/tv/master/ESPN-logo.jpg",
+      "shortDescription": "ESPN2 is an American multinational pay television network owned by ESPN Inc.",
+      "releaseDate": "2022-07-02",
+      "longDescription": "ESPN2 is an American multinational pay television network owned by ESPN Inc., a joint venture between The Walt Disney Company and Hearst Communications.",
+      "tags": [
+        "sports"
+      ],
+      "genres": [
+        "reality"
+      ],
+      "rating": {
+        "rating": "TVG",
+        "ratingSource": "MPAA"
+      }
+    },
+    {
+      "id": "Cartoon-Network-West-Live-Advance-TV",
+      "title": "Cartoon Network West(Temporary)GEO-BLOCKED",
+      "content": {
+        "dateAdded": "2022-06-24T03:45:26+00:00",
+        "videos": [
+          {
+            "url": "https://github.com/CODERX24/tv/raw/master/CARTOONNETWORK.m3u8",
+            "quality": "HD",
+            "videoType": "HLS"
+          }
+        ],
+        "duration": 86400,
+        "language": "en-us",
+        "validityPeriodEnd": "3086-06-24T16:31:32+00:00"
+      },
+      "thumbnail": "https://raw.githubusercontent.com/CODERX24/tv/master/180px-CN_logo.svg.jpg",
+      "shortDescription": "Cartoon Network is an American cable television channel owned by the Warner Bros.",
+      "releaseDate": "2022-06-23",
+      "longDescription": "Cartoon Network is an American cable television channel owned by the Warner Bros. Discovery Networks subsidiary of Warner Bros. Discovery. It is monitored through the holding group The Cartoon Network, Inc., which also monitors the broadcasting and production activities of Adult Swim, Cartoonito, Boomerang and Discovery Family.",
+      "tags": [
+        "kids"
+      ],
+      "genres": [
+        "thriller"
+      ],
+      "rating": {
         "rating": "UNRATED",
+        "ratingSource": "MPAA"
+      }
+    },
+    {
+      "id": "IFC-Live-Advance-TV",
+      "title": "IFC",
+      "content": {
+        "dateAdded": "2022-07-02T12:15:11+00:00",
+        "videos": [
+          {
+            "url": "https://raw.githubusercontent.com/CODERX24/tv/master/IFC.m3u8",
+            "quality": "HD",
+            "videoType": "HLS"
+          }
+        ]
+      },
+      "thumbnail": "https://raw.githubusercontent.com/CODERX24/tv/master/ifc%20(1).png",
+      "shortDescription": "IFC is an American basic cable channel owned by AMC Networks.",
+      "releaseDate": "2022-07-02",
+      "longDescription": "IFC is an American basic cable channel owned by AMC Networks, originally launching in 1994 as a TV channel devoted to independent films. The Independent Film Channel originally operated as a commercial-free service, with films being shown without interruption.",
+      "tags": [
+        "sci-fi"
+      ],
+      "genres": [
+        "mystery"
+      ],
+      "rating": {
+        "rating": "TVG",
         "ratingSource": "MPAA"
       }
     }
@@ -1039,7 +1439,18 @@
         "Bounce-TV-Live-Advance-TV",
         "FOX-TV-Live-Advance-TV",
         "Univision-Live-Advance-TV",
-        "TNT-Live-Advance-TV"
+        "TNT-Live-Advance-TV",
+        "Cinemax-Live-Advance-TV",
+        "HBO-Live-Advance-TV",
+        "NatGeo-Live-Advance-TV",
+        "MTV-Live-Advance-TV",
+        "NatGeoWild-Live-Advance-TV",
+        "TLC-Live-Advance-TV",
+        "Discovery-Live-Advance-TV",
+        "Stadium-Live-Advance-TV",
+        "FS1-Live-Advance-TV",
+        "ESPN-Live-Advance-TV",
+        "ESPN2-Live-Advance-TV"
       ]
     }
   ]
