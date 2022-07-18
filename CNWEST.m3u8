@@ -1,3 +1,6 @@
 #EXTM3U
-#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=544906,CODECS="avc1.77.31,mp4a.40.5",RESOLUTION=640x360
-http://iptvworld.nl:2095/live/kQ91ka4n/daJGMKt1/10926.m3u8
+#EXT-X-VERSION:3
+#EXT-X-STREAM-INF:BANDWIDTH=2654208,CODECS="avc1.64001f,mp4a.40.2",RESOLUTION=1280x720
+https://tve-live-lln.warnermediacdn.com/hls/live/2023180/toonwest/slate/VIDEO_0_3564000.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=1937408,CODECS="avc1.4d401f,mp4a.40.2",RESOLUTION=852×480
+https://tve-live-lln.warnermediacdn.com/hls/live/2023180/toonwest/slate/VIDEO_2_1964000.m3u8
