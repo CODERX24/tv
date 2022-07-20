@@ -1,3 +1,8 @@
 #EXTM3U
-#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=544906,CODECS="avc1.77.31,mp4a.40.5",RESOLUTION=640x360
-http://iptvworld.nl:2095/live/kQ91ka4n/daJGMKt1/10926.m3u8
+#EXT-X-VERSION:5
+#EXT-X-ALLOW-CACHE:NO
+#EXT-X-INDEPENDENT-SEGMENTS
+#EXT-X-MEDIA:TYPE=AUDIO,GROUP-ID="audio1",LANGUAGE="slv",NAME="SD_audio_2Mb",AUTOSELECT=YES,DEFAULT=YES,CHANNELS="2",URI="https://streamer12.xploretv.si/qdcnm4/__cl/cg:prod/__c/A1_SI_BOOMERANG_ott/__op/dash-default/__dci/__f/1/SD_audio_2M/manifest.m3u8?redirect=true&admin=xploreTv_test_user"
+#EXT-X-STREAM-INF:BANDWIDTH=4128000,RESOLUTION=1920x1080,CODECS="avc1.640028,mp4a.40.2",AUDIO="audio1",FRAME-RATE=25
+https://streamer12.xploretv.si/qdcnm4/__cl/cg:prod/__c/A1_SI_BOOMERANG_ott/__op/dash-default/__dci/__f/1/SD_video_2M/manifest.m3u8?redirect=true&admin=xploreTv_test_user
+#EXT-X-ENDLIST
