@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:3
 #EXT-X-STREAM-INF:BANDWIDTH=715789,CODECS="avc1.100.31,mp4a.40.2",RESOLUTION=852x480
-https://testing-0912.herokuapp.com/iptv-query?streaming-ip=https://www.twitch.tv/gtvmsnbc
+http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.twitch.tv/gtvmsnbc
