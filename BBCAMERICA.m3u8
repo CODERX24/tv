@@ -1,10 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:3
 #EXT-X-STREAM-INF:BANDWIDTH=2654208,CODECS="avc1.64001f,mp4a.40.2",RESOLUTION=1280x720
-https://bcovlive-a.akamaihd.net/8e64fad5ddbe4d3e95b23b0f9c062f03/us-east-1/6240731308001/profile_0/chunklist.m3u8
-#EXT-X-STREAM-INF:BANDWIDTH=1937408,CODECS="avc1.4d401f,mp4a.40.2",RESOLUTION=960x540
-https://bcovlive-a.akamaihd.net/8e64fad5ddbe4d3e95b23b0f9c062f03/us-east-1/6240731308001/profile_1/chunklist.m3u8
-#EXT-X-STREAM-INF:BANDWIDTH=1118208,CODECS="avc1.4d401e,mp4a.40.2",RESOLUTION=640x360
-https://bcovlive-a.akamaihd.net/8e64fad5ddbe4d3e95b23b0f9c062f03/us-east-1/6240731308001/profile_2/chunklist.m3u8
-#EXT-X-STREAM-INF:BANDWIDTH=657408,CODECS="avc1.42c015,mp4a.40.2",RESOLUTION=480x270
-https://bcovlive-a.akamaihd.net/8e64fad5ddbe4d3e95b23b0f9c062f03/us-east-1/6240731308001/profile_3/chunklist.m3u8
+https://tvnow.best/api/stream/htuqan1@gmail.com/311470/livetv.epg/nba.tv.canada.ca.m3u8
