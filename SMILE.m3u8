@@ -1,4 +1,12 @@
 #EXTM3U
 #EXT-X-VERSION:3
-#EXT-X-STREAM-INF:PROGRAM-ID=0,BANDWIDTH=1756000,CODECS="avc1.64001f,mp4a.40.2",RESOLUTION=874x540
-https://api.new.livestream.com/accounts/27460990/events/8266916/live.m3u8
+## Created with Unified Streaming Platform (version=1.11.20-26889)
+# variants
+#EXT-X-STREAM-INF:BANDWIDTH=511000,AVERAGE-BANDWIDTH=465000,CODECS="mp4a.40.2,avc1.640015",RESOLUTION=426x240,FRAME-RATE=30
+https://tbn-jw.cdn.vustreams.com/live/smile/live.isml/live-audio_1=128000-video=309952.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=966000,AVERAGE-BANDWIDTH=878000,CODECS="mp4a.40.2,avc1.64001E",RESOLUTION=640x360,FRAME-RATE=30
+https://tbn-jw.cdn.vustreams.com/live/smile/live.isml/live-audio_1=128000-video=699968.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=2015000,AVERAGE-BANDWIDTH=1832000,CODECS="mp4a.40.2,avc1.64001F",RESOLUTION=960x540,FRAME-RATE=30
+https://tbn-jw.cdn.vustreams.com/live/smile/live.isml/live-audio_1=128000-video=1600000.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=3415000,AVERAGE-BANDWIDTH=3104000,CODECS="mp4a.40.2,avc1.64001F",RESOLUTION=1280x720,FRAME-RATE=30
+https://tbn-jw.cdn.vustreams.com/live/smile/live.isml/live-audio_1=128000-video=2800000.m3u8
