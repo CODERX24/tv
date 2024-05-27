@@ -1,7 +1,3 @@
 #EXTM3U
-#EXT-X-MEDIA:TYPE=SUBTITLES,GROUP-ID="subs",NAME="rus t1",AUTOSELECT=YES,LANGUAGE="rus",URI="https://stream01.vnet.am/Boomerang/tracks-t1/mono.m3u8"
-#EXT-X-MEDIA:TYPE=AUDIO,GROUP-ID="aac",NAME="rus a1",DEFAULT=NO,AUTOSELECT=YES,LANGUAGE="rus",URI="https://stream01.vnet.am/Boomerang/tracks-a1/mono.m3u8"
-#EXT-X-MEDIA:TYPE=AUDIO,GROUP-ID="aac",NAME="eng a2",DEFAULT=YES,AUTOSELECT=YES,LANGUAGE="eng",URI="https://stream01.vnet.am/Boomerang/tracks-a2/mono.m3u8"
-#EXT-X-MEDIA:TYPE=AUDIO,GROUP-ID="aac",NAME="ukr a3",DEFAULT=NO,AUTOSELECT=YES,LANGUAGE="ukr",URI="https://stream01.vnet.am/Boomerang/tracks-a3/mono.m3u8"
 #EXT-X-STREAM-INF:AVERAGE-BANDWIDTH=10260000,BANDWIDTH=12820000,AUDIO="aac",SUBTITLES="subs",RESOLUTION=1920x1080,FRAME-RATE=25.000,CODECS="avc1.640028"
-https://stream01.vnet.am/Boomerang/tracks-v1a1/mono.m3u8
+https://stream01.vnet.am/Boomerang/tracks-v1a2/mono.m3u8
