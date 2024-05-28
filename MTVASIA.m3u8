@@ -1,6 +1,3 @@
 #EXTM3U
-#EXT-X-VERSION:3
-#EXT-X-STREAM-INF:BANDWIDTH=1200000,CODECS="mp4a.40.2,avc1.4d001f",RESOLUTION=640x360
-https://livecdn.fptplay.net/sdb/mtv_hls.smil/chunklist_b1200000.m3u8
-#EXT-X-STREAM-INF:BANDWIDTH=2500000,CODECS="mp4a.40.2,avc1.64002a",RESOLUTION=1024x576
-https://livecdn.fptplay.net/sdb/mtv_hls.smil/chunklist_b2500000.m3u8
+#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=1167421
+http://103.255.250.203:5002/cs18.m3u8?token=guoziyun&gid=cs18&channel=zhongying
