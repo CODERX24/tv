@@ -531,13 +531,13 @@
       }
     },
     {
-      "id": "Cartoon-Network-Live-Advance-TV",
-      "title": "Cartoon Network(Temporary)GEO-BLOCKED",
+      "id": "Nick-Toons-Live-Advance-TV",
+      "title": "Nicktoons",
       "content": {
         "dateAdded": "2022-07-02T12:08:29+00:00",
         "videos": [
           {
-            "url": "https://github.com/CODERX24/tv/raw/master/CNWEST.m3u8",
+            "url": "https://github.com/CODERX24/tv/raw/master/NICKTOONS.m3u8",
             "quality": "HD",
             "videoType": "HLS"
           }
@@ -546,10 +546,10 @@
         "language": "en-us",
         "validityPeriodEnd": "3086-06-24T16:31:32+00:00"
       },
-      "thumbnail": "https://raw.githubusercontent.com/CODERX24/tv/master/180px-CN_logo.svg.jpg",
-      "shortDescription": "Cartoon Network is an American cable television channel owned by the Warner Bros.",
+      "thumbnail": "https://raw.githubusercontent.com/CODERX24/tv/master/nicktoons_live_stream.jpg",
+      "shortDescription": "Nicktoons is an American television channel owned by Paramount Media Networks",
       "releaseDate": "2022-06-23",
-      "longDescription": "Cartoon Network is an American cable television channel owned by the Warner Bros. Discovery Networks subsidiary of Warner Bros. Discovery. It is monitored through the holding group The Cartoon Network, Inc., which also monitors the broadcasting and production activities of Adult Swim, Cartoonito, Boomerang and Discovery Family.",
+      "longDescription": "Nicktoons is geared towards children aged 7 to 11, and broadcasts reruns of original animated series from sister network Nickelodeon along with some other animated shows and feature films.",
       "tags": [
         "kids"
       ],
@@ -1424,7 +1424,7 @@
         "AMC-Live-Advance-TV",
         "CHARGE-Live-Advance-TV",
         "HLN-Live-Advance-TV",
-        "Cartoon-Network-Live-Advance-TV",
+        "Nick-Toons-Live-Advance-TV",
         "TBS-Live-Advance-TV",
         "POP-Live-Advance-TV",
         "GETTV-Live-Advance-TV",
