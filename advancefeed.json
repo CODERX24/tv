@@ -222,7 +222,7 @@
     },
     {
       "id": "BBC-AMERICA-Live-Advance-TV",
-      "title": "BBC America",
+      "title": "BBC News",
       "content": {
         "dateAdded": "2022-06-24T03:45:26+00:00",
         "videos": [
@@ -237,9 +237,9 @@
         "validityPeriodEnd": "3086-06-24T16:29:58+00:00"
       },
       "thumbnail": "https://raw.githubusercontent.com/CODERX24/tv/master/bbc_logo_1280x720.jpg",
-      "shortDescription": "BBC America is an American basic cable network that is jointly owned by BBC Studios and AMC Networks.",
+      "shortDescription": "BBC News is an international English-language television channel owned by BBC Global News Ltd",
       "releaseDate": "2022-06-23",
-      "longDescription": "BBC America is an American basic cable network that is jointly owned by BBC Studios and AMC Networks. The channel primarily airs sci-fi and action series and films, as well as selected programs from the BBC.",
+      "longDescription": "BBC News is an operational business division of the British Broadcasting Corporation responsible for the gathering and broadcasting of news and current affairs in the UK and around the world.",
       "tags": [
         "sci-fi"
       ],
