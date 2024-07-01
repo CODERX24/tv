@@ -1337,6 +1337,37 @@
       }
     },
     {
+      "id": "Boomerang-Live-Advance-TV",
+      "title": "Boomerang",
+      "content": {
+        "dateAdded": "2022-07-02T12:00:24+00:00",
+        "videos": [
+          {
+            "url": "https://raw.githubusercontent.com/CODERX24/tv/master/Boomerang.m3u8",
+            "quality": "HD",
+            "videoType": "HLS"
+          }
+        ],
+        "duration": 86400,
+        "language": "en-us",
+        "validityPeriodEnd": "3086-06-24T16:35:26+00:00"
+      },
+      "thumbnail": "https://raw.githubusercontent.com/CODERX24/tv/master/503b14e1dbbdb270fc8eaafb6688b370.png",
+      "shortDescription": "Boomerang is an American cable television network and subscription video on-demand over-the-top streaming service owned by Warner Bros.",
+      "releaseDate": "2022-07-02",
+      "longDescription": "Boomerang is an American cable television network and subscription video on-demand over-the-top streaming service owned by Warner Bros. Discovery U.S. Networks, a subsidiary of Warner Bros. Discovery. It primarily features animated programming from the Warner Bros. Animation library",
+      "tags": [
+        "sports"
+      ],
+      "genres": [
+        "reality"
+      ],
+      "rating": {
+        "rating": "TVG",
+        "ratingSource": "MPAA"
+      }
+    },
+    {
       "id": "Cartoon-Network-West-Live-Advance-TV",
       "title": "Cartoon Network West(Temporary)GEO-BLOCKED",
       "content": {
@@ -1450,7 +1481,8 @@
         "Stadium-Live-Advance-TV",
         "FS1-Live-Advance-TV",
         "ESPN-Live-Advance-TV",
-        "ESPN2-Live-Advance-TV"
+        "ESPN2-Live-Advance-TV",
+        "Boomerang-Live-Advance-TV"
       ]
     }
   ]
