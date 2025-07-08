@@ -1369,7 +1369,7 @@
     },
     {
       "id": "Cartoon-Network-West-Live-Advance-TV",
-      "title": "Cartoon Network West(Temporary)GEO-BLOCKED",
+      "title": "Cartoon Network",
       "content": {
         "dateAdded": "2022-06-24T03:45:26+00:00",
         "videos": [
@@ -1502,7 +1502,8 @@
         "FS1-Live-Advance-TV",
         "ESPN-Live-Advance-TV",
         "ESPN2-Live-Advance-TV",
-        "Boomerang-Live-Advance-TV"
+        "Boomerang-Live-Advance-TV",
+        "Cartoon-Network-West-Live-Advance-TV"
         ]
       },
       {
@@ -1539,7 +1540,7 @@
           "name": "Turner",
           "itemIds": [
             "TBS-Live-Advance-TV",
-            "Cartoon-Network-Live-Advance-TV",
+            "Cartoon-Network-West-Live-Advance-TV",
             "AMC-Live-Advance-TV",
             "TCM-Live-Advance-TV",
             "Tru-TV-Live-Advance-TV",
