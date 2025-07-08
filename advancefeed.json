@@ -1399,22 +1399,22 @@
       }
     },
     {
-      "id": "IFC-Live-Advance-TV",
-      "title": "IFC",
+      "id": "Disney-Live-Advance-TV",
+      "title": "Disney Channel",
       "content": {
         "dateAdded": "2022-07-02T12:15:11+00:00",
         "videos": [
           {
-            "url": "https://raw.githubusercontent.com/CODERX24/tv/master/IFC.m3u8",
+            "url": "https://raw.githubusercontent.com/CODERX24/tv/refs/heads/master/DisneyChannel.m3u8",
             "quality": "HD",
             "videoType": "HLS"
           }
         ]
       },
-      "thumbnail": "https://raw.githubusercontent.com/CODERX24/tv/master/ifc%20(1).png",
-      "shortDescription": "IFC is an American basic cable channel owned by AMC Networks.",
+      "thumbnail": "https://raw.githubusercontent.com/CODERX24/tv/refs/heads/master/thumbnail-generic.jpg",
+      "shortDescription": "Disney Channel is an American pay television channel that serves as the flagship property of Disney Branded Television.",
       "releaseDate": "2022-07-02",
-      "longDescription": "IFC is an American basic cable channel owned by AMC Networks, originally launching in 1994 as a TV channel devoted to independent films. The Independent Film Channel originally operated as a commercial-free service, with films being shown without interruption.",
+      "longDescription": "Disney Channel is an American pay television channel that serves as the flagship property of Disney Branded Television, a unit of the Disney Entertainment business segment of the Walt Disney Company.",
       "tags": [
         "sci-fi"
       ],
@@ -1503,7 +1503,8 @@
         "ESPN-Live-Advance-TV",
         "ESPN2-Live-Advance-TV",
         "Boomerang-Live-Advance-TV",
-        "Cartoon-Network-West-Live-Advance-TV"
+        "Cartoon-Network-West-Live-Advance-TV",
+        "Disney-Live-Advance-TV"
         ]
       },
       {
@@ -1557,7 +1558,10 @@
             "AMC-Live-Advance-TV",
             "SMILE-Live-Advance-TV",
             "CYC-Live-Advance-TV",
-            "TBN-Live-Advance-TV"
+            "TBN-Live-Advance-TV",
+            "Disney-Live-Advance-TV",
+            "Boomerang-Live-Advance-TV",
+            "Nick-Toons-Live-Advance-TV"
       ]
     }
   ]
