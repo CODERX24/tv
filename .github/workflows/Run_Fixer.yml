@@ -1,0 +1,34 @@
+name: Daily IPTV Fixer
+on:
+  schedule:
+    - cron: '0 */12 * * *' # Runs every day at midnight
+  workflow_dispatch: # Allows you to manually trigger it via the 'Actions' tab
+
+jobs:
+  fix-links:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write # Crucial: Allows the bot to push changes
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Install Dependencies
+        run: pip install requests
+
+      - name: Run Fixer Script
+        # Ensure your python script is actually named 'blank.py' in your repo
+        run: python blank.py
+
+      - name: Save and Push Changes
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add advancefeed.json
+          git commit -m "Automated update of dead links in advancefeed.json" || echo "No changes to commit"
+          git push
