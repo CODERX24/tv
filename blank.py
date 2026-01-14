@@ -142,30 +142,65 @@ def find_replacement_stream(channel_name, iptv_streams):
     
     print(f"  Searching for: {search_terms}")
     
-    # Search through iptv-org streams
-    candidates = []
+    # Search through iptv-org streams with priority system
+    exact_matches = []  # Exact name matches (highest priority)
+    title_matches = []  # Title matches (medium priority)
+    partial_matches = []  # Partial matches (lowest priority)
+    
     for stream in iptv_streams:
-        # Check both 'name' and 'title' fields (case-insensitive)
         stream_name = stream.get('name', '').upper()
         stream_title = stream.get('title', '').upper()
+        url = stream.get('url', '')
         
-        # Combine name and title for searching
-        search_text = f"{stream_name} {stream_title}"
+        if not url or '.m3u8' not in url.lower():
+            continue
         
+        candidate = {
+            'name': stream.get('name') or stream.get('title', 'Unknown'),
+            'url': url,
+            'country': stream.get('country', ''),
+            'title': stream.get('title', ''),
+            'stream_name': stream_name,
+            'stream_title': stream_title
+        }
+        
+        matched = False
         for term in search_terms:
-            if term in search_text:
-                url = stream.get('url', '')
-                if url and '.m3u8' in url.lower():
-                    candidates.append({
-                        'name': stream.get('name') or stream.get('title', 'Unknown'),
-                        'url': url,
-                        'country': stream.get('country', ''),
-                        'title': stream.get('title', '')
-                    })
-                    print(f"    - Found: {stream.get('title', stream.get('name', 'Unknown'))} | {url[:60]}...")
+            # Priority 1: Exact match in name field
+            if stream_name and term == stream_name:
+                exact_matches.append(candidate)
+                print(f"    - EXACT match in name: {stream.get('name', 'Unknown')} | {url[:60]}...")
+                matched = True
+                break
+            
+            # Priority 2: Exact match in title field
+            elif stream_title and term == stream_title:
+                title_matches.append(candidate)
+                print(f"    - Exact match in title: {stream.get('title', 'Unknown')} | {url[:60]}...")
+                matched = True
+                break
+        
+        if not matched:
+            # Priority 3: Partial match in name (preferred over title)
+            for term in search_terms:
+                if stream_name and term in stream_name:
+                    partial_matches.append(candidate)
+                    print(f"    - Partial match in name: {stream.get('name', 'Unknown')} | {url[:60]}...")
+                    matched = True
+                    break
+        
+        if not matched:
+            # Priority 4: Partial match in title (last resort)
+            for term in search_terms:
+                if stream_title and term in stream_title:
+                    partial_matches.append(candidate)
+                    print(f"    - Partial match in title: {stream.get('title', 'Unknown')} | {url[:60]}...")
                     break
     
-    print(f"  Found {len(candidates)} potential replacements")
+    # Combine in priority order: exact name > exact title > partial name > partial title
+    candidates = exact_matches + title_matches + partial_matches
+    
+    print(f"  Found {len(candidates)} potential replacements (Exact: {len(exact_matches)}, Title: {len(title_matches)}, Partial: {len(partial_matches)})")
     
     # Test each candidate until we find one that works
     for i, candidate in enumerate(candidates):
