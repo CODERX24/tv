@@ -116,7 +116,8 @@ def find_replacement_stream(channel_name, iptv_streams):
         'DISNEY CHANNEL': ['DISNEY CHANNEL', 'DISNEY'],
         'ESPN': ['ESPN'],
         'ESPN2': ['ESPN2', 'ESPN 2'],
-        'FS1': ['FOX SPORTS 1', 'FS1'],
+        'FS1': ['FOX SPORTS 1', 'FOX SPORTS1', 'FS1', 'FS 1'],
+        'FOX SPORTS': ['FOX SPORTS'],
         'HBO': ['HBO'],
         'CINEMAX': ['CINEMAX'],
         'STADIUM': ['STADIUM'],
@@ -144,24 +145,32 @@ def find_replacement_stream(channel_name, iptv_streams):
     # Search through iptv-org streams
     candidates = []
     for stream in iptv_streams:
+        # Check both 'name' and 'title' fields (case-insensitive)
         stream_name = stream.get('name', '').upper()
+        stream_title = stream.get('title', '').upper()
+        
+        # Combine name and title for searching
+        search_text = f"{stream_name} {stream_title}"
         
         for term in search_terms:
-            if term in stream_name:
+            if term in search_text:
                 url = stream.get('url', '')
                 if url and '.m3u8' in url.lower():
                     candidates.append({
-                        'name': stream.get('name'),
+                        'name': stream.get('name') or stream.get('title', 'Unknown'),
                         'url': url,
-                        'country': stream.get('country', '')
+                        'country': stream.get('country', ''),
+                        'title': stream.get('title', '')
                     })
+                    print(f"    - Found: {stream.get('title', stream.get('name', 'Unknown'))} | {url[:60]}...")
                     break
     
     print(f"  Found {len(candidates)} potential replacements")
     
     # Test each candidate until we find one that works
     for i, candidate in enumerate(candidates):
-        print(f"  Testing candidate {i+1}/{len(candidates)}: {candidate['name']} ({candidate['country']})")
+        display_name = candidate.get('title') or candidate.get('name', 'Unknown')
+        print(f"  Testing candidate {i+1}/{len(candidates)}: {display_name} ({candidate['country']})")
         print(f"    URL: {candidate['url']}")
         
         if check_m3u8_link(candidate['url']):
