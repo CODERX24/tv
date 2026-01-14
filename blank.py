@@ -2,13 +2,72 @@ import json
 import requests
 import time
 from datetime import datetime
+import re
 
-def check_m3u8_link(url, timeout=10):
-    """Check if an m3u8 link is working"""
+def check_m3u8_link(url, timeout=15):
+    """Check if an m3u8 link actually works by downloading and parsing it"""
     try:
-        response = requests.head(url, timeout=timeout, allow_redirects=True)
-        return response.status_code == 200
-    except:
+        # First, try to get the m3u8 file
+        response = requests.get(url, timeout=timeout, allow_redirects=True)
+        
+        if response.status_code != 200:
+            return False
+        
+        content = response.text
+        
+        # Check if it's actually an m3u8 file (should contain #EXTM3U)
+        if '#EXTM3U' not in content:
+            print(f"    Not a valid m3u8 file (missing #EXTM3U header)")
+            return False
+        
+        # Extract actual stream URLs from the m3u8 playlist
+        stream_urls = []
+        for line in content.split('\n'):
+            line = line.strip()
+            # Skip comments and empty lines
+            if line and not line.startswith('#'):
+                # Handle relative URLs
+                if line.startswith('http'):
+                    stream_urls.append(line)
+                else:
+                    # Construct absolute URL from relative path
+                    base_url = '/'.join(url.split('/')[:-1])
+                    stream_urls.append(f"{base_url}/{line}")
+        
+        if not stream_urls:
+            print(f"    No stream URLs found in m3u8 playlist")
+            return False
+        
+        # Test the first stream URL to see if it's reachable
+        test_url = stream_urls[0]
+        print(f"    Testing actual stream: {test_url[:80]}...")
+        
+        # Try to fetch a small chunk of the actual stream
+        stream_response = requests.get(test_url, timeout=timeout, stream=True, allow_redirects=True)
+        
+        if stream_response.status_code != 200:
+            print(f"    Stream returned status: {stream_response.status_code}")
+            return False
+        
+        # Read a small chunk to verify it's actually streaming data
+        chunk = next(stream_response.iter_content(chunk_size=1024), None)
+        stream_response.close()
+        
+        if chunk is None or len(chunk) == 0:
+            print(f"    Stream returned no data")
+            return False
+        
+        print(f"    ✓ Stream is working and serving data")
+        return True
+        
+    except requests.exceptions.Timeout:
+        print(f"    Timeout while checking stream")
+        return False
+    except requests.exceptions.ConnectionError:
+        print(f"    Connection error")
+        return False
+    except Exception as e:
+        print(f"    Error: {str(e)[:100]}")
         return False
 
 def fetch_iptv_org_streams():
@@ -32,21 +91,26 @@ def find_replacement_stream(channel_name, iptv_streams):
     """Find a replacement stream for a dead channel"""
     channel_name_upper = channel_name.upper()
     
+    # Remove common suffixes for better matching
+    channel_name_clean = channel_name_upper.replace('(TEMPORARY)', '').replace('GEO-BLOCKED', '').replace('(LATENCY)', '').strip()
+    
     # Common channel name mappings
     channel_mappings = {
-        'FOX NEWS': ['FOX NEWS', 'FOXNEWS'],
-        'CBSN': ['CBS NEWS', 'CBSN'],
-        'ABC NEWS': ['ABC NEWS', 'ABCNEWS'],
+        'FOX NEWS': ['FOX NEWS', 'FOXNEWS', 'FOX', 'FNC'],
+        'CBSN': ['CBS NEWS', 'CBSN', 'CBS'],
+        'ABC NEWS': ['ABC NEWS', 'ABCNEWS', 'ABC'],
         'CNN': ['CNN'],
-        'OANN': ['OAN', 'ONE AMERICA NEWS'],
-        'NEWSMAX TV': ['NEWSMAX'],
+        'OANN': ['OAN', 'ONE AMERICA NEWS', 'OANN'],
+        'NEWSMAX TV': ['NEWSMAX', 'NEWSMAX TV'],
         'MSNBC': ['MSNBC'],
-        'BBC NEWS': ['BBC', 'BBC NEWS'],
+        'BBC NEWS': ['BBC', 'BBC NEWS', 'BBC AMERICA', 'BBCAMERICA'],
         'TBN': ['TBN', 'TRINITY'],
-        'TCM': ['TCM', 'TURNER CLASSIC'],
+        'TCM': ['TCM', 'TURNER CLASSIC MOVIES'],
         'AMC': ['AMC'],
         'TNT': ['TNT'],
         'TBS': ['TBS'],
+        'TRUTV': ['TRUTV', 'TRU TV'],
+        'HLN': ['HLN', 'HEADLINE NEWS'],
         'CARTOON NETWORK': ['CARTOON NETWORK', 'CN'],
         'NICKTOONS': ['NICKTOONS', 'NICKELODEON'],
         'DISNEY CHANNEL': ['DISNEY CHANNEL', 'DISNEY'],
@@ -55,29 +119,57 @@ def find_replacement_stream(channel_name, iptv_streams):
         'FS1': ['FOX SPORTS 1', 'FS1'],
         'HBO': ['HBO'],
         'CINEMAX': ['CINEMAX'],
-        'STADIUM': ['STADIUM']
+        'STADIUM': ['STADIUM'],
+        'DISCOVERY': ['DISCOVERY', 'DISCOVERY CHANNEL'],
+        'TLC': ['TLC'],
+        'NATIONAL GEOGRAPHIC': ['NAT GEO', 'NATIONAL GEOGRAPHIC', 'NATGEO'],
+        'MTV': ['MTV'],
+        'CHARGE': ['CHARGE!', 'CHARGE'],
+        'POP': ['POP', 'POP TV'],
+        'BOOMERANG': ['BOOMERANG']
     }
     
     # Find matching channel names
     search_terms = []
     for key, values in channel_mappings.items():
-        if any(term in channel_name_upper for term in values):
+        if any(term in channel_name_clean for term in values):
             search_terms.extend(values)
             break
     
     if not search_terms:
-        search_terms = [channel_name_upper]
+        search_terms = [channel_name_clean]
+    
+    print(f"  Searching for: {search_terms}")
     
     # Search through iptv-org streams
+    candidates = []
     for stream in iptv_streams:
         stream_name = stream.get('name', '').upper()
         
         for term in search_terms:
             if term in stream_name:
                 url = stream.get('url', '')
-                if url and url.endswith('.m3u8'):
-                    print(f"  Found potential replacement: {stream.get('name')} - {url}")
-                    return url
+                if url and '.m3u8' in url.lower():
+                    candidates.append({
+                        'name': stream.get('name'),
+                        'url': url,
+                        'country': stream.get('country', '')
+                    })
+                    break
+    
+    print(f"  Found {len(candidates)} potential replacements")
+    
+    # Test each candidate until we find one that works
+    for i, candidate in enumerate(candidates):
+        print(f"  Testing candidate {i+1}/{len(candidates)}: {candidate['name']} ({candidate['country']})")
+        print(f"    URL: {candidate['url']}")
+        
+        if check_m3u8_link(candidate['url']):
+            print(f"  ✓ Found working replacement!")
+            return candidate['url']
+        
+        # Small delay between tests
+        time.sleep(1)
     
     return None
 
@@ -107,6 +199,7 @@ def update_advancefeed():
     # Track changes
     updated_count = 0
     checked_count = 0
+    failed_count = 0
     
     # Process each video in shortFormVideos
     if 'shortFormVideos' in feed_data:
@@ -116,7 +209,9 @@ def update_advancefeed():
             channel_title = video.get('title', 'Unknown')
             channel_id = video.get('id', 'Unknown')
             
-            print(f"\n[{checked_count}] Checking: {channel_title} ({channel_id})")
+            print(f"\n{'='*70}")
+            print(f"[{checked_count}] Checking: {channel_title} ({channel_id})")
+            print(f"{'='*70}")
             
             # Get video content
             content = video.get('content', {})
@@ -136,31 +231,29 @@ def update_advancefeed():
             
             print(f"  Current URL: {current_url}")
             
-            # Check if the link is working
+            # Check if the link is actually working (stream test)
+            print(f"  Testing if stream actually works...")
             is_working = check_m3u8_link(current_url)
             
             if is_working:
-                print("  ✓ Link is working")
+                print("  ✓ Link is working and streaming")
                 continue
             
-            print("  ✗ Link is dead, searching for replacement...")
+            print("  ✗ Link is dead or not streaming, searching for replacement...")
+            failed_count += 1
             
             # Find replacement
             new_url = find_replacement_stream(channel_title, iptv_streams)
             
             if new_url:
-                # Verify the new URL works
-                if check_m3u8_link(new_url):
-                    video_obj['url'] = new_url
-                    updated_count += 1
-                    print(f"  ✓ Updated to: {new_url}")
-                else:
-                    print(f"  ✗ Replacement URL also dead: {new_url}")
+                video_obj['url'] = new_url
+                updated_count += 1
+                print(f"  ✓✓✓ UPDATED to: {new_url}")
             else:
-                print("  ✗ No replacement found")
+                print(f"  ✗✗✗ No working replacement found")
             
             # Small delay to avoid rate limiting
-            time.sleep(0.5)
+            time.sleep(1)
     
     # Save updated feed
     if updated_count > 0:
@@ -169,16 +262,21 @@ def update_advancefeed():
         with open('advancefeed.json', 'w') as f:
             json.dump(feed_data, f, indent=2)
         
-        print(f"\n{'='*60}")
+        print(f"\n{'='*70}")
         print(f"✓ Update complete!")
         print(f"  Channels checked: {checked_count}")
+        print(f"  Dead channels found: {failed_count}")
         print(f"  Channels updated: {updated_count}")
+        print(f"  Still broken: {failed_count - updated_count}")
         print(f"  Last updated: {feed_data['lastUpdated']}")
-        print(f"{'='*60}")
+        print(f"{'='*70}")
     else:
-        print(f"\n{'='*60}")
-        print(f"No updates needed. All {checked_count} channels are working.")
-        print(f"{'='*60}")
+        print(f"\n{'='*70}")
+        if failed_count > 0:
+            print(f"Found {failed_count} dead channels but no working replacements available.")
+        else:
+            print(f"No updates needed. All {checked_count} channels are working.")
+        print(f"{'='*70}")
 
 if __name__ == "__main__":
     update_advancefeed()
