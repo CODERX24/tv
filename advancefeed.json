@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2022-07-02T12:30:54+00:00",
+  "lastUpdated": "2026-01-14T16:30:21.266290",
   "providerName": "Advance TV Feed",
   "language": "en-US",
   "shortFormVideos": [
@@ -134,7 +134,7 @@
         "dateAdded": "2022-06-24T03:45:26+00:00",
         "videos": [
           {
-            "url": "https://github.com/CODERX24/tv/raw/master/OneAmerica.m3u8",
+            "url": "https://a-cdn.herringnetwork.com/affiliate/oane/playlist.m3u8",
             "quality": "HD",
             "videoType": "HLS"
           }
@@ -165,7 +165,7 @@
         "dateAdded": "2022-06-24T03:45:26+00:00",
         "videos": [
           {
-            "url": "https://github.com/CODERX24/tv/raw/master/NEWSMAX.m3u8",
+            "url": "https://nmxlive.akamaized.net/hls/live/529965/Live_1/index.m3u8",
             "quality": "HD",
             "videoType": "HLS"
           }
@@ -227,7 +227,7 @@
         "dateAdded": "2022-06-24T03:45:26+00:00",
         "videos": [
           {
-            "url": "https://github.com/CODERX24/tv/raw/master/BBCAMERICA.m3u8",
+            "url": "http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/60e4519e6873180007d3cddb/master.m3u8?appName=web&appVersion=unknown&clientTime=0&deviceDNT=0&deviceId=bc830921-4b91-11ef-8a44-83c5e90e038f&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=unknown&includeExtendedEvents=false&serverSideAds=false&sid=88187eab-d70d-4b26-a9c4-a5c998b271ff",
             "quality": "HD",
             "videoType": "HLS"
           }
@@ -258,7 +258,7 @@
         "dateAdded": "2022-06-24T03:45:26+00:00",
         "videos": [
           {
-            "url": "https://github.com/CODERX24/tv/raw/master/CBNNEWS.m3u8",
+            "url": "https://fastly.live.brightcove.com/6380396819112/us-east-1/734546207001/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJob3N0IjoiczFpM3ZpLmVncmVzcy50N2M3emwiLCJhY2NvdW50X2lkIjoiNzM0NTQ2MjA3MDAxIiwiZWhuIjoiZmFzdGx5LmxpdmUuYnJpZ2h0Y292ZS5jb20iLCJpc3MiOiJibGl2ZS1wbGF5YmFjay1zb3VyY2UtYXBpIiwic3ViIjoicGF0aG1hcHRva2VuIiwiYXVkIjpbIjczNDU0NjIwNzAwMSJdLCJqdGkiOiI2MzgwMzk2ODE5MTEyIn0.GDYp4IWtzwPkupEWeeOavnioVknO-Ev3UGlHvM1rE6I/playlist-hls.m3u8",
             "quality": "HD",
             "videoType": "HLS"
           }
@@ -289,7 +289,7 @@
         "dateAdded": "2022-06-24T03:45:26+00:00",
         "videos": [
           {
-            "url": "https://github.com/CODERX24/tv/raw/master/TBN.m3u8",
+            "url": "https://livecdn.use1-0004.jwplive.com/live/sites/Yal8cmyO/media/fCGf6ROk/live.isml/.m3u8",
             "quality": "HD",
             "videoType": "HLS"
           }
@@ -382,7 +382,7 @@
         "dateAdded": "2022-06-24T03:45:26+00:00",
         "videos": [
           {
-            "url": "https://github.com/CODERX24/tv/raw/master/SMILE.m3u8",
+            "url": "https://rpn.bozztv.com/gusa/gusa-camerasmile/index.m3u8",
             "quality": "HD",
             "videoType": "HLS"
           }
@@ -413,7 +413,7 @@
         "dateAdded": "2022-06-24T03:45:26+00:00",
         "videos": [
           {
-            "url": "https://github.com/CODERX24/tv/raw/master/MSNBC.m3u8",
+            "url": "http://41.205.93.154/MSNBC/index.m3u8",
             "quality": "HD",
             "videoType": "HLS"
           }
@@ -444,7 +444,7 @@
         "dateAdded": "2022-06-24T03:45:26+00:00",
         "videos": [
           {
-            "url": "https://github.com/CODERX24/tv/raw/master/AMC.m3u8",
+            "url": "https://amc-absolutereality-1-us.plex.wurl.tv/playlist.m3u8",
             "quality": "HD",
             "videoType": "HLS"
           }
@@ -475,7 +475,7 @@
         "dateAdded": "2022-06-24T03:45:26+00:00",
         "videos": [
           {
-            "url": "https://github.com/CODERX24/tv/raw/master/CHARGE.m3u8",
+            "url": "https://fast-channels.sinclairstoryline.com/CHARGE/index.m3u8",
             "quality": "HD",
             "videoType": "HLS"
           }
@@ -599,7 +599,7 @@
         "dateAdded": "2022-06-24T03:45:26+00:00",
         "videos": [
           {
-            "url": "https://github.com/CODERX24/tv/raw/master/pop.m3u8",
+            "url": "https://amg00056-amg00056c7-rakuten-de-3245.playouts.now.amagi.tv/playlist.m3u8",
             "quality": "HD",
             "videoType": "HLS"
           }
@@ -661,7 +661,7 @@
         "dateAdded": "2022-06-24T03:45:26+00:00",
         "videos": [
           {
-            "url": "https://github.com/CODERX24/tv/raw/master/nbc10.m3u8",
+            "url": "https://pubads.g.doubleclick.net/ssai/event/kpannrCBQ5KwdV3Hag3Wog/master.m3u8",
             "quality": "HD",
             "videoType": "HLS"
           }
@@ -816,7 +816,7 @@
         "dateAdded": "2022-06-24T03:45:26+00:00",
         "videos": [
           {
-            "url": "https://raw.githubusercontent.com/CODERX24/tv/master/ABC.m3u8",
+            "url": "http://41.205.93.154/ABC/index.m3u8",
             "quality": "HD",
             "videoType": "HLS"
           }
@@ -909,7 +909,7 @@
         "dateAdded": "2022-06-24T03:45:26+00:00",
         "videos": [
           {
-            "url": "https://raw.githubusercontent.com/CODERX24/tv/master/FOX.m3u8",
+            "url": "https://fl1.moveonjoy.com/FOX_Sports_1/index.m3u8",
             "quality": "HD",
             "videoType": "HLS"
           }
@@ -1033,7 +1033,7 @@
         "dateAdded": "2022-07-02T11:58:21+00:00",
         "videos": [
           {
-            "url": "https://github.com/CODERX24/tv/raw/master/HBO.m3u8",
+            "url": "http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/65e23f340d4561000821540d/master.m3u8?appName=web&appVersion=unknown&clientTime=0&deviceDNT=0&deviceId=6c29dbd1-30d3-11ef-9cf5-e9ddff8ff496&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=unknown&includeExtendedEvents=false&serverSideAds=false&sid=18721deb-08cc-4fc5-b3dd-89d418b508de",
             "quality": "HD",
             "videoType": "HLS"
           }
@@ -1064,7 +1064,7 @@
         "dateAdded": "2022-07-02T11:58:26+00:00",
         "videos": [
           {
-            "url": "https://github.com/CODERX24/tv/raw/master/Natgeo.m3u8",
+            "url": "http://103.178.78.151:7505/play/a12o/index.m3u8",
             "quality": "HD",
             "videoType": "HLS"
           }
@@ -1126,7 +1126,7 @@
         "dateAdded": "2022-07-02T11:58:41+00:00",
         "videos": [
           {
-            "url": "https://raw.githubusercontent.com/CODERX24/tv/master/NATGEOWILD.m3u8",
+            "url": "http://103.178.78.151:7505/play/a12o/index.m3u8",
             "quality": "HD",
             "videoType": "HLS"
           }
@@ -1188,7 +1188,7 @@
         "dateAdded": "2022-07-02T11:58:52+00:00",
         "videos": [
           {
-            "url": "https://raw.githubusercontent.com/CODERX24/tv/master/Discovery.m3u8",
+            "url": "https://svs.itworkscdn.net/asharqdiscoverylive/asharqd.smil/playlist_dvr.m3u8",
             "quality": "HD",
             "videoType": "HLS"
           }
@@ -1250,7 +1250,7 @@
         "dateAdded": "2022-07-02T11:59:55+00:00",
         "videos": [
           {
-            "url": "https://raw.githubusercontent.com/CODERX24/tv/master/FS1TEMP.m3u8",
+            "url": "https://fl1.moveonjoy.com/FOX_Sports_1/index.m3u8",
             "quality": "HD",
             "videoType": "HLS"
           }
@@ -1374,7 +1374,7 @@
         "dateAdded": "2022-06-24T03:45:26+00:00",
         "videos": [
           {
-            "url": "https://github.com/CODERX24/tv/raw/master/CARTOONNETWORK.m3u8",
+            "url": "https://cdn4.skygo.mn/live/disk1/CNBC/HLSv3-FTA/CNBC.m3u8",
             "quality": "HD",
             "videoType": "HLS"
           }
@@ -1405,7 +1405,7 @@
         "dateAdded": "2022-07-02T12:15:11+00:00",
         "videos": [
           {
-            "url": "https://raw.githubusercontent.com/CODERX24/tv/refs/heads/master/DisneyChannel.m3u8",
+            "url": "http://84.54.128.52:9090/play/3006/index.m3u8",
             "quality": "HD",
             "videoType": "HLS"
           }
@@ -1505,67 +1505,64 @@
         "Boomerang-Live-Advance-TV",
         "Cartoon-Network-West-Live-Advance-TV",
         "Disney-Live-Advance-TV"
-        ]
-      },
-      {
-          "name": "LocalTV",
-          "itemIds": [
-            "GETTV-Live-Advance-TV",
-            "NBC10-Live-Advance-TV",
-            "CBS-Live-Advance-TV",
-            "MeTv-Live-Advance-TV",
-            "Pbs-Kids-Live-Advance-TV",
-            "Antenna-TV-Live-Advance-TV",
-            "ABC-Live-Advance-TV",
-            "ION-TV-Live-Advance-TV",
-            "Bounce-TV-Live-Advance-TV",
-            "FOX-TV-Live-Advance-TV",
-            "Univision-Live-Advance-TV"
-          ]
-        },
-        {
-          "name": "Newschannels",
-          "itemIds": [
-            "Fox-News-Live-Advance-TV",
-            "CBS-News-Live-Advance-TV",
-            "ABC-News-Live-Advance-TV",
-            "CNN-News-Live-Advance-TV",
-            "One-America-News-Network-Live-Advance-TV",
-            "NEWSMAX-TV-Live-Advance-TV",
-            "CBN-NEWS-Live-Advance-TV",
-            "MSNBC-Live-Advance-TV",
-            "HLN-Live-Advance-TV"
-          ]
-        },
-        {
-          "name": "Turner",
-          "itemIds": [
-            "TBS-Live-Advance-TV",
-            "Cartoon-Network-West-Live-Advance-TV",
-            "AMC-Live-Advance-TV",
-            "TCM-Live-Advance-TV",
-            "Tru-TV-Live-Advance-TV",
-            "TNT-Live-Advance-TV",
-            "HLN-Live-Advance-TV",
-            "CNN-News-Live-Advance-TV"
-          ]
-        },
-        {
-          "name": "extrastuff",
-          "itemIds": [
-            "POP-Live-Advance-TV",
-            "CHARGE-Live-Advance-TV",
-            "AMC-Live-Advance-TV",
-            "SMILE-Live-Advance-TV",
-            "CYC-Live-Advance-TV",
-            "TBN-Live-Advance-TV",
-            "Disney-Live-Advance-TV",
-            "Boomerang-Live-Advance-TV",
-            "Nick-Toons-Live-Advance-TV"
+      ]
+    },
+    {
+      "name": "LocalTV",
+      "itemIds": [
+        "GETTV-Live-Advance-TV",
+        "NBC10-Live-Advance-TV",
+        "CBS-Live-Advance-TV",
+        "MeTv-Live-Advance-TV",
+        "Pbs-Kids-Live-Advance-TV",
+        "Antenna-TV-Live-Advance-TV",
+        "ABC-Live-Advance-TV",
+        "ION-TV-Live-Advance-TV",
+        "Bounce-TV-Live-Advance-TV",
+        "FOX-TV-Live-Advance-TV",
+        "Univision-Live-Advance-TV"
+      ]
+    },
+    {
+      "name": "Newschannels",
+      "itemIds": [
+        "Fox-News-Live-Advance-TV",
+        "CBS-News-Live-Advance-TV",
+        "ABC-News-Live-Advance-TV",
+        "CNN-News-Live-Advance-TV",
+        "One-America-News-Network-Live-Advance-TV",
+        "NEWSMAX-TV-Live-Advance-TV",
+        "CBN-NEWS-Live-Advance-TV",
+        "MSNBC-Live-Advance-TV",
+        "HLN-Live-Advance-TV"
+      ]
+    },
+    {
+      "name": "Turner",
+      "itemIds": [
+        "TBS-Live-Advance-TV",
+        "Cartoon-Network-West-Live-Advance-TV",
+        "AMC-Live-Advance-TV",
+        "TCM-Live-Advance-TV",
+        "Tru-TV-Live-Advance-TV",
+        "TNT-Live-Advance-TV",
+        "HLN-Live-Advance-TV",
+        "CNN-News-Live-Advance-TV"
+      ]
+    },
+    {
+      "name": "extrastuff",
+      "itemIds": [
+        "POP-Live-Advance-TV",
+        "CHARGE-Live-Advance-TV",
+        "AMC-Live-Advance-TV",
+        "SMILE-Live-Advance-TV",
+        "CYC-Live-Advance-TV",
+        "TBN-Live-Advance-TV",
+        "Disney-Live-Advance-TV",
+        "Boomerang-Live-Advance-TV",
+        "Nick-Toons-Live-Advance-TV"
       ]
     }
   ]
 }
-
-
-
