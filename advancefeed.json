@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-01-14T16:30:21.266290",
+  "lastUpdated": "2026-01-16T12:33:59.611577",
   "providerName": "Advance TV Feed",
   "language": "en-US",
   "shortFormVideos": [
@@ -1405,7 +1405,7 @@
         "dateAdded": "2022-07-02T12:15:11+00:00",
         "videos": [
           {
-            "url": "http://84.54.128.52:9090/play/3006/index.m3u8",
+            "url": "https://viamotionhsi.netplus.ch/live/eds/disneychannelde/browser-HLS8/disneychannelde.m3u8",
             "quality": "HD",
             "videoType": "HLS"
           }
