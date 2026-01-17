@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-01-16T12:33:59.611577",
+  "lastUpdated": "2026-01-17T01:14:13.004308",
   "providerName": "Advance TV Feed",
   "language": "en-US",
   "shortFormVideos": [
@@ -1374,7 +1374,7 @@
         "dateAdded": "2022-06-24T03:45:26+00:00",
         "videos": [
           {
-            "url": "https://cdn4.skygo.mn/live/disk1/CNBC/HLSv3-FTA/CNBC.m3u8",
+            "url": "https://viewmedia7219.bozztv.com/wmedia/viewmedia100/web_014/Stream/playlist.m3u8",
             "quality": "HD",
             "videoType": "HLS"
           }
