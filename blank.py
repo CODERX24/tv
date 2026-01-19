@@ -87,7 +87,7 @@ def is_channel_mismatch(channel_title, stream_name, stream_title, url):
     mismatch_rules = {
         'ESPN': {
             'avoid': ['DEPORTES', 'DEPORTIVAS', 'SPANISH', 'LATINO', 'PLUS', 'ESPN+', 'ESPN2', 'ESPN 2', 'ESPNU', 'ESPN U', 'COLLEGE'],
-            'penalty_score': -50,  # Heavy penalty
+            'penalty_score': -50,
             'reason': 'Secondary/International ESPN variant'
         },
         'ESPN2': {
@@ -177,12 +177,27 @@ def is_channel_mismatch(channel_title, stream_name, stream_title, url):
                 return (True, f'Secondary channel variant ({indicator})', -25)
     
     return (False, None, 0)
+
+def get_stream_quality_score(url, stream_data, channel_title=''):
     """
     Assign a quality score to a stream based on URL patterns and metadata.
     Higher score = better quality
+    Includes mismatch penalties for wrong channels
     """
     score = 50  # Base score
     url_lower = url.lower()
+    
+    # Check for channel mismatches first (can heavily penalize)
+    stream_name = stream_data.get('name', '')
+    stream_title = stream_data.get('title', '')
+    is_mismatch, mismatch_reason, penalty = is_channel_mismatch(
+        channel_title, stream_name, stream_title, url
+    )
+    
+    if is_mismatch:
+        score += penalty  # Apply penalty (negative number)
+        # Store mismatch info in stream_data for logging
+        stream_data['_mismatch_reason'] = mismatch_reason
     
     # Country priority (US-based app)
     country = stream_data.get('country', '').upper()
@@ -211,7 +226,6 @@ def is_channel_mismatch(channel_title, stream_name, stream_title, url):
         score -= 10
     
     # Extract resolution from URL patterns like "750x600", "1280x720", etc.
-    import re
     resolution_pattern = r'(\d{3,4})[x_\-](\d{3,4})'
     matches = re.findall(resolution_pattern, url_lower)
     if matches:
@@ -265,7 +279,7 @@ def is_channel_mismatch(channel_title, stream_name, stream_title, url):
     
     # Prefer certain reliable domains/providers
     reliable_domains = [
-        'i.mjh.nz',  # High quality IPTV provider
+        'i.mjh.nz',
         'iptv-org.github.io',
         'livetv.sx',
         'ustv247.tv',
@@ -282,10 +296,11 @@ def is_channel_mismatch(channel_title, stream_name, stream_title, url):
         score -= 5
     
     return score
+
+def fetch_iptv_org_streams():
     """Fetch streams from iptv-org database"""
     print("Fetching fresh streams from iptv-org...")
     
-    # Main iptv-org streams JSON
     url = "https://iptv-org.github.io/api/streams.json"
     
     try:
@@ -354,9 +369,9 @@ def find_replacement_stream(channel_name, iptv_streams):
     print(f"  Searching for: {search_terms}")
     
     # Search through iptv-org streams with priority system
-    exact_matches = []  # Exact name matches (highest priority)
-    title_matches = []  # Title matches (medium priority)
-    partial_matches = []  # Partial matches (lowest priority)
+    exact_matches = []
+    title_matches = []
+    partial_matches = []
     
     for stream in iptv_streams:
         stream_name = stream.get('name', '').upper()
@@ -373,8 +388,8 @@ def find_replacement_stream(channel_name, iptv_streams):
             'title': stream.get('title', ''),
             'stream_name': stream_name,
             'stream_title': stream_title,
-            'quality_score': get_stream_quality_score(url, stream, channel_title),
-            'match_type': '',  # Will be set below
+            'quality_score': get_stream_quality_score(url, stream, channel_name),
+            'match_type': '',
             'mismatch_reason': stream.get('_mismatch_reason', None)
         }
         
@@ -401,7 +416,6 @@ def find_replacement_stream(channel_name, iptv_streams):
                 break
         
         if not matched:
-            # Priority 3: Partial match in name (preferred over title)
             for term in search_terms:
                 if stream_name and term in stream_name:
                     candidate['match_type'] = 'PARTIAL_NAME'
@@ -413,7 +427,6 @@ def find_replacement_stream(channel_name, iptv_streams):
                     break
         
         if not matched:
-            # Priority 4: Partial match in title (last resort)
             for term in search_terms:
                 if stream_title and term in stream_title:
                     candidate['match_type'] = 'PARTIAL_TITLE'
@@ -428,7 +441,7 @@ def find_replacement_stream(channel_name, iptv_streams):
     title_matches.sort(key=lambda x: x['quality_score'], reverse=True)
     partial_matches.sort(key=lambda x: x['quality_score'], reverse=True)
     
-    # Combine in priority order: exact name > exact title > partial name > partial title
+    # Combine in priority order
     candidates = exact_matches + title_matches + partial_matches
     
     print(f"  Found {len(candidates)} potential replacements (Exact: {len(exact_matches)}, Title: {len(title_matches)}, Partial: {len(partial_matches)})")
@@ -446,27 +459,20 @@ def find_replacement_stream(channel_name, iptv_streams):
             print(f"  ✓ Found working replacement!")
             return candidate['url']
         
-        # Small delay between tests
         time.sleep(1)
     
     return None
 
 def should_upgrade_stream(current_url, current_country, channel_title, iptv_streams):
-    """
-    Check if there's a better quality/country stream available than the current one.
-    Returns (should_upgrade, new_url, reason) tuple
-    """
+    """Check if there's a better quality/country stream available than the current one"""
     print(f"  Checking for better alternatives to current stream...")
     
-    # Get current stream quality score (without actual stream data, estimate from URL)
-    current_score = get_stream_quality_score(current_url, {'country': current_country or ''})
+    current_score = get_stream_quality_score(current_url, {'country': current_country or ''}, channel_title)
     print(f"    Current stream score: {current_score} [Country: {current_country or 'Unknown'}]")
     
-    # Find all possible replacements
     channel_name_upper = channel_title.upper()
     channel_name_clean = channel_name_upper.replace('(TEMPORARY)', '').replace('GEO-BLOCKED', '').replace('(LATENCY)', '').strip()
     
-    # Use same mapping logic as find_replacement_stream
     channel_mappings = {
         'FOX NEWS': ['FOX NEWS', 'FOXNEWS', 'FOX', 'FNC'],
         'CBSN': ['CBS NEWS', 'CBSN', 'CBS'],
@@ -511,16 +517,14 @@ def should_upgrade_stream(current_url, current_country, channel_title, iptv_stre
     if not search_terms:
         search_terms = [channel_name_clean]
     
-    # Find better alternatives
     best_alternative = None
-    best_score = current_score + 20  # Require at least 20 points improvement to switch
+    best_score = current_score + 20  # Require at least 20 points improvement
     
     for stream in iptv_streams:
         stream_name = stream.get('name', '').upper()
         stream_title = stream.get('title', '').upper()
         search_text = f"{stream_name} {stream_title}"
         
-        # Check if it matches our channel
         matched = False
         for term in search_terms:
             if term in search_text:
@@ -534,14 +538,11 @@ def should_upgrade_stream(current_url, current_country, channel_title, iptv_stre
         if not url or '.m3u8' not in url.lower():
             continue
         
-        # Skip if it's the same URL we already have
         if url == current_url:
             continue
         
-        # Calculate score for this alternative
         alt_score = get_stream_quality_score(url, stream, channel_title)
         
-        # Check if this is better
         if alt_score > best_score:
             best_alternative = {
                 'url': url,
@@ -559,11 +560,12 @@ def should_upgrade_stream(current_url, current_country, channel_title, iptv_stre
     
     print(f"    No better alternatives found")
     return (False, None, None)
+
+def update_advancefeed():
     """Main function to update dead links in advancefeed.json"""
     print("Starting IPTV Link Fixer...")
     print(f"Current time: {datetime.now()}")
     
-    # Load the advancefeed.json file
     try:
         with open('advancefeed.json', 'r') as f:
             feed_data = json.load(f)
@@ -574,20 +576,17 @@ def should_upgrade_stream(current_url, current_country, channel_title, iptv_stre
         print(f"Error parsing advancefeed.json: {e}")
         return
     
-    # Fetch iptv-org streams
     iptv_streams = fetch_iptv_org_streams()
     
     if not iptv_streams:
         print("No streams fetched from iptv-org. Exiting.")
         return
     
-    # Track changes
     updated_count = 0
     checked_count = 0
     failed_count = 0
     upgraded_count = 0
     
-    # Process each video in shortFormVideos
     if 'shortFormVideos' in feed_data:
         for video in feed_data['shortFormVideos']:
             checked_count += 1
@@ -599,7 +598,6 @@ def should_upgrade_stream(current_url, current_country, channel_title, iptv_stre
             print(f"[{checked_count}] Checking: {channel_title} ({channel_id})")
             print(f"{'='*70}")
             
-            # Get video content
             content = video.get('content', {})
             videos = content.get('videos', [])
             
@@ -607,7 +605,6 @@ def should_upgrade_stream(current_url, current_country, channel_title, iptv_stre
                 print("  No video URLs found")
                 continue
             
-            # Check first video URL
             video_obj = videos[0]
             current_url = video_obj.get('url', '')
             
@@ -617,18 +614,15 @@ def should_upgrade_stream(current_url, current_country, channel_title, iptv_stre
             
             print(f"  Current URL: {current_url}")
             
-            # Check if the link is actually working (stream test)
             print(f"  Testing if stream actually works...")
             is_working = check_m3u8_link(current_url)
             
             if is_working:
                 print("  ✓ Link is working and streaming")
                 
-                # Even though it works, check if there's a better alternative
-                # (e.g., upgrade from Germany to USA, or better quality)
                 should_upgrade, new_url, reason = should_upgrade_stream(
                     current_url, 
-                    video.get('country', ''),  # Try to get country from existing data
+                    video.get('country', ''),
                     channel_title, 
                     iptv_streams
                 )
@@ -650,7 +644,6 @@ def should_upgrade_stream(current_url, current_country, channel_title, iptv_stre
             print("  ✗ Link is dead or not streaming, searching for replacement...")
             failed_count += 1
             
-            # Find replacement
             new_url = find_replacement_stream(channel_title, iptv_streams)
             
             if new_url:
@@ -660,10 +653,8 @@ def should_upgrade_stream(current_url, current_country, channel_title, iptv_stre
             else:
                 print(f"  ✗✗✗ No working replacement found")
             
-            # Small delay to avoid rate limiting
             time.sleep(1)
     
-    # Save updated feed
     if updated_count > 0:
         feed_data['lastUpdated'] = datetime.now().isoformat()
         
