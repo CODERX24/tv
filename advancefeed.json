@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-01-19T14:36:49.330822",
+  "lastUpdated": "2026-01-19T14:46:52.655819",
   "providerName": "Advance TV Feed",
   "language": "en-US",
   "shortFormVideos": [
@@ -10,7 +10,7 @@
         "dateAdded": "2022-06-24T03:45:26+00:00",
         "videos": [
           {
-            "url": "https://aegis-cloudfront-1.tubi.video/317a6700-b890-4066-a2e7-dea5c15fd915/index.m3u8",
+            "url": "https://stream.livenewsplay.com:9443/hls/foxnews/foxsd.m3u8",
             "quality": "HD",
             "videoType": "HLS"
           }
