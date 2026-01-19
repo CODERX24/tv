@@ -83,8 +83,36 @@ def is_channel_mismatch(channel_title, stream_name, stream_title, url):
     # Remove common suffixes for cleaner matching
     channel_clean = channel_upper.replace('(TEMPORARY)', '').replace('GEO-BLOCKED', '').replace('(LATENCY)', '').strip()
     
+    # Detect local affiliates and wrong stations
+    local_indicators = [
+        'LOCAL', 'AFFILIATE', 'KDFW', 'KTVU', 'WTTG', 'WNYW', 'KTTV',
+        'FOX 2', 'FOX 4', 'FOX 5', 'FOX 7', 'FOX 9', 'FOX 10', 'FOX 11', 'FOX 13',
+        'FOX 25', 'FOX 26', 'FOX 29', 'FOX 32', 'FOX 35', 'FOX 46',
+        'WTXF', 'WFXT', 'WJBK', 'WTVT', 'WAGA', 'KRIV',
+        'WASHINGTON', 'NEW YORK', 'LOS ANGELES', 'CHICAGO', 'DALLAS', 'ATLANTA',
+        'DETROIT', 'MIAMI', 'BOSTON', 'PHOENIX', 'SEATTLE', 'HOUSTON'
+    ]
+    
+    # Check if looking for Fox News specifically
+    if 'FOX NEWS' in channel_clean or 'FOXNEWS' in channel_clean:
+        # Reject local Fox stations
+        for indicator in local_indicators:
+            if indicator in stream_name_upper or indicator in stream_title_upper:
+                return (True, 'Local Fox affiliate, not Fox News Channel', -60)
+        
+        # Reject if it doesn't explicitly say "NEWS" or "FNC"
+        if 'NEWS' not in stream_name_upper and 'NEWS' not in stream_title_upper and 'FNC' not in stream_name_upper:
+            # But allow if the URL clearly indicates fox news
+            if 'foxnews' not in url_lower and 'fox_news' not in url_lower and 'fox-news' not in url_lower:
+                return (True, 'Fox channel but not Fox News', -55)
+    
     # Define unacceptable mismatches and secondary variants
     mismatch_rules = {
+        'FOX NEWS': {
+            'avoid': ['FOX BUSINESS', 'FOX SPORTS', 'FOX DEPORTES', 'FOX SOCCER', 'FS1', 'FS2', 'FOX MOVIES', 'FOX LIFE'],
+            'penalty_score': -50,
+            'reason': 'Wrong Fox network'
+        },
         'ESPN': {
             'avoid': ['DEPORTES', 'DEPORTIVAS', 'SPANISH', 'LATINO', 'PLUS', 'ESPN+', 'ESPN2', 'ESPN 2', 'ESPNU', 'ESPN U', 'COLLEGE'],
             'penalty_score': -50,
@@ -105,20 +133,25 @@ def is_channel_mismatch(channel_title, stream_name, stream_title, url):
             'penalty_score': -40,
             'reason': 'HBO secondary channel, not main HBO'
         },
-        'FOX NEWS': {
-            'avoid': ['FOX BUSINESS', 'FOX SPORTS', 'FOX DEPORTES', 'FOX SOCCER', 'FS1', 'FS2'],
-            'penalty_score': -50,
-            'reason': 'Wrong Fox network'
-        },
         'CNN': {
             'avoid': ['CNN INTERNATIONAL', 'CNN ESPAÑOL', 'CNN TURK', 'CNN BRASIL', 'HLN'],
             'penalty_score': -30,
             'reason': 'International CNN variant'
         },
         'MSNBC': {
-            'avoid': ['CNBC', 'NBC', 'NBC SPORTS'],
+            'avoid': ['CNBC', 'NBC SPORTS', 'NBC 2', 'NBC 4', 'NBC 5', 'NBC 7', 'WNBC', 'KNBC'],
             'penalty_score': -40,
             'reason': 'Wrong NBC network'
+        },
+        'CBS NEWS': {
+            'avoid': ['CBS SPORTS', 'CBS 2', 'CBS 3', 'CBS 4', 'CBS 5', 'WCBS', 'KCBS', 'LOCAL'],
+            'penalty_score': -40,
+            'reason': 'Local CBS station, not CBS News'
+        },
+        'ABC NEWS': {
+            'avoid': ['ABC 7', 'ABC 13', 'WABC', 'KABC', 'WLS', 'LOCAL'],
+            'penalty_score': -40,
+            'reason': 'Local ABC station, not ABC News'
         },
         'DISCOVERY': {
             'avoid': ['DISCOVERY+', 'PLUS', 'ID', 'INVESTIGATION', 'SCIENCE', 'FAMILIA', 'TURBO', 'THEATER'],
