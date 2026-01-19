@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-01-17T01:14:13.004308",
+  "lastUpdated": "2026-01-19T01:21:51.553982",
   "providerName": "Advance TV Feed",
   "language": "en-US",
   "shortFormVideos": [
@@ -1064,7 +1064,7 @@
         "dateAdded": "2022-07-02T11:58:26+00:00",
         "videos": [
           {
-            "url": "http://103.178.78.151:7505/play/a12o/index.m3u8",
+            "url": "https://admn-live-cdn-lb.starzplayarabia.com/out/v1/admn_tv_enc/national_geo/national_geo_hls_nd/index.m3u8",
             "quality": "HD",
             "videoType": "HLS"
           }
@@ -1126,7 +1126,7 @@
         "dateAdded": "2022-07-02T11:58:41+00:00",
         "videos": [
           {
-            "url": "http://103.178.78.151:7505/play/a12o/index.m3u8",
+            "url": "https://admn-live-cdn-lb.starzplayarabia.com/out/v1/admn_tv_enc/national_geo/national_geo_hls_nd/index.m3u8",
             "quality": "HD",
             "videoType": "HLS"
           }
