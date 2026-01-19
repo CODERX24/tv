@@ -70,7 +70,218 @@ def check_m3u8_link(url, timeout=15):
         print(f"    Error: {str(e)[:100]}")
         return False
 
-def fetch_iptv_org_streams():
+def is_channel_mismatch(channel_title, stream_name, stream_title, url):
+    """
+    Detect if a stream is a mismatch for the requested channel.
+    Returns (is_mismatch, reason, penalty_score)
+    """
+    channel_upper = channel_title.upper()
+    stream_name_upper = stream_name.upper()
+    stream_title_upper = stream_title.upper()
+    url_lower = url.lower()
+    
+    # Remove common suffixes for cleaner matching
+    channel_clean = channel_upper.replace('(TEMPORARY)', '').replace('GEO-BLOCKED', '').replace('(LATENCY)', '').strip()
+    
+    # Define unacceptable mismatches and secondary variants
+    mismatch_rules = {
+        'ESPN': {
+            'avoid': ['DEPORTES', 'DEPORTIVAS', 'SPANISH', 'LATINO', 'PLUS', 'ESPN+', 'ESPN2', 'ESPN 2', 'ESPNU', 'ESPN U', 'COLLEGE'],
+            'penalty_score': -50,  # Heavy penalty
+            'reason': 'Secondary/International ESPN variant'
+        },
+        'ESPN2': {
+            'avoid': ['DEPORTES', 'SPANISH', 'LATINO', 'PLUS'],
+            'penalty_score': -50,
+            'reason': 'Wrong ESPN variant'
+        },
+        'AMC': {
+            'avoid': ['AMC+', 'PLUS', 'AMCPLUS', 'SUNDANCE', 'IFC', 'SHUDDER', 'ACORN'],
+            'penalty_score': -40,
+            'reason': 'AMC secondary service, not main channel'
+        },
+        'HBO': {
+            'avoid': ['HBO2', 'HBO 2', 'HBO3', 'HBO 3', 'HBO MAX', 'HBOMAX', 'MAX', 'FAMILY', 'COMEDY', 'ZONE', 'SIGNATURE', 'LATINO'],
+            'penalty_score': -40,
+            'reason': 'HBO secondary channel, not main HBO'
+        },
+        'FOX NEWS': {
+            'avoid': ['FOX BUSINESS', 'FOX SPORTS', 'FOX DEPORTES', 'FOX SOCCER', 'FS1', 'FS2'],
+            'penalty_score': -50,
+            'reason': 'Wrong Fox network'
+        },
+        'CNN': {
+            'avoid': ['CNN INTERNATIONAL', 'CNN ESPAÑOL', 'CNN TURK', 'CNN BRASIL', 'HLN'],
+            'penalty_score': -30,
+            'reason': 'International CNN variant'
+        },
+        'MSNBC': {
+            'avoid': ['CNBC', 'NBC', 'NBC SPORTS'],
+            'penalty_score': -40,
+            'reason': 'Wrong NBC network'
+        },
+        'DISCOVERY': {
+            'avoid': ['DISCOVERY+', 'PLUS', 'ID', 'INVESTIGATION', 'SCIENCE', 'FAMILIA', 'TURBO', 'THEATER'],
+            'penalty_score': -30,
+            'reason': 'Discovery secondary channel'
+        },
+        'NATIONAL GEOGRAPHIC': {
+            'avoid': ['NAT GEO WILD', 'WILD', 'MUNDO', 'LATIN'],
+            'penalty_score': -30,
+            'reason': 'Nat Geo secondary channel'
+        },
+        'CARTOON NETWORK': {
+            'avoid': ['BOOMERANG', 'TOONAMI', 'CARTOON NETWORK ARABIC'],
+            'penalty_score': -30,
+            'reason': 'Wrong Cartoon Network variant'
+        },
+        'DISNEY CHANNEL': {
+            'avoid': ['DISNEY+', 'DISNEY PLUS', 'DISNEY XD', 'DISNEY JR', 'DISNEY JUNIOR'],
+            'penalty_score': -35,
+            'reason': 'Disney secondary channel'
+        },
+        'TBS': {
+            'avoid': ['TNT', 'TRUTV', 'TCM'],
+            'penalty_score': -40,
+            'reason': 'Wrong Turner network'
+        },
+        'TNT': {
+            'avoid': ['TBS', 'TRUTV', 'TCM'],
+            'penalty_score': -40,
+            'reason': 'Wrong Turner network'
+        }
+    }
+    
+    # Check against mismatch rules
+    for channel_key, rules in mismatch_rules.items():
+        if channel_key in channel_clean:
+            avoid_terms = rules['avoid']
+            
+            # Check if any avoid terms are in the stream name or title
+            for avoid_term in avoid_terms:
+                if avoid_term in stream_name_upper or avoid_term in stream_title_upper or avoid_term in url_lower:
+                    return (True, rules['reason'], rules['penalty_score'])
+    
+    # General secondary channel detection (lighter penalty, as last resort)
+    secondary_indicators = [
+        'PLUS', '+', '2', '3', 'HD', 'EXTRA', 'XTRA', 'FAMILIA', 'LATINO', 'LATIN', 
+        'SPANISH', 'ESPAÑOL', 'ALTERNATIVE', 'ALT'
+    ]
+    
+    # Only apply if it's a clear secondary variant (has the base name + indicator)
+    for indicator in secondary_indicators:
+        # Check if stream has base channel name plus secondary indicator
+        if channel_clean in stream_name_upper and indicator in stream_name_upper:
+            # Make sure it's truly a secondary channel (not just "HD" in description)
+            if indicator in ['2', '3', 'PLUS', '+', 'EXTRA', 'XTRA']:
+                return (True, f'Secondary channel variant ({indicator})', -25)
+    
+    return (False, None, 0)
+    """
+    Assign a quality score to a stream based on URL patterns and metadata.
+    Higher score = better quality
+    """
+    score = 50  # Base score
+    url_lower = url.lower()
+    
+    # Country priority (US-based app)
+    country = stream_data.get('country', '').upper()
+    if country == 'US' or country == 'USA' or country == 'UNITED STATES':
+        score += 40  # High bonus for US streams
+    elif country == 'UK' or country == 'CA' or country == 'CANADA':
+        score += 20  # Medium bonus for English-speaking countries
+    elif country == 'INT' or country == 'INTERNATIONAL':
+        score += 10  # Small bonus for international feeds
+    elif country:  # Any other country
+        score += 5
+    # No country specified gets no bonus
+    
+    # Check for resolution indicators in URL (keywords)
+    if '2160' in url_lower or '4k' in url_lower or 'uhd' in url_lower:
+        score += 40
+    elif '1440' in url_lower or '2k' in url_lower:
+        score += 35
+    elif '1080' in url_lower or 'fhd' in url_lower or '1920' in url_lower:
+        score += 30
+    elif '900' in url_lower or '720' in url_lower or 'hd' in url_lower or '1280' in url_lower:
+        score += 20
+    elif '600' in url_lower or '480' in url_lower or 'sd' in url_lower or '640' in url_lower or '854' in url_lower:
+        score += 10
+    elif '360' in url_lower or '240' in url_lower or '426' in url_lower or '320' in url_lower:
+        score -= 10
+    
+    # Extract resolution from URL patterns like "750x600", "1280x720", etc.
+    import re
+    resolution_pattern = r'(\d{3,4})[x_\-](\d{3,4})'
+    matches = re.findall(resolution_pattern, url_lower)
+    if matches:
+        for width, height in matches:
+            width_int = int(width)
+            height_int = int(height)
+            # Use the larger dimension (could be width or height)
+            max_dimension = max(width_int, height_int)
+            
+            if max_dimension >= 2160:
+                score += 40
+            elif max_dimension >= 1440:
+                score += 35
+            elif max_dimension >= 1080:
+                score += 30
+            elif max_dimension >= 900:
+                score += 25
+            elif max_dimension >= 720:
+                score += 20
+            elif max_dimension >= 600:
+                score += 15
+            elif max_dimension >= 480:
+                score += 10
+            elif max_dimension >= 360:
+                score += 5
+            break  # Only use first resolution found
+    
+    # Check resolution in stream metadata if available
+    resolution = stream_data.get('resolution', {})
+    if resolution:
+        width = resolution.get('width', 0)
+        height = resolution.get('height', 0)
+        max_dimension = max(width, height)
+        
+        if max_dimension >= 2160:
+            score += 40
+        elif max_dimension >= 1440:
+            score += 35
+        elif max_dimension >= 1080:
+            score += 30
+        elif max_dimension >= 900:
+            score += 25
+        elif max_dimension >= 720:
+            score += 20
+        elif max_dimension >= 600:
+            score += 15
+        elif max_dimension >= 480:
+            score += 10
+        elif max_dimension >= 360:
+            score += 5
+    
+    # Prefer certain reliable domains/providers
+    reliable_domains = [
+        'i.mjh.nz',  # High quality IPTV provider
+        'iptv-org.github.io',
+        'livetv.sx',
+        'ustv247.tv',
+        'moveonjoy.com'
+    ]
+    
+    for domain in reliable_domains:
+        if domain in url_lower:
+            score += 15
+            break
+    
+    # Penalize certain indicators of lower quality
+    if 'backup' in url_lower or 'alt' in url_lower:
+        score -= 5
+    
+    return score
     """Fetch streams from iptv-org database"""
     print("Fetching fresh streams from iptv-org...")
     
@@ -161,22 +372,31 @@ def find_replacement_stream(channel_name, iptv_streams):
             'country': stream.get('country', ''),
             'title': stream.get('title', ''),
             'stream_name': stream_name,
-            'stream_title': stream_title
+            'stream_title': stream_title,
+            'quality_score': get_stream_quality_score(url, stream, channel_title),
+            'match_type': '',  # Will be set below
+            'mismatch_reason': stream.get('_mismatch_reason', None)
         }
         
         matched = False
         for term in search_terms:
             # Priority 1: Exact match in name field
             if stream_name and term == stream_name:
+                candidate['match_type'] = 'EXACT_NAME'
                 exact_matches.append(candidate)
-                print(f"    - EXACT match in name: {stream.get('name', 'Unknown')} | {url[:60]}...")
+                country_tag = f"[{stream.get('country', 'N/A')}]" if stream.get('country') else ""
+                mismatch_tag = f" ⚠️{candidate['mismatch_reason']}" if candidate['mismatch_reason'] else ""
+                print(f"    - EXACT match in name: {stream.get('name', 'Unknown')} {country_tag} [Q:{candidate['quality_score']}]{mismatch_tag} | {url[:45]}...")
                 matched = True
                 break
             
             # Priority 2: Exact match in title field
             elif stream_title and term == stream_title:
+                candidate['match_type'] = 'EXACT_TITLE'
                 title_matches.append(candidate)
-                print(f"    - Exact match in title: {stream.get('title', 'Unknown')} | {url[:60]}...")
+                country_tag = f"[{stream.get('country', 'N/A')}]" if stream.get('country') else ""
+                mismatch_tag = f" ⚠️{candidate['mismatch_reason']}" if candidate['mismatch_reason'] else ""
+                print(f"    - Exact match in title: {stream.get('title', 'Unknown')} {country_tag} [Q:{candidate['quality_score']}]{mismatch_tag} | {url[:45]}...")
                 matched = True
                 break
         
@@ -184,8 +404,11 @@ def find_replacement_stream(channel_name, iptv_streams):
             # Priority 3: Partial match in name (preferred over title)
             for term in search_terms:
                 if stream_name and term in stream_name:
+                    candidate['match_type'] = 'PARTIAL_NAME'
                     partial_matches.append(candidate)
-                    print(f"    - Partial match in name: {stream.get('name', 'Unknown')} | {url[:60]}...")
+                    country_tag = f"[{stream.get('country', 'N/A')}]" if stream.get('country') else ""
+                    mismatch_tag = f" ⚠️{candidate['mismatch_reason']}" if candidate['mismatch_reason'] else ""
+                    print(f"    - Partial match in name: {stream.get('name', 'Unknown')} {country_tag} [Q:{candidate['quality_score']}]{mismatch_tag} | {url[:45]}...")
                     matched = True
                     break
         
@@ -193,9 +416,17 @@ def find_replacement_stream(channel_name, iptv_streams):
             # Priority 4: Partial match in title (last resort)
             for term in search_terms:
                 if stream_title and term in stream_title:
+                    candidate['match_type'] = 'PARTIAL_TITLE'
                     partial_matches.append(candidate)
-                    print(f"    - Partial match in title: {stream.get('title', 'Unknown')} | {url[:60]}...")
+                    country_tag = f"[{stream.get('country', 'N/A')}]" if stream.get('country') else ""
+                    mismatch_tag = f" ⚠️{candidate['mismatch_reason']}" if candidate['mismatch_reason'] else ""
+                    print(f"    - Partial match in title: {stream.get('title', 'Unknown')} {country_tag} [Q:{candidate['quality_score']}]{mismatch_tag} | {url[:45]}...")
                     break
+    
+    # Sort each category by quality score (highest first)
+    exact_matches.sort(key=lambda x: x['quality_score'], reverse=True)
+    title_matches.sort(key=lambda x: x['quality_score'], reverse=True)
+    partial_matches.sort(key=lambda x: x['quality_score'], reverse=True)
     
     # Combine in priority order: exact name > exact title > partial name > partial title
     candidates = exact_matches + title_matches + partial_matches
@@ -205,7 +436,10 @@ def find_replacement_stream(channel_name, iptv_streams):
     # Test each candidate until we find one that works
     for i, candidate in enumerate(candidates):
         display_name = candidate.get('title') or candidate.get('name', 'Unknown')
-        print(f"  Testing candidate {i+1}/{len(candidates)}: {display_name} ({candidate['country']})")
+        quality = candidate['quality_score']
+        match_type = candidate.get('match_type', 'UNKNOWN')
+        
+        print(f"  Testing candidate {i+1}/{len(candidates)}: {display_name} ({candidate['country']}) [Quality:{quality}] [{match_type}]")
         print(f"    URL: {candidate['url']}")
         
         if check_m3u8_link(candidate['url']):
@@ -217,7 +451,114 @@ def find_replacement_stream(channel_name, iptv_streams):
     
     return None
 
-def update_advancefeed():
+def should_upgrade_stream(current_url, current_country, channel_title, iptv_streams):
+    """
+    Check if there's a better quality/country stream available than the current one.
+    Returns (should_upgrade, new_url, reason) tuple
+    """
+    print(f"  Checking for better alternatives to current stream...")
+    
+    # Get current stream quality score (without actual stream data, estimate from URL)
+    current_score = get_stream_quality_score(current_url, {'country': current_country or ''})
+    print(f"    Current stream score: {current_score} [Country: {current_country or 'Unknown'}]")
+    
+    # Find all possible replacements
+    channel_name_upper = channel_title.upper()
+    channel_name_clean = channel_name_upper.replace('(TEMPORARY)', '').replace('GEO-BLOCKED', '').replace('(LATENCY)', '').strip()
+    
+    # Use same mapping logic as find_replacement_stream
+    channel_mappings = {
+        'FOX NEWS': ['FOX NEWS', 'FOXNEWS', 'FOX', 'FNC'],
+        'CBSN': ['CBS NEWS', 'CBSN', 'CBS'],
+        'ABC NEWS': ['ABC NEWS', 'ABCNEWS', 'ABC'],
+        'CNN': ['CNN'],
+        'OANN': ['OAN', 'ONE AMERICA NEWS', 'OANN'],
+        'NEWSMAX TV': ['NEWSMAX', 'NEWSMAX TV'],
+        'MSNBC': ['MSNBC'],
+        'BBC NEWS': ['BBC', 'BBC NEWS', 'BBC AMERICA', 'BBCAMERICA'],
+        'TBN': ['TBN', 'TRINITY'],
+        'TCM': ['TCM', 'TURNER CLASSIC MOVIES'],
+        'AMC': ['AMC'],
+        'TNT': ['TNT'],
+        'TBS': ['TBS'],
+        'TRUTV': ['TRUTV', 'TRU TV'],
+        'HLN': ['HLN', 'HEADLINE NEWS'],
+        'CARTOON NETWORK': ['CARTOON NETWORK', 'CN'],
+        'NICKTOONS': ['NICKTOONS', 'NICKELODEON'],
+        'DISNEY CHANNEL': ['DISNEY CHANNEL', 'DISNEY'],
+        'ESPN': ['ESPN'],
+        'ESPN2': ['ESPN2', 'ESPN 2'],
+        'FS1': ['FOX SPORTS 1', 'FOX SPORTS1', 'FS1', 'FS 1'],
+        'FOX SPORTS': ['FOX SPORTS'],
+        'HBO': ['HBO'],
+        'CINEMAX': ['CINEMAX'],
+        'STADIUM': ['STADIUM'],
+        'DISCOVERY': ['DISCOVERY', 'DISCOVERY CHANNEL'],
+        'TLC': ['TLC'],
+        'NATIONAL GEOGRAPHIC': ['NAT GEO', 'NATIONAL GEOGRAPHIC', 'NATGEO'],
+        'MTV': ['MTV'],
+        'CHARGE': ['CHARGE!', 'CHARGE'],
+        'POP': ['POP', 'POP TV'],
+        'BOOMERANG': ['BOOMERANG']
+    }
+    
+    search_terms = []
+    for key, values in channel_mappings.items():
+        if any(term in channel_name_clean for term in values):
+            search_terms.extend(values)
+            break
+    
+    if not search_terms:
+        search_terms = [channel_name_clean]
+    
+    # Find better alternatives
+    best_alternative = None
+    best_score = current_score + 20  # Require at least 20 points improvement to switch
+    
+    for stream in iptv_streams:
+        stream_name = stream.get('name', '').upper()
+        stream_title = stream.get('title', '').upper()
+        search_text = f"{stream_name} {stream_title}"
+        
+        # Check if it matches our channel
+        matched = False
+        for term in search_terms:
+            if term in search_text:
+                matched = True
+                break
+        
+        if not matched:
+            continue
+        
+        url = stream.get('url', '')
+        if not url or '.m3u8' not in url.lower():
+            continue
+        
+        # Skip if it's the same URL we already have
+        if url == current_url:
+            continue
+        
+        # Calculate score for this alternative
+        alt_score = get_stream_quality_score(url, stream, channel_title)
+        
+        # Check if this is better
+        if alt_score > best_score:
+            best_alternative = {
+                'url': url,
+                'score': alt_score,
+                'name': stream.get('title') or stream.get('name', 'Unknown'),
+                'country': stream.get('country', '')
+            }
+            best_score = alt_score
+    
+    if best_alternative:
+        improvement = best_score - current_score
+        reason = f"Found better stream: {best_alternative['name']} [{best_alternative['country']}] (Score: {best_score} vs {current_score}, +{improvement} improvement)"
+        print(f"    ✓ {reason}")
+        return (True, best_alternative['url'], reason)
+    
+    print(f"    No better alternatives found")
+    return (False, None, None)
     """Main function to update dead links in advancefeed.json"""
     print("Starting IPTV Link Fixer...")
     print(f"Current time: {datetime.now()}")
@@ -244,6 +585,7 @@ def update_advancefeed():
     updated_count = 0
     checked_count = 0
     failed_count = 0
+    upgraded_count = 0
     
     # Process each video in shortFormVideos
     if 'shortFormVideos' in feed_data:
@@ -281,6 +623,28 @@ def update_advancefeed():
             
             if is_working:
                 print("  ✓ Link is working and streaming")
+                
+                # Even though it works, check if there's a better alternative
+                # (e.g., upgrade from Germany to USA, or better quality)
+                should_upgrade, new_url, reason = should_upgrade_stream(
+                    current_url, 
+                    video.get('country', ''),  # Try to get country from existing data
+                    channel_title, 
+                    iptv_streams
+                )
+                
+                if should_upgrade and new_url:
+                    print(f"  → UPGRADE AVAILABLE: {reason}")
+                    print(f"  Testing new stream before upgrading...")
+                    
+                    if check_m3u8_link(new_url):
+                        video_obj['url'] = new_url
+                        upgraded_count += 1
+                        updated_count += 1
+                        print(f"  ✓✓✓ UPGRADED to: {new_url}")
+                    else:
+                        print(f"  ✗ New stream doesn't work, keeping current")
+                
                 continue
             
             print("  ✗ Link is dead or not streaming, searching for replacement...")
@@ -310,16 +674,20 @@ def update_advancefeed():
         print(f"✓ Update complete!")
         print(f"  Channels checked: {checked_count}")
         print(f"  Dead channels found: {failed_count}")
-        print(f"  Channels updated: {updated_count}")
-        print(f"  Still broken: {failed_count - updated_count}")
+        print(f"  Channels fixed (dead → working): {updated_count - upgraded_count}")
+        print(f"  Channels upgraded (working → better): {upgraded_count}")
+        print(f"  Total channels updated: {updated_count}")
+        print(f"  Still broken: {failed_count - (updated_count - upgraded_count)}")
         print(f"  Last updated: {feed_data['lastUpdated']}")
         print(f"{'='*70}")
     else:
         print(f"\n{'='*70}")
         if failed_count > 0:
             print(f"Found {failed_count} dead channels but no working replacements available.")
+        elif upgraded_count > 0:
+            print(f"Upgraded {upgraded_count} channels to better streams!")
         else:
-            print(f"No updates needed. All {checked_count} channels are working.")
+            print(f"No updates needed. All {checked_count} channels are working optimally.")
         print(f"{'='*70}")
 
 if __name__ == "__main__":
