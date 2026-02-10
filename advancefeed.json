@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-09T01:45:46.135202",
+  "lastUpdated": "2026-02-10T13:01:43.802723",
   "providerName": "Advance TV Feed",
   "language": "en-US",
   "shortFormVideos": [
@@ -537,7 +537,7 @@
         "dateAdded": "2022-07-02T12:08:29+00:00",
         "videos": [
           {
-            "url": "https://github.com/CODERX24/tv/raw/master/NICKTOONS.m3u8",
+            "url": "http://151.80.18.177:86/Nickelodeon_FR/index.m3u8",
             "quality": "HD",
             "videoType": "HLS"
           }
@@ -1250,7 +1250,7 @@
         "dateAdded": "2022-07-02T11:59:55+00:00",
         "videos": [
           {
-            "url": "https://fl1.moveonjoy.com/FOX_Sports_1/index.m3u8",
+            "url": "http://stream.fs1.tv:8080/hls/webstream.m3u8",
             "quality": "HD",
             "videoType": "HLS"
           }
