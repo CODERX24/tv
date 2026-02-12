@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-10T13:01:43.802723",
+  "lastUpdated": "2026-02-12T01:45:44.156502",
   "providerName": "Advance TV Feed",
   "language": "en-US",
   "shortFormVideos": [
@@ -289,7 +289,7 @@
         "dateAdded": "2022-06-24T03:45:26+00:00",
         "videos": [
           {
-            "url": "https://164475.gvideo.io/mpegts/164475_650646/master_mpegts.m3u8",
+            "url": "https://livecdn.use1-0004.jwplive.com/live/sites/Yal8cmyO/media/fCGf6ROk/live.isml/.m3u8",
             "quality": "HD",
             "videoType": "HLS"
           }
@@ -444,7 +444,7 @@
         "dateAdded": "2022-06-24T03:45:26+00:00",
         "videos": [
           {
-            "url": "https://amc-absolutereality-1-us.plex.wurl.tv/playlist.m3u8",
+            "url": "https://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/5e8254118601b80007b4b7ae/master.m3u8?appName=web&appVersion=9.19.0&deviceDNT=0&deviceId=affbdbfa-5fa3-48af-8369-57c005daef42&deviceMake=firefox&deviceModel=web&deviceType=web&deviceVersion=147.0.0&sid=cc73e49b-ac0c-4c6a-8748-2744bae6bc3c&serverSideAds=false",
             "quality": "HD",
             "videoType": "HLS"
           }
@@ -537,7 +537,7 @@
         "dateAdded": "2022-07-02T12:08:29+00:00",
         "videos": [
           {
-            "url": "http://151.80.18.177:86/Nickelodeon_FR/index.m3u8",
+            "url": "https://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/5ede448d3d50590007a4419e/master.m3u8?appName=web&appVersion=9.19.0&deviceDNT=0&deviceId=62b227dc-b436-4646-95c2-26345773df69&deviceMake=firefox&deviceModel=web&deviceType=web&deviceVersion=147.0.0&sid=aa8cd522-0259-44aa-bc85-f584f8031016&serverSideAds=false",
             "quality": "HD",
             "videoType": "HLS"
           }
