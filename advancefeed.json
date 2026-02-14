@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-14T01:27:27.367609",
+  "lastUpdated": "2026-02-14T12:35:34.009502",
   "providerName": "Advance TV Feed",
   "language": "en-US",
   "shortFormVideos": [
@@ -227,7 +227,7 @@
         "dateAdded": "2022-06-24T03:45:26+00:00",
         "videos": [
           {
-            "url": "https://streamer.nexyl.uk/48559ccd-6400-457d-8acc-06b9e24c2ed8.m3u8",
+            "url": "https://bcovlive-a.akamaihd.net/7f5ec16d102f4b5d92e8e27bc95ff424/us-east-1/6240731308001/playlist.m3u8",
             "quality": "HD",
             "videoType": "HLS"
           }
