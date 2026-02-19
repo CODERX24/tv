@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-19T01:44:35.815051",
+  "lastUpdated": "2026-02-19T12:52:42.262030",
   "providerName": "Advance TV Feed",
   "language": "en-US",
   "shortFormVideos": [
@@ -165,7 +165,7 @@
         "dateAdded": "2022-06-24T03:45:26+00:00",
         "videos": [
           {
-            "url": "https://nmx1ota.akamaized.net/hls/live/2107010/Live_1/index.m3u8",
+            "url": "https://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/55b179af994403942f3061d6/master.m3u8?appName=web&appVersion=9.19.0&deviceDNT=0&deviceId=affbdbfa-5fa3-48af-8369-57c005daef42&deviceMake=firefox&deviceModel=web&deviceType=web&deviceVersion=147.0.0&serverSideAds=false&sid=f7541d50-b052-4940-8fbf-7f0d3eb1c043",
             "quality": "HD",
             "videoType": "HLS"
           }
