@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-19T12:52:42.262030",
+  "lastUpdated": "2026-02-24T01:28:48.142179",
   "providerName": "Advance TV Feed",
   "language": "en-US",
   "shortFormVideos": [
@@ -1281,7 +1281,7 @@
         "dateAdded": "2022-07-02T12:00:02+00:00",
         "videos": [
           {
-            "url": "http://fl41.moveonjoy.com/ESPN_U/index.m3u8",
+            "url": "https://d3b6q2ou5kp8ke.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-vz67vw1bljinm/ESPNTheOcho.m3u8",
             "quality": "HD",
             "videoType": "HLS"
           }
@@ -1312,7 +1312,7 @@
         "dateAdded": "2022-07-02T12:00:24+00:00",
         "videos": [
           {
-            "url": "http://fl41.moveonjoy.com/ESPN_U/index.m3u8",
+            "url": "https://d3b6q2ou5kp8ke.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-vz67vw1bljinm/ESPNTheOcho.m3u8",
             "quality": "HD",
             "videoType": "HLS"
           }
