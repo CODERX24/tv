@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-24T01:28:48.142179",
+  "lastUpdated": "2026-02-25T01:43:53.240364",
   "providerName": "Advance TV Feed",
   "language": "en-US",
   "shortFormVideos": [
@@ -10,7 +10,7 @@
         "dateAdded": "2022-06-24T03:45:26+00:00",
         "videos": [
           {
-            "url": "https://tvpass.org/live/FoxNewsChannel/sd",
+            "url": "https://stream.livenewsplay.com:9443/hls/foxnews/foxsd.m3u8",
             "quality": "HD",
             "videoType": "HLS"
           }
@@ -599,7 +599,7 @@
         "dateAdded": "2022-06-24T03:45:26+00:00",
         "videos": [
           {
-            "url": "http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/65410176770cf1000866bf31/master.m3u8?appName=web&appVersion=unknown&clientTime=0&deviceDNT=0&deviceId=2c7b17f7-35fc-11ef-a031-2b5d494037a2&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=unknown&includeExtendedEvents=false&serverSideAds=false&sid=bcf56774-6379-4d92-a0d3-c5c517f6e994",
+            "url": "https://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/664c94e80120f40008b860f0/master.m3u8?appName=web&appVersion=9.19.0&deviceDNT=0&deviceId=07998d5d-dd4a-4bcc-84be-58dcbcec76b7&deviceMake=firefox&deviceModel=web&deviceType=web&deviceVersion=147.0.0&serverSideAds=false&sid=eb18b8f7-8cd0-43a0-b81e-3457383ab2e6",
             "quality": "HD",
             "videoType": "HLS"
           }
