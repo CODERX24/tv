@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-27T12:43:41.903701",
+  "lastUpdated": "2026-03-01T01:48:34.971725",
   "providerName": "Advance TV Feed",
   "language": "en-US",
   "shortFormVideos": [
@@ -10,7 +10,7 @@
         "dateAdded": "2022-06-24T03:45:26+00:00",
         "videos": [
           {
-            "url": "https://tvpass.org/live/FoxNewsChannel/sd",
+            "url": "http://247preview.foxnews.com/hls/live/2020027/fncv3preview/primary.m3u8",
             "quality": "HD",
             "videoType": "HLS"
           }
@@ -289,7 +289,7 @@
         "dateAdded": "2022-06-24T03:45:26+00:00",
         "videos": [
           {
-            "url": "https://164475.gvideo.io/mpegts/164475_650646/master_mpegts.m3u8",
+            "url": "https://livecdn.use1-0004.jwplive.com/live/sites/Yal8cmyO/media/fCGf6ROk/live.isml/.m3u8",
             "quality": "HD",
             "videoType": "HLS"
           }
