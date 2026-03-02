@@ -6,69 +6,116 @@ import re
 
 def check_m3u8_link(url, timeout=15):
     """Check if an m3u8 link actually works by downloading and parsing it"""
-    try:
-        # First, try to get the m3u8 file
-        response = requests.get(url, timeout=timeout, allow_redirects=True)
-        
-        if response.status_code != 200:
+    
+    # Block streams that require user-agent or referrer (won't work on Roku)
+    blocked_domains_requiring_headers = [
+        'livenewsplay.com',
+        'livenewsnow.com',
+        'streamfare.com',
+        'ustvgo.tv'
+    ]
+    
+    url_lower = url.lower()
+    for blocked_domain in blocked_domains_requiring_headers:
+        if blocked_domain in url_lower:
+            print(f"    ✗ Blocked: {blocked_domain} requires user-agent/referrer (incompatible with Roku)")
             return False
-        
-        content = response.text
-        
-        # Check if it's actually an m3u8 file (should contain #EXTM3U)
-        if '#EXTM3U' not in content:
-            print(f"    Not a valid m3u8 file (missing #EXTM3U header)")
+    
+    # Special handling for tvpass.org - they need a retry
+    is_tvpass = 'tvpass.org' in url_lower
+    max_retries = 2 if is_tvpass else 1
+    
+    for attempt in range(max_retries):
+        try:
+            if attempt > 0:
+                print(f"    Retry attempt {attempt + 1}/{max_retries} for tvpass.org link...")
+                time.sleep(2)  # Wait before retry
+            
+            # First, try to get the m3u8 file
+            response = requests.get(url, timeout=timeout, allow_redirects=True)
+            
+            if response.status_code != 200:
+                if attempt < max_retries - 1 and is_tvpass:
+                    continue  # Retry
+                return False
+            
+            content = response.text
+            
+            # Check if it's actually an m3u8 file (should contain #EXTM3U)
+            if '#EXTM3U' not in content:
+                if attempt < max_retries - 1 and is_tvpass:
+                    print(f"    Not valid m3u8 on attempt {attempt + 1}, retrying...")
+                    continue
+                print(f"    Not a valid m3u8 file (missing #EXTM3U header)")
+                return False
+            
+            # Extract actual stream URLs from the m3u8 playlist
+            stream_urls = []
+            for line in content.split('\n'):
+                line = line.strip()
+                # Skip comments and empty lines
+                if line and not line.startswith('#'):
+                    # Handle relative URLs
+                    if line.startswith('http'):
+                        stream_urls.append(line)
+                    else:
+                        # Construct absolute URL from relative path
+                        base_url = '/'.join(url.split('/')[:-1])
+                        stream_urls.append(f"{base_url}/{line}")
+            
+            if not stream_urls:
+                if attempt < max_retries - 1 and is_tvpass:
+                    continue
+                print(f"    No stream URLs found in m3u8 playlist")
+                return False
+            
+            # Test the first stream URL to see if it's reachable
+            test_url = stream_urls[0]
+            print(f"    Testing actual stream: {test_url[:80]}...")
+            
+            # Try to fetch a small chunk of the actual stream
+            stream_response = requests.get(test_url, timeout=timeout, stream=True, allow_redirects=True)
+            
+            if stream_response.status_code != 200:
+                if attempt < max_retries - 1 and is_tvpass:
+                    print(f"    Stream returned {stream_response.status_code}, retrying...")
+                    continue
+                print(f"    Stream returned status: {stream_response.status_code}")
+                return False
+            
+            # Read a small chunk to verify it's actually streaming data
+            chunk = next(stream_response.iter_content(chunk_size=1024), None)
+            stream_response.close()
+            
+            if chunk is None or len(chunk) == 0:
+                if attempt < max_retries - 1 and is_tvpass:
+                    continue
+                print(f"    Stream returned no data")
+                return False
+            
+            if is_tvpass and attempt > 0:
+                print(f"    ✓ Stream is working after retry!")
+            else:
+                print(f"    ✓ Stream is working and serving data")
+            return True
+            
+        except requests.exceptions.Timeout:
+            if attempt < max_retries - 1 and is_tvpass:
+                continue
+            print(f"    Timeout while checking stream")
             return False
-        
-        # Extract actual stream URLs from the m3u8 playlist
-        stream_urls = []
-        for line in content.split('\n'):
-            line = line.strip()
-            # Skip comments and empty lines
-            if line and not line.startswith('#'):
-                # Handle relative URLs
-                if line.startswith('http'):
-                    stream_urls.append(line)
-                else:
-                    # Construct absolute URL from relative path
-                    base_url = '/'.join(url.split('/')[:-1])
-                    stream_urls.append(f"{base_url}/{line}")
-        
-        if not stream_urls:
-            print(f"    No stream URLs found in m3u8 playlist")
+        except requests.exceptions.ConnectionError:
+            if attempt < max_retries - 1 and is_tvpass:
+                continue
+            print(f"    Connection error")
             return False
-        
-        # Test the first stream URL to see if it's reachable
-        test_url = stream_urls[0]
-        print(f"    Testing actual stream: {test_url[:80]}...")
-        
-        # Try to fetch a small chunk of the actual stream
-        stream_response = requests.get(test_url, timeout=timeout, stream=True, allow_redirects=True)
-        
-        if stream_response.status_code != 200:
-            print(f"    Stream returned status: {stream_response.status_code}")
+        except Exception as e:
+            if attempt < max_retries - 1 and is_tvpass:
+                continue
+            print(f"    Error: {str(e)[:100]}")
             return False
-        
-        # Read a small chunk to verify it's actually streaming data
-        chunk = next(stream_response.iter_content(chunk_size=1024), None)
-        stream_response.close()
-        
-        if chunk is None or len(chunk) == 0:
-            print(f"    Stream returned no data")
-            return False
-        
-        print(f"    ✓ Stream is working and serving data")
-        return True
-        
-    except requests.exceptions.Timeout:
-        print(f"    Timeout while checking stream")
-        return False
-    except requests.exceptions.ConnectionError:
-        print(f"    Connection error")
-        return False
-    except Exception as e:
-        print(f"    Error: {str(e)[:100]}")
-        return False
+    
+    return False
 
 def is_channel_mismatch(channel_title, stream_name, stream_title, url):
     """
@@ -314,15 +361,32 @@ def get_stream_quality_score(url, stream_data, channel_title=''):
     reliable_domains = [
         'i.mjh.nz',
         'iptv-org.github.io',
-        'livetv.sx',
         'ustv247.tv',
-        'moveonjoy.com'
+        'moveonjoy.com',
+        'livetv.sx'
     ]
     
     for domain in reliable_domains:
         if domain in url_lower:
-            score += 15
+            score += 20  # Good bonus for reliable domains
             break
+    
+    # Detect 24/7 preview streams (very low quality, absolute last resort)
+    preview_indicators = ['preview', '247preview', '_300.m3u8', '_preview', 'low_quality']
+    is_preview_stream = any(indicator in url_lower for indicator in preview_indicators)
+    
+    if is_preview_stream:
+        score -= 60  # Massive penalty - only use if nothing else works
+        
+    # tvpass.org: Decent fallback option, better than preview streams
+    # Priority: Good providers > Normal streams > tvpass.org > Preview streams
+    elif 'tvpass.org' in url_lower:
+        score -= 10  # Small penalty (fallback, but not last resort)
+        # Prefer SD over HD within tvpass for bandwidth
+        if '/sd' in url_lower or '_sd' in url_lower:
+            score += 5  # Slight bonus for SD (net -5)
+        elif '/hd' in url_lower or '_hd' in url_lower or '/fhd' in url_lower:
+            score -= 10  # Extra penalty for HD (net -20)
     
     # Penalize certain indicators of lower quality
     if 'backup' in url_lower or 'alt' in url_lower:
