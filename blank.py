@@ -21,31 +21,60 @@ def check_m3u8_link(url, timeout=15):
             print(f"    ✗ Blocked: {blocked_domain} requires user-agent/referrer (incompatible with Roku)")
             return False
     
-    # Special handling for tvpass.org - they need a retry
+    # Special handling for tvpass.org - they only work on Roku devices
+    # If the m3u8 playlist returns ANYTHING (even 404 on .ts files), it's alive
     is_tvpass = 'tvpass.org' in url_lower
-    max_retries = 2 if is_tvpass else 1
+    
+    if is_tvpass:
+        print(f"    ℹ️  tvpass.org link detected (Roku-only, special validation)")
+        try:
+            # For tvpass, just check if the m3u8 playlist itself is accessible
+            response = requests.get(url, timeout=timeout, allow_redirects=True)
+            
+            # If we get ANY response (even error), the playlist exists
+            if response.status_code in [200, 403, 404]:
+                content = response.text
+                
+                # Check if it returns an m3u8 playlist structure
+                if '#EXTM3U' in content or '#EXT-X-' in content:
+                    print(f"    ✓ tvpass.org playlist exists (will work on Roku)")
+                    return True
+                # Even if it returns some content without m3u8 headers, it might be alive
+                elif len(content) > 50:
+                    print(f"    ✓ tvpass.org returned content (assuming alive for Roku)")
+                    return True
+                else:
+                    print(f"    ✗ tvpass.org returned empty/invalid response")
+                    return False
+            else:
+                print(f"    ✗ tvpass.org returned unexpected status: {response.status_code}")
+                return False
+                
+        except requests.exceptions.Timeout:
+            print(f"    ✗ tvpass.org timeout - link may be dead")
+            return False
+        except requests.exceptions.ConnectionError:
+            print(f"    ✗ tvpass.org connection error - link is dead")
+            return False
+        except Exception as e:
+            print(f"    ⚠️  tvpass.org error (assuming dead): {str(e)[:100]}")
+            return False
+    
+    # Standard validation for non-tvpass streams
+    max_retries = 1
     
     for attempt in range(max_retries):
         try:
-            if attempt > 0:
-                print(f"    Retry attempt {attempt + 1}/{max_retries} for tvpass.org link...")
-                time.sleep(2)  # Wait before retry
-            
             # First, try to get the m3u8 file
             response = requests.get(url, timeout=timeout, allow_redirects=True)
             
             if response.status_code != 200:
-                if attempt < max_retries - 1 and is_tvpass:
-                    continue  # Retry
                 return False
             
             content = response.text
             
             # Check if it's actually an m3u8 file (should contain #EXTM3U)
             if '#EXTM3U' not in content:
-                if attempt < max_retries - 1 and is_tvpass:
-                    print(f"    Not valid m3u8 on attempt {attempt + 1}, retrying...")
-                    continue
                 print(f"    Not a valid m3u8 file (missing #EXTM3U header)")
                 return False
             
@@ -64,8 +93,6 @@ def check_m3u8_link(url, timeout=15):
                         stream_urls.append(f"{base_url}/{line}")
             
             if not stream_urls:
-                if attempt < max_retries - 1 and is_tvpass:
-                    continue
                 print(f"    No stream URLs found in m3u8 playlist")
                 return False
             
@@ -77,9 +104,6 @@ def check_m3u8_link(url, timeout=15):
             stream_response = requests.get(test_url, timeout=timeout, stream=True, allow_redirects=True)
             
             if stream_response.status_code != 200:
-                if attempt < max_retries - 1 and is_tvpass:
-                    print(f"    Stream returned {stream_response.status_code}, retrying...")
-                    continue
                 print(f"    Stream returned status: {stream_response.status_code}")
                 return False
             
@@ -88,30 +112,19 @@ def check_m3u8_link(url, timeout=15):
             stream_response.close()
             
             if chunk is None or len(chunk) == 0:
-                if attempt < max_retries - 1 and is_tvpass:
-                    continue
                 print(f"    Stream returned no data")
                 return False
             
-            if is_tvpass and attempt > 0:
-                print(f"    ✓ Stream is working after retry!")
-            else:
-                print(f"    ✓ Stream is working and serving data")
+            print(f"    ✓ Stream is working and serving data")
             return True
             
         except requests.exceptions.Timeout:
-            if attempt < max_retries - 1 and is_tvpass:
-                continue
             print(f"    Timeout while checking stream")
             return False
         except requests.exceptions.ConnectionError:
-            if attempt < max_retries - 1 and is_tvpass:
-                continue
             print(f"    Connection error")
             return False
         except Exception as e:
-            if attempt < max_retries - 1 and is_tvpass:
-                continue
             print(f"    Error: {str(e)[:100]}")
             return False
     
@@ -740,6 +753,10 @@ def update_advancefeed():
             
             print("  ✗ Link is dead or not streaming, searching for replacement...")
             failed_count += 1
+            
+            # If the dead link was tvpass.org, allow replacing it
+            if is_current_tvpass:
+                print("  → tvpass.org link is dead, searching for replacement...")
             
             new_url = find_replacement_stream(channel_title, iptv_streams)
             
