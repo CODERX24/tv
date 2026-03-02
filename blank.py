@@ -754,6 +754,9 @@ def update_advancefeed():
             print("  ✗ Link is dead or not streaming, searching for replacement...")
             failed_count += 1
             
+            # Define the missing variable here!
+            is_current_tvpass = 'tvpass.org' in current_url.lower()
+            
             # If the dead link was tvpass.org, allow replacing it
             if is_current_tvpass:
                 print("  → tvpass.org link is dead, searching for replacement...")
