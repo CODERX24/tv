@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-01T12:35:18.028573",
+  "lastUpdated": "2026-03-02T01:14:31.750954",
   "providerName": "Advance TV Feed",
   "language": "en-US",
   "shortFormVideos": [
@@ -10,7 +10,7 @@
         "dateAdded": "2022-06-24T03:45:26+00:00",
         "videos": [
           {
-            "url": "https://tvpass.org/live/FoxNewsChannel/sd",
+            "url": "https://radiovid.foxnews.com/hls/live/661547/RADIOVID/index.m3u8",
             "quality": "HD",
             "videoType": "HLS"
           }
