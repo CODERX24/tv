@@ -10,7 +10,7 @@
         "dateAdded": "2022-06-24T03:45:26+00:00",
         "videos": [
           {
-            "url": "https://radiovid.foxnews.com/hls/live/661547/RADIOVID/index.m3u8",
+            "url": "https://tvpass.org/live/FoxNewsChannel/sd",
             "quality": "HD",
             "videoType": "HLS"
           }
