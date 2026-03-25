@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-24T12:59:02.325581",
+  "lastUpdated": "2026-03-25T01:45:33.455974",
   "providerName": "Advance TV Feed",
   "language": "en-US",
   "shortFormVideos": [
@@ -289,7 +289,7 @@
         "dateAdded": "2022-06-24T03:45:26+00:00",
         "videos": [
           {
-            "url": "https://164475.gvideo.io/mpegts/164475_650646/master_mpegts.m3u8",
+            "url": "https://livecdn.use1-0004.jwplive.com/live/sites/Yal8cmyO/media/fCGf6ROk/live.isml/.m3u8",
             "quality": "HD",
             "videoType": "HLS"
           }
