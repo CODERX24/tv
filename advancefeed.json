@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-25T12:56:11.580909",
+  "lastUpdated": "2026-03-30T13:05:45.235504",
   "providerName": "Advance TV Feed",
   "language": "en-US",
   "shortFormVideos": [
@@ -1405,7 +1405,7 @@
         "dateAdded": "2022-07-02T12:15:11+00:00",
         "videos": [
           {
-            "url": "http://151.80.18.177:86/Disney_Channel_HD/index.m3u8",
+            "url": "https://liveovh010.cda.pl/zkr7GNESGht4_0Wk12c78A/17538736/2782059/enc103/disneychannelhdraw/disneychannelhdraw.m3u8",
             "quality": "HD",
             "videoType": "HLS"
           }
