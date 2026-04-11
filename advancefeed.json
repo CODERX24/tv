@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-10T12:57:18.921622",
+  "lastUpdated": "2026-04-11T01:48:48.507184",
   "providerName": "Advance TV Feed",
   "language": "en-US",
   "shortFormVideos": [
@@ -1064,7 +1064,7 @@
         "dateAdded": "2022-07-02T11:58:26+00:00",
         "videos": [
           {
-            "url": "https://liveovh010.cda.pl/zkr7GNESGht4_0Wk12c78A/17538736/2782059/enc024/natgeopeoplehdraw/natgeopeoplehdraw.m3u8",
+            "url": "http://103.157.248.140:8000/play/a012/index.m3u8",
             "quality": "HD",
             "videoType": "HLS"
           }
@@ -1126,7 +1126,7 @@
         "dateAdded": "2022-07-02T11:58:41+00:00",
         "videos": [
           {
-            "url": "https://liveovh010.cda.pl/zkr7GNESGht4_0Wk12c78A/17538736/2782059/enc024/natgeopeoplehdraw/natgeopeoplehdraw.m3u8",
+            "url": "http://201.217.246.42:44310/Live/3fcb6e26785fd8d415571b26dc3cf5d3/local-46_720.m3u8",
             "quality": "HD",
             "videoType": "HLS"
           }
@@ -1405,7 +1405,7 @@
         "dateAdded": "2022-07-02T12:15:11+00:00",
         "videos": [
           {
-            "url": "https://liveovh010.cda.pl/zkr7GNESGht4_0Wk12c78A/17538736/2782059/enc103/disneychannelhdraw/disneychannelhdraw.m3u8",
+            "url": "http://151.80.18.177:86/Disney_Channel_HD/index.m3u8",
             "quality": "HD",
             "videoType": "HLS"
           }
