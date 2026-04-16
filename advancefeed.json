@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-15T01:56:51.193712",
+  "lastUpdated": "2026-04-16T02:05:33.143756",
   "providerName": "Advance TV Feed",
   "language": "en-US",
   "shortFormVideos": [
@@ -1405,7 +1405,7 @@
         "dateAdded": "2022-07-02T12:15:11+00:00",
         "videos": [
           {
-            "url": "http://151.80.18.177:86/Disney_Channel_HD/index.m3u8",
+            "url": "http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=bs24",
             "quality": "HD",
             "videoType": "HLS"
           }
