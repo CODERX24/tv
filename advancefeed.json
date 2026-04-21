@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-19T12:47:14.962313",
+  "lastUpdated": "2026-04-21T13:10:58.704403",
   "providerName": "Advance TV Feed",
   "language": "en-US",
   "shortFormVideos": [
@@ -971,7 +971,7 @@
         "dateAdded": "2022-07-23T12:01:21+00:00",
         "videos": [
           {
-            "url": "https://raw.githubusercontent.com/CODERX24/tv/master/TNT.m3u8",
+            "url": "https://tntv-samsung-fr.amagi.tv/playlist.m3u8",
             "quality": "HD",
             "videoType": "HLS"
           }
