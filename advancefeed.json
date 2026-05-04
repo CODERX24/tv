@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-30T13:28:27.877312",
+  "lastUpdated": "2026-05-04T02:13:47.110666",
   "providerName": "Advance TV Feed",
   "language": "en-US",
   "shortFormVideos": [
@@ -1405,7 +1405,7 @@
         "dateAdded": "2022-07-02T12:15:11+00:00",
         "videos": [
           {
-            "url": "http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=bs24",
+            "url": "https://streamer.filmowo.xyz/memfs/24012cc7-5a6e-492f-9083-579349d56f37.m3u8",
             "quality": "HD",
             "videoType": "HLS"
           }
