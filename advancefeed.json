@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-04T02:13:47.110666",
+  "lastUpdated": "2026-05-06T02:12:44.634483",
   "providerName": "Advance TV Feed",
   "language": "en-US",
   "shortFormVideos": [
@@ -1064,7 +1064,7 @@
         "dateAdded": "2022-07-02T11:58:26+00:00",
         "videos": [
           {
-            "url": "http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=cs10",
+            "url": "http://103.157.248.140:8000/play/a012/index.m3u8",
             "quality": "HD",
             "videoType": "HLS"
           }
