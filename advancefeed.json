@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-16T13:09:00.857884",
+  "lastUpdated": "2026-05-18T02:44:54.015119",
   "providerName": "Advance TV Feed",
   "language": "en-US",
   "shortFormVideos": [
@@ -1250,7 +1250,7 @@
         "dateAdded": "2022-07-02T11:59:55+00:00",
         "videos": [
           {
-            "url": "http://stream.fs1.tv:8080/hls/webstream.m3u8",
+            "url": "https://cors-proxy.cooks.fyi/http://190.11.225.124:5000/live/fs1_hd/playlist.m3u8",
             "quality": "HD",
             "videoType": "HLS"
           }
@@ -1405,7 +1405,7 @@
         "dateAdded": "2022-07-02T12:15:11+00:00",
         "videos": [
           {
-            "url": "http://151.80.18.177:86/Disney_Channel_HD/index.m3u8",
+            "url": "http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=bs24",
             "quality": "HD",
             "videoType": "HLS"
           }
