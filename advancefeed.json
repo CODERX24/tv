@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-21T14:52:02.300073",
+  "lastUpdated": "2026-05-23T02:31:13.990287",
   "providerName": "Advance TV Feed",
   "language": "en-US",
   "shortFormVideos": [
@@ -1250,7 +1250,7 @@
         "dateAdded": "2022-07-02T11:59:55+00:00",
         "videos": [
           {
-            "url": "https://cors-proxy.cooks.fyi/http://190.11.225.124:5000/live/fs1_hd/playlist.m3u8",
+            "url": "http://stream.fs1.tv:8080/hls/webstream.m3u8",
             "quality": "HD",
             "videoType": "HLS"
           }
