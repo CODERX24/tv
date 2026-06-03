@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-01T17:25:56.147126",
+  "lastUpdated": "2026-06-03T03:32:55.670435",
   "providerName": "Advance TV Feed",
   "language": "en-US",
   "shortFormVideos": [
@@ -10,7 +10,7 @@
         "dateAdded": "2022-06-24T03:45:26+00:00",
         "videos": [
           {
-            "url": "http://41.205.93.154/FOX-NEWS/index.m3u8",
+            "url": "https://radiovid.foxnews.com/hls/live/661547/RADIOVID/index.m3u8",
             "quality": "HD",
             "videoType": "HLS"
           }
@@ -103,7 +103,7 @@
         "dateAdded": "2022-06-24T03:45:26+00:00",
         "videos": [
           {
-            "url": "https://github.com/CODERX24/tv/raw/master/CNN.m3u8",
+            "url": "https://viewmedia7219.bozztv.com/wmedia/viewmedia100/web_014/Stream/playlist.m3u8",
             "quality": "HD",
             "videoType": "HLS"
           }
@@ -320,7 +320,7 @@
         "dateAdded": "2022-06-24T03:45:26+00:00",
         "videos": [
           {
-            "url": "https://github.com/CODERX24/tv/raw/master/TCM.m3u8",
+            "url": "https://live.tcm10.com.br/tcm10hd/stream.m3u8",
             "quality": "HD",
             "videoType": "HLS"
           }
@@ -351,7 +351,7 @@
         "dateAdded": "2022-06-24T03:45:26+00:00",
         "videos": [
           {
-            "url": "https://github.com/CODERX24/tv/raw/master/CYC.m3u8",
+            "url": "http://media3.smc-host.com:1935/cycnow.com/smil:cyc.smil/playlist.m3u8",
             "quality": "HD",
             "videoType": "HLS"
           }
@@ -568,7 +568,7 @@
         "dateAdded": "2022-06-24T03:45:26+00:00",
         "videos": [
           {
-            "url": "https://github.com/CODERX24/tv/raw/master/TBS.m3u8",
+            "url": "https://cdntv.tbs.seoul.kr/tbs/tbs_tv_web.smil/playlist.m3u8",
             "quality": "HD",
             "videoType": "HLS"
           }
@@ -785,7 +785,7 @@
         "dateAdded": "2022-06-24T03:45:26+00:00",
         "videos": [
           {
-            "url": "https://raw.githubusercontent.com/CODERX24/tv/master/antennatv.m3u8",
+            "url": "https://5f22d76e220e1.streamlock.net/primantenna14/primantenna14/playlist.m3u8",
             "quality": "HD",
             "videoType": "HLS"
           }
